@@ -1,0 +1,59 @@
+@media screen and (min-width: 768px)
+    footer
+        section
+            @extends .box
+            width 24%
+
+    header
+        .panel-busqueda
+            background-color silver
+            display block
+            overflow hidden
+            padding 0.5em 2em
+
+            .caja-busqueda
+                padding-top 0.5em
+
+                .fa-search
+                    background-color #eaeaea
+                    padding 0.35em
+                    position relative
+                    right 4px
+
+            .lenguajes
+                span
+                    @extends .box
+                    border 1px solid gray
+                    padding 0.5em 2em
+
+        .nav.navbar-nav
+            float right
+
+    #obras_intro
+        padding-bottom 1.5em
+
+    #seccion_mapa
+        .nav.nav-tabs.tab-especial
+            max-width 300px
+
+    #ubicacion
+    #vista
+        @extends .box
+        width 49%
+
+    #visita
+        form
+            max-width 500px
+
+    .noticias
+        .noticia
+            @extends .box
+            width 45%
+
+    .obras-box
+        text-align center
+
+        .obra
+            @extends .box
+            margin-bottom 0.3em
+            width 30%

@@ -1,0 +1,128 @@
+@import "util.styl"
+
+body
+    margin auto
+    max-width 1200px
+
+footer
+    border-top 1px solid silver
+    padding 1em
+
+    section
+        .fa
+            font-size 2em
+            text-decoration none
+
+    .enlace
+        color silver
+        padding 1em 0
+
+        .titulo-enlace
+            text-transform uppercase
+
+    .info
+        padding 1em 0
+
+        div
+            @extends .box
+
+            &.glyphicon
+                border 1px solid silver
+                color silver
+                padding 1em
+
+            p
+                margin 0
+
+    .link-formulario
+        font-size 13px
+        padding 1em
+
+        a
+            border 1px solid silver
+            padding 1em
+
+header
+    nav
+        margin 0 !important
+
+    .logo
+        cursor pointer
+        left 0.5em
+        position absolute
+        top 0.5em
+        z-index 3
+
+        img
+            height 32px
+            width 32px
+
+    .panel-busqueda
+        display none
+
+section
+    #select-box
+        font-size 21px
+    .btn-box
+        margin 1em
+    .row
+        margin-left 0px !important
+        margin-right 0px !important
+
+.cargo
+    font-size 14px !important
+
+.nombre
+    font-size 14px !important
+    margin 0px !important
+
+ul.tab-especial
+    li
+        width 50% !important
+        text-align center
+
+.noticias
+    padding 1em
+
+    .noticia
+        border 1px solid silver
+        margin 1em
+
+        .fecha
+        .texto
+        .titulo
+            padding-left 0.5em
+
+        .imagen
+            text-align center
+
+        .texto
+            padding-bottom 1em
+
+.obras-box
+    .obra
+        background-color silver
+        border 1px solid gray
+        padding 2em
+
+        h1
+        p
+            margin 0
+
+.parrafo
+    margin 1em !important
+
+.sub-titulo
+    font-size 16px !important
+    margin 0.5em 0 !important
+
+.tab-especial
+    li
+        width 50% !important
+        text-align center
+
+.titulo
+    font-size 18px !important
+    margin 1em 0 !important
+
+@import "screen_768.styl"
