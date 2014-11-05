@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section>
+<div class="parrafo">
+    <p class="titulo">Como Llegar</p>
+    <form action="#">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Punto de Partida</label>
+            <select name="ordenar" id="ordenar" class="form-control">
+                <option value="1">Valparaiso</option>
+                <option value="2">Santiago</option>
+            </select>
+        </div>
+    </form>
+    <img src="http://dummyimage.com/290x290/000/fff" alt="">
+    <p class="titulo">Indicaciones</p>
+    <p class="sub-titulo">Cómo Llegar en Bus</p>
+    <ol type="1">
+        <li>Some step</li>
+        <li>Some step</li>
+        <li>Some step</li>
+        <li>Some step</li>
+        <li>Some step</li>
+    </ol>
+    <p class="sub-titulo">Cómo Llegar en Auto</p>
+    <ol type="1">
+        <li>Some step</li>
+        <li>Some step</li>
+        <li>Some step</li>
+        <li>Some step</li>
+        <li>Some step</li>
+    </ol>
+</div>
+</section>
+{% endblock %}

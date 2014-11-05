@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="noticias">
+    <h1>Noticias</h1>
+
+    {% for noticia in noticias %}
+    <article class="noticia">
+        <figure class="imagen">
+            <img src="{{ noticia.imagen }}" alt="" />
+        </figure>
+
+        <h3 class="titulo">{{ noticia.titulo }}</h3>
+        <p class="fecha">{{ noticia.fecha }}</p>
+
+        <div class="texto">
+            {% autoescape false %}
+            {{ noticia.texto }}
+            {% endautoescape %}
+        </div>
+    </article>
+    {% endfor %}
+</section>
+{% endblock %}

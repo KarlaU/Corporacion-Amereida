@@ -1,0 +1,154 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="obra">
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="text-center">Nombre de la obra</h1>
+            <p class="text-center">Tipo Obra</p>
+            <p class="text-center">Sector</p>
+            <p class="text-center">Creador</p>
+            <p class="text-center">Año</p>
+        </div>
+    </div>
+</section>
+
+<section id="seccion_tabs">
+    <div class="text-center">
+        <div class="btn-group btn-custom">
+            <button type="button" class="btn btn-default btn-lg text-center"
+                onclick="revelar('ubicacion')">
+                <span class="glyphicon glyphicon-map-marker"></span>
+                <p>Ubicación</p>
+            </button>
+            <button type="button" class="btn btn-default btn-lg text-center"
+                onclick="revelar('mas_obras')">
+                <span class="glyphicon glyphicon-plus"></span>
+                <p>Más Obras</p>
+            </button>
+            <button type="button" class="btn btn-default btn-lg text-center"
+                onclick="revelar('vista')">
+                <span class="glyphicon glyphicon-refresh"></span>
+                <p>Vista 360</p>
+            </button>
+            <button type="button" class="btn btn-default btn-lg text-center"
+                onclick="revelar('#galeria')">
+                <span class="glyphicon glyphicon-th"></span>
+                <p>Galeria</p>
+            </button>
+        </div>
+    </div>
+
+    <div id="ubicacion" class="hidden ocultar">
+        <div class="jumbotron no-padding">
+            <div class="container">
+                <div class="text-right btn-remove">
+                    <span class="glyphicon glyphicon-remove"
+                        onclick="$('.ocultar').addClass('hidden')"></span>
+                </div>
+                <div class="text-center">
+                    <img src="http://dummyimage.com/280x280/000/fff" alt="" />
+                </div>
+                <div class="parrafo">
+                    <p class="titulo">Cómo Llegar a Este Sitio</p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis placeat assumenda modi nulla ipsa iusto voluptatum id qui sint blanditiis dolor officia fugiat nesciunt rem quaerat similique, in neque repudiandae.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="vista" class="hidden ocultar">
+        <div class="jumbotron no-padding">
+            <div class="container">
+                <div class="text-right btn-remove">
+                    <span class="glyphicon glyphicon-remove"
+                        onclick="ocultar()"></span>
+                </div>
+                <div class="text-center">
+                    <img src="http://dummyimage.com/280x400/000/fff" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="galeria" class="hidden ocultar">
+        <div class="jumbotron no-padding">
+            <div class="container">
+                <div class="text-right btn-remove">
+                    <span class="glyphicon glyphicon-remove"
+                        onclick="ocultar()"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="mas_obras" class="hidden ocultar">
+        <div class="jumbotron no-padding">
+            <div class="container">
+                <div class="text-right btn-remove">
+                    <span class="glyphicon glyphicon-remove"
+                        onclick="ocultar()"></span>
+                </div>
+                <div class="parrafo">
+                    <p class="titulo">Obras Cercanas</p>
+                </div>
+                <div class="text-center">
+                    <img src="http://dummyimage.com/280x280/000/fff" alt="" />
+                </div>
+                <div class="text-center">
+                    <img src="http://dummyimage.com/280x280/000/fff" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="parrafo">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quam illo sint deleniti obcaecati velit ipsam itaque qui amet adipisci rem, laborum a, voluptates placeat consequatur, vel nesciunt eaque voluptas.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quam illo sint deleniti obcaecati velit ipsam itaque qui amet adipisci rem, laborum a, voluptates placeat consequatur, vel nesciunt eaque voluptas.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quam illo sint deleniti obcaecati velit ipsam itaque qui amet adipisci rem, laborum a, voluptates placeat consequatur, vel nesciunt eaque voluptas.
+        </p>
+    </div>
+
+    <!-- Import de Sound Clound -->
+    <!-- Import de Youtube/Miveo -->
+
+    <div class="parrafo">
+        Notas
+        <ol type="1">
+            <li>Alguna nota</li>
+            <li>Alguna nota</li>
+        </ol>
+
+        <div class="text-right" onclick="common.irTop()">
+            Arriba <spam class="glyphicon glyphicon-arrow-up"></spam>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+{% block js %}
+<script>
+
+function revelar(id){
+    $('.ocultar').addClass('hidden');
+    $('#' + id).removeClass('hidden');
+}
+
+function ocultar(){
+    $('.ocultar').addClass('hidden');
+}
+
+if($(window).width() >= 768){
+    $(".hidden").removeClass("hidden");
+}
+</script>
+{% endblock %}

@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section>
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Ciudad Abierta</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure error consequuntur itaque perferendis earum quisquam magnam aut dolorem ipsa quae eum cumque, praesentium, cum, repudiandae, fugiat tenetur mollitia odit velit.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section style="padding:1em">
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Corporación Amereida</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab voluptatum mollitia provident unde, ut accusamus, nobis, at dignissimos quasi voluptatibus obcaecati perferendis veritatis velit quaerat ratione porro distinctio qui facere.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div style="padding: 1em">
+        <h1>Obras</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit recusandae voluptatum, iure minus. Autem doloremque repudiandae deleniti dolore totam, velit consectetur, eos magni sed adipisci, ex provident voluptates voluptatem eum?
+        </p>
+    </div>
+
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            {% for obra in obras %}
+                <li data-target="#carousel" data-slide-to="{{ loop.index0 }}"
+                    {% if loop.first %}class="active"{% endif %}></li>
+            {% endfor %}
+        </ol>
+
+        <div class="carousel-inner">
+            {% for obra in obras %}
+            <div class="item{% if loop.first %} active{% endif %}">
+                <div class="text-center">
+                    <img src="{{ obra.imagen }}" alt="" />
+                </div>
+                <div class="carousel-caption">
+                    <h3>{{ obra.nombre }}</h3>
+                    <p>{{ obra.descripcion }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+
+    <div class="text-center btn-box">
+        <a href="/obras" class="btn btn-primary btn-lg" role="button">Ver todas las Obras</a>
+    </div>
+</section>
+
+<section>
+    <h1>Noticias Recientes</h1>
+    <div class="row">
+        {% for noticia in noticias %}
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="{{ noticia.imagen }}">
+                <div class="caption">
+                    <h3>{{ noticia.titulo }}</h3>
+                    <p>{{ noticia.texto }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="text-center btn-box">
+        <a href="/noticias" class="btn btn-primary btn-lg" role="button">Ver todas las Noticias</a>
+    </div>
+</section>
+{% endblock %}
+

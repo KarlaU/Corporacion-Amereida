@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>Camereida</title>
+    <link rel="shortcut icon" href="/images/favicon.png" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/css/camereida.css" />
+</head>
+<body>
+    <header>
+        <section class="panel-busqueda">
+            <div class="lenguajes pull-left">
+                <span>Español</span>
+                <span>English</span>
+            </div>
+            <div class="caja-busqueda pull-right">
+                <input type="text" />
+                <span class="fa fa-search"></span>
+            </div>
+        </section>
+        {% include "barra_navegacion.html" %}
+    </header>
+
+    {% block content %}
+    contenido no sobreescrito
+    {% endblock %}
+
+    <footer>
+        <p class="titulo">Corporación Cultural Camereida</p>
+
+        <section>
+            <article class="info">
+                <div class="glyphicon glyphicon-envelope"></div>
+                <div>
+                    <p>Contacto</p>
+                    <p>secretaria@amereida.cl</p>
+                </div>
+            </article>
+
+            <article class="info">
+                <div class="glyphicon glyphicon-earphone"></div>
+                <div>
+                    <p>Tel-Fax</p>
+                    <p>+56 32 666510</p>
+                </div>
+            </article>
+
+            <article class="info">
+                <div class="glyphicon glyphicon-pushpin"></div>
+                <div>
+                    <p>Ciudad Abierta</p>
+                    <p>Km. 4 camino Concón-Quintero</p>
+                </div>
+            </article>
+
+            <article class="info">
+                <div class="glyphicon glyphicon-pushpin"></div>
+                <div>
+                    <p>Oficinas</p>
+                    <p>Matta 12, Recreo, Viña del Mar</p>
+                    <p>Valparaíso, Chile</p>
+                </div>
+            </article>
+        </section>
+
+        <section>
+            <div class="link-formulario">
+                <a href="#">Formulario de Visitas</a>
+            </div>
+
+            <div class="link-formulario">
+                <a href="#">Donaciones y Aporte</a>
+            </div>
+        </section>
+
+        <section>
+            <p class="titulo">Redes Sociales</p>
+            <a href="http://vimeo.com/album/2421485" target="_blank" class="fa fa-vimeo-square"></a>
+            <a href="https://twitter.com/amereidas" target="_blank" class="fa fa-twitter-square"></a>
+        </section>
+
+        <section>
+            <p class="titulo">Enlaces</p>
+
+            <article class="enlace">
+                <p class="titulo-enlace">Archivo histórico José Vial Armstrong</p>
+                <p>Fotografías, videos, planos, etc.</p>
+            </article>
+
+            <article class="enlace">
+                <p class="titulo-enlace">Biblioteca contel</p>
+                <p class="descripcion-enlace">Catálogo de documentos, libros, poemas, ensayos, etc.</p>
+            </article>
+
+            <article class="enlace">
+                <p class="titulo-enlace">e[ad] Escuela de Arquitectura y Diseño.</p>
+                <p class="descripcion-enlace">Sitio de la Escuela de Arquitectura y diseño.</p>
+                <p class="descripcion-enlace">PUCV.</p>
+            </article>
+
+            <article class="enlace">
+                <p class="titulo-enlace">Travesías de Amereida</p>
+                <p class="descripcion-enlace">Bitácora colectiva de las travesías de amereida.</p>
+            </article>
+        </section>
+    </footer>
+
+    <script src="/js/jquery-2.1.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/common_functions.js"></script>
+
+    {% block js %}
+    {% endblock %}
+</body>
+</html>
