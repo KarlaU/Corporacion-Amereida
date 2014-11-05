@@ -1,0 +1,86 @@
+{
+    "noticias": [
+        {
+            "titulo": "Some Title 1",
+            "texto": "Some Text 1",
+            "fecha": "2014-10-01",
+            "imagen": "http://dummyimage.com/240x200/000/fff"
+        },
+        {
+            "titulo": "Some Title 2",
+            "texto": "Some Text 2",
+            "fecha": "2014-10-01",
+            "imagen": "http://dummyimage.com/240x200/000/fff"
+        },
+        {
+            "titulo": "Some Title 3",
+            "texto": "Some Text 3",
+            "fecha": "2014-10-01",
+            "imagen": "http://dummyimage.com/240x200/000/fff"
+        },
+        {
+            "titulo": "Some Title 4",
+            "texto": "Some Text 4",
+            "fecha": "2014-10-01",
+            "imagen": "http://dummyimage.com/240x200/000/fff"
+        },
+        {
+            "titulo": "Some Title 5",
+            "texto": "Some Text 5",
+            "fecha": "2014-10-01",
+            "imagen": "http://dummyimage.com/240x200/000/fff"
+        },
+        {
+            "titulo": "Some Title 6",
+            "texto": "Some Text 6",
+            "fecha": "2014-10-01",
+            "imagen": "http://dummyimage.com/240x200/000/fff"
+        },
+        {
+            "titulo": "Some Title 7",
+            "texto": "Some Text 7",
+            "fecha": "2014-10-01",
+            "imagen": "http://dummyimage.com/240x200/000/fff"
+        }
+    ],
+    "obras": [
+        {
+            "nombre": "Ágora de Tronquoy",
+            "slug": "Ágora-de-Tronquoy",
+            "descripcion": "Ágora",
+            "imagen": "http://cdn.meme.am/images/300x/6541210.jpg",
+            "zona": "Zona Baja - Cercano a la Vega",
+            "autor": "Juan Purcell, Alberto Cruz A",
+            "anio": "1972"
+        },
+        {
+            "nombre": "Taller de Prototipos",
+            "slug": "Taller-de-Prototipos",
+            "descripcion": "Sala",
+            "imagen": "http://cdn.meme.am/images/300x/6541210.jpg",
+            "zona": "Zona Media - Cercano a la Vega",
+            "autor": "Juan Purcell, Alberto Cruz B",
+            "anio": "1973"
+        },
+        {
+            "nombre": "Casa de los Nombres",
+            "slug": "Casa-de-los-Nombres",
+            "descripcion": "Sala",
+            "imagen": "http://cdn.meme.am/images/300x/6541210.jpg",
+            "zona": "Zona Alta - Cercano a la Vega",
+            "autor": "Juan Purcell, Alberto Cruz C",
+            "anio": "1974"
+        }
+    ],
+    "reglas":[
+        "Respetar y conservar todos y cada uno de los bienes naturales y culturales de Ciudad Abierta.",
+        "Respetar el derecho a la privacidad. Mantener una distancia prudente con las Hospederías. Se recuerda que en ellas vive gente.",
+        "Respetar las indicaciones entregadas por los anfitriones.",
+        "No cazar.",
+        "No acampar.",
+        "No ingresar con vehículos al borde costero. Para ingresar a la playa existen senderos peatonales autorizados.",
+        "Las playas del sector no son aptas para el baño.",
+        "Si se viene en auto, estacionar dentro del recinto. Existen lugares habilitados mas estos no cuentan con cuidadores.",
+        "Las delegaciones que vengan en buses grandes no pueden estacionar dentro del recinto."
+    ]
+}
