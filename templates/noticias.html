@@ -8,12 +8,14 @@
             <figure class="news-image" style="background-image:url('{{ noticia.imagen }}');">
             </figure>
             <h3 class="titulo">{{ noticia.titulo }}</h3>
-            <p class="fecha">{{ noticia.fecha }}</p>
-            <div class="texto">
+            <p>
+                <span class="span-fecha">{{ noticia.fecha }}</span>
+            </p>
+            <p>
                 {% autoescape false %}
                 {{ noticia.texto }}
                 {% endautoescape %}
-            </div>
+            </p>
         </article>
         {% endfor %}
     </div>

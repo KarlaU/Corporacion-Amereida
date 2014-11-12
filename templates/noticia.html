@@ -1,59 +1,44 @@
 {% extends "base.html" %}
 
 {% block content %}
-<section>
-    <div class="jumbotron">
+<section class="head-section">
+    <div class="jumbotron main">
         <div class="container">
-            <h1>Titulo Noticia</h1>
+            <h1>Concierto Código es Poesía</h1>
             <p class="text-center">
-                03|05|2013
+                11|11|2014
             </p>
-
         </div>
     </div>
 </section>
 <section>
-    <div class="parrafo">
-        <p>Noticia | Titulo Noticia</p>
+    <div class="main-wrapper">
+        <p>Noticias | Concierto Código es Poesía</p>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque delectus dolorem sunt cum perferendis vel maiores, modi, consequatur aliquam non sit eaque nemo vero soluta a minima! Neque quos, ea.
+            El Sábado 25 de octubre se realizó en la Sala de Música el concierto “Código es Poesía”.
         </p>
-        <p class="titulo">Lorem Ipsum</p>
-        <p class="sub-titulo">Dolor sit amet</p>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, numquam. Officiis est quasi porro dolore corporis natus cupiditate maiores, esse mollitia maxime, voluptatem totam iste necessitatibus, quod possimus dolorum dignissimos.
+           Participaron: Sergio Miranda (guitarra eléctrica), Sebastián de Larraechea (flauta y guitarra eléctrica), Sebastián Murillo (acordeón y vidrios), Ronald Smith (electrónica), Óscar Santis (electrónica) y Diego Ballcels (imágenes y proyecciones)
         </p>
-        <p class="sub-titulo">Dolor sit amet</p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus nihil eligendi consequatur, voluptatibus labore accusantium alias recusandae mollitia nisi. Harum asperiores blanditiis reiciendis aperiam eveniet dolorem similique architecto sit, aliquid?
-        </p>
-
     </div>
 </section>
-<section  class="noticias">
-    <article class="noticia">
-        <figure class="imagen">
-            <img src="http://dummyimage.com/240x200/000/fff" alt="" />
-        </figure>
-        <p>Pie de img</p>
-    </article>
-</section>
 <section class="noticias">
-    <h1>Noticias</h1>
+    <div class="main-wrapper">
+        <h2>Noticias Anteriores</h2>
+        {% for noticia in noticias %}
+        <article class="noticia">
+            <figure class="imagen">
+                <img src="{{ noticia.imagen }}" alt="" />
+            </figure>
 
-    {% for noticia in noticias %}
-    <article class="noticia">
-        <figure class="imagen">
-            <img src="{{ noticia.imagen }}" alt="" />
-        </figure>
+            <h3 class="titulo">{{ noticia.titulo }}</h3>
+            <p class="fecha">{{ noticia.fecha }}</p>
 
-        <h3 class="titulo">{{ noticia.titulo }}</h3>
-        <p class="fecha">{{ noticia.fecha }}</p>
-
-        <div class="texto">
-            {% autoescape false %}
-            {{ noticia.texto }}
-            {% endautoescape %}
+            <div class="texto">
+                {% autoescape false %}
+                {{ noticia.texto }}
+                {% endautoescape %}
+            </div>
         </div>
     </article>
     {% endfor %}
