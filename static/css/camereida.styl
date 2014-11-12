@@ -1,30 +1,105 @@
 @import "util.styl"
 
+montserrat = 'Montserrat', sans-serif
+
+merriweather = 'Merriweather', serif
+
+claro = #E3E3E3
+
+p, h1, h2, h3, h4, li
+    max-width 740px
+
+h1, h2 ,h3 , h4, a, button, html input[type=button], input[type=reset], input[type=submit]
+    font-family montserrat
+
+a, button, html input[type=button], input[type=reset], input[type=submit]
+    text-decoration none
+
+    &:hover 
+        text-decoration none
+
+h1, h2
+    text-transform uppercase
+    font-weight bold
+    font-size 54px
+
+h2
+    font-weight normal
+
+h3 
+    font-size 25px
+
+h4
+    font-size 16px
+
+p, li
+    font-family merriweather
+
+li
+    margin-bottom 16px
+
+.jumbotron
+    background-size cover
+    background-position center
+
+    p,h1,h2
+        text-align center
+        margin 0 auto
+    p 
+        font-style italic
+
+.head-section
+    margin-bottom 0
+
 body
     margin auto
-    max-width 1200px
+    font-size 16px
 
 footer
     border-top 1px solid silver
     padding 1em
+    font-size 13px
+
+    h2, h3 
+        font-weight bold
+
+    h2
+        font-size 21px
+        text-transform none
+        margin-bottom 26px
+
+    h3
+        font-size 16px
+        margin-bottom 20px
+    
+    h4
+        margin 0
 
     section
         .fa
             font-size 2em
             text-decoration none
+            padding 0
+            border-color transparent
+
+    .contacto-direcciones
+
+        h3
+            margin 0
 
     .enlace
-        color silver
-        padding 1em 0
 
         .titulo-enlace
-            text-transform uppercase
+            font-family montserrat
+            
 
     .info
         padding 1em 0
 
         div
             @extends .box
+            margin-right 10px
+            max-width 196px
 
             &.glyphicon
                 border 1px solid silver
@@ -39,10 +114,20 @@ footer
         padding 1em
 
         a
-            border 1px solid silver
             padding 1em
 
+.news-container
+    overflow auto
+    margin-bottom 50px
+
 header
+    
+    a, span
+        font-size 12px
+
+    span
+        font-family montserrat
+
     nav
         margin 0 !important
 
@@ -54,13 +139,34 @@ header
         z-index 3
 
         img
-            height 32px
             width 32px
 
     .panel-busqueda
         display none
+        margin-bottom 0
+
+.main-wrapper
+    width 90%
+    margin 0 auto
+
+    .bajada-titulo
+        font-style italic
+        font-size 21px
+
+.secondary
+    padding-top 160px
+    padding-bottom 160px
 
 section
+    margin-bottom 90px
+
+    .home-text
+        margin-bottom 55px
+
+        h1,p, h2
+            text-align center
+            margin 0 auto
+
     #select-box
         font-size 21px
     .btn-box
@@ -69,9 +175,27 @@ section
         margin-left 0px !important
         margin-right 0px !important
 
+    .main
+        position relative
+        bottom 120px
+        z-index -1
+        padding-top 328px
+        padding-bottom 228px
+
+.text-center 
+
+    a
+        margin-top 50px
+        display inline-block
+
+a
+    color gray
+    border 1px solid gray
+    padding 0.5em 2em
+
 .cargo
     font-size 14px !important
-
+    
 .nombre
     font-size 14px !important
     margin 0px !important
@@ -80,6 +204,29 @@ ul.tab-especial
     li
         width 50% !important
         text-align center
+
+#seccion_tabs
+
+    .text-center
+        position relative
+        bottom 76px
+
+.thumbnail
+    height 575px;
+    overflow hidden
+
+    .news-image
+        width 100%
+        height 280px
+        background-color silver
+
+    .caption 
+        padding-top 0
+
+        p
+
+            span
+                font-family montserrat
 
 .noticias
     padding 1em
@@ -100,17 +247,53 @@ ul.tab-especial
             padding-bottom 1em
 
 .obras-box
+    overflow auto
+    margin-bottom 90px
+
     .obra
         background-color silver
         border 1px solid gray
         padding 2em
+        height 370px
+        postion relative
 
-        h1
+        div
+            position absolute
+            bottom 50px
+            right 50px
+            left 50px
+            
+        h2
+            text-transform none
+            font-size 40px
         p
             margin 0
+            font-style italic
 
-.parrafo
-    margin 1em !important
+.no-head-image
+    margin-top 130px
+
+    h1, h2
+        text-transform none
+        font-weight normal
+
+    h2 
+        font-size 41px
+        margin-bottom 20px
+
+    h1
+        margin-bottom 65px
+
+    form
+
+        .form-group
+            max-width 415px
+
+        .selector
+            width 150px
+
+.paragraph-container
+        margin-bottom 45px
 
 .sub-titulo
     font-size 16px !important
@@ -125,4 +308,7 @@ ul.tab-especial
     font-size 18px !important
     margin 1em 0 !important
 
+.cca-brand
+    border transparent
+ 
 @import "screen_768.styl"

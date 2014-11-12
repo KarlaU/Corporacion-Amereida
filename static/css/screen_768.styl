@@ -1,33 +1,42 @@
 @media screen and (min-width: 768px)
+
     footer
+
         section
             @extends .box
             width 24%
 
     header
-        .panel-busqueda
-            background-color silver
-            display block
-            overflow hidden
-            padding 0.5em 2em
 
-            .caja-busqueda
-                padding-top 0.5em
+        div
+            .panel-busqueda
+                display block
+                overflow hidden
+                padding 0.5em 0
 
-                .fa-search
-                    background-color #eaeaea
-                    padding 0.35em
-                    position relative
-                    right 4px
+                .caja-busqueda
+                    padding-top 0.5em
 
-            .lenguajes
-                span
-                    @extends .box
-                    border 1px solid gray
-                    padding 0.5em 2em
+                    .fa-search
+                        background-color #eaeaea
+                        padding 0.35em
+                        position relative
+                        right 4px
+                        border 1px solid gray
+
+                .lenguajes
+                    span
+                        @extends .box
+                        border 1px solid gray
+                        padding 0.5em 2em
 
         .nav.navbar-nav
             float right
+
+        .logo
+
+            img
+                width 62px
 
     #obras_intro
         padding-bottom 1.5em
@@ -55,5 +64,15 @@
 
         .obra
             @extends .box
-            margin-bottom 0.3em
-            width 30%
+            
+    .cca-brand
+        position relative
+
+        figure
+            position absolute
+
+    .tab-especial
+
+        li
+            width auto
+            text-align center

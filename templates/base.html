@@ -10,19 +10,23 @@
     <link rel="stylesheet" href="/css/bootstrap-theme.min.css" />
     <link rel="stylesheet" href="/css/font-awesome.min.css" />
     <link rel="stylesheet" href="/css/camereida.css" />
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400italic,400,900,300italic,300,700,700italic,900italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
     <header>
-        <section class="panel-busqueda">
-            <div class="lenguajes pull-left">
-                <span>Español</span>
-                <span>English</span>
-            </div>
-            <div class="caja-busqueda pull-right">
-                <input type="text" />
-                <span class="fa fa-search"></span>
-            </div>
-        </section>
+        <div class="main-wrapper">
+            <section class="panel-busqueda">
+                <div class="lenguajes pull-left">
+                    <span>Español</span>
+                    <span>English</span>
+                </div>
+                <div class="caja-busqueda pull-right">
+                    <input type="text" />
+                    <span class="fa fa-search"></span>
+                </div>
+            </section>
+        </div>
         {% include "barra_navegacion.html" %}
     </header>
 
@@ -31,89 +35,98 @@
     {% endblock %}
 
     <footer>
-        <p class="titulo">Corporación Cultural Camereida</p>
+        <div class="main-wrapper">
+            <h2>Corporación Cultural Camereida</h2>
+            <section class="contacto-direcciones col-lg-3 col-sm-6">
+                <article class="info">
+                    <div class="glyphicon glyphicon-envelope"></div>
+                    <div>
+                        <h3>Contacto</h3>
+                        <p>secretaria@amereida.cl</p>
+                    </div>
+                </article>
 
-        <section>
-            <article class="info">
-                <div class="glyphicon glyphicon-envelope"></div>
-                <div>
-                    <p>Contacto</p>
-                    <p>secretaria@amereida.cl</p>
-                </div>
-            </article>
+                <article class="info">
+                    <div class="glyphicon glyphicon-earphone"></div>
+                    <div>
+                        <h3>Tel-Fax</h3>
+                        <p>+56 32 666510</p>
+                    </div>
+                </article>
 
-            <article class="info">
-                <div class="glyphicon glyphicon-earphone"></div>
-                <div>
-                    <p>Tel-Fax</p>
-                    <p>+56 32 666510</p>
-                </div>
-            </article>
+                <article class="info">
+                    <div class="glyphicon glyphicon-pushpin"></div>
+                    <div>
+                        <h3>Ciudad Abierta</h3>
+                        <p>Km. 4 camino Concón-Quintero</p>
+                    </div>
+                </article>
 
-            <article class="info">
-                <div class="glyphicon glyphicon-pushpin"></div>
-                <div>
-                    <p>Ciudad Abierta</p>
-                    <p>Km. 4 camino Concón-Quintero</p>
-                </div>
-            </article>
+                <article class="info">
+                    <div class="glyphicon glyphicon-pushpin"></div>
+                    <div>
+                        <h3>Oficinas</h3>
+                        <p>Matta 12, Recreo, Viña del Mar</p>
+                        <p>Valparaíso, Chile</p>
+                    </div>
+                </article>
+            </section>
 
-            <article class="info">
-                <div class="glyphicon glyphicon-pushpin"></div>
-                <div>
-                    <p>Oficinas</p>
-                    <p>Matta 12, Recreo, Viña del Mar</p>
-                    <p>Valparaíso, Chile</p>
-                </div>
-            </article>
-        </section>
+            <section class="col-lg-3 col-sm-6">
+                <article class="info">
+                    <div class="link-formulario">
+                        <a href="#">Formulario de Visitas</a>
+                    </div>
+                </article>
+                <article>  
+                    <div class="link-formulario">
+                        <a href="#">Donaciones y Aporte</a>
+                    </div>
+                </article>
+            </section>
 
-        <section>
-            <div class="link-formulario">
-                <a href="#">Formulario de Visitas</a>
-            </div>
+            <section class="col-lg-3 col-sm-6">
+                <h3>Redes Sociales</h3>
+                <a href="http://vimeo.com/album/2421485" target="_blank" class="fa fa-vimeo-square"></a>
+                <a href="https://twitter.com/amereidas" target="_blank" class="fa fa-twitter-square"></a>
+            </section>
 
-            <div class="link-formulario">
-                <a href="#">Donaciones y Aporte</a>
-            </div>
-        </section>
+            <section class="col-lg-3 col-sm-6">
+                <h3>Enlaces</h3>
 
-        <section>
-            <p class="titulo">Redes Sociales</p>
-            <a href="http://vimeo.com/album/2421485" target="_blank" class="fa fa-vimeo-square"></a>
-            <a href="https://twitter.com/amereidas" target="_blank" class="fa fa-twitter-square"></a>
-        </section>
+                <article class="enlace">
+                    <h4>Archivo histórico José Vial Armstrong</h4>
+                    <p>Fotografías, videos, planos, etc.</p>
+                </article>
 
-        <section>
-            <p class="titulo">Enlaces</p>
+                <article class="enlace">
+                    <h4>Biblioteca Constel</h4>
+                    <p>Catálogo de documentos, libros, poemas, ensayos, etc.</p>
+                </article>
 
-            <article class="enlace">
-                <p class="titulo-enlace">Archivo histórico José Vial Armstrong</p>
-                <p>Fotografías, videos, planos, etc.</p>
-            </article>
+                <article class="enlace">
+                    <h4>e[ad] Escuela de Arquitectura y Diseño.</h4>
+                    <p>Sitio de la Escuela de Arquitectura y diseño PUCV.</p>
+                </article>
 
-            <article class="enlace">
-                <p class="titulo-enlace">Biblioteca contel</p>
-                <p class="descripcion-enlace">Catálogo de documentos, libros, poemas, ensayos, etc.</p>
-            </article>
-
-            <article class="enlace">
-                <p class="titulo-enlace">e[ad] Escuela de Arquitectura y Diseño.</p>
-                <p class="descripcion-enlace">Sitio de la Escuela de Arquitectura y diseño.</p>
-                <p class="descripcion-enlace">PUCV.</p>
-            </article>
-
-            <article class="enlace">
-                <p class="titulo-enlace">Travesías de Amereida</p>
-                <p class="descripcion-enlace">Bitácora colectiva de las travesías de amereida.</p>
-            </article>
-        </section>
+                <article class="enlace">
+                    <h4>Travesías de Amereida</h4>
+                    <p>Bitácora colectiva de las travesías de amereida.</p>
+                </article>
+            </section>
+        </div>
     </footer>
 
     <script src="/js/jquery-2.1.1.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/common_functions.js"></script>
-
+    <script src="js/portfolio.pack.min.js"></script>
+    <script>
+    $(document).ready(function() {
+            var p = $("#gallery").portfolio();
+            p.init();
+    });
+    </script>
     {% block js %}
     {% endblock %}
 </body>

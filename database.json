@@ -1,50 +1,109 @@
 {
     "noticias": [
         {
-            "titulo": "Some Title 1",
-            "texto": "Some Text 1",
-            "fecha": "2014-10-01",
-            "imagen": "http://dummyimage.com/240x200/000/fff"
+            "titulo": "Celebración Día de San Francisco",
+            "texto": "Les invitamos cordialmente a todos los amigos de la Ciudad Abierta junto a la Escuela de Arquitectura y Diseño PUCV, a celebrar el día de San Francisco este domingo 5 de octubre […]",
+            "fecha": "3|10|2014"
         },
         {
-            "titulo": "Some Title 2",
-            "texto": "Some Text 2",
-            "fecha": "2014-10-01",
-            "imagen": "http://dummyimage.com/240x200/000/fff"
+            "titulo": "Código es Poesía",
+            "texto": "El Viernes 15 de Agosto se realizará el concierto “Código es Poesía” con la participación de: Sonido Sergio Miranda (guitarra) Eric Bertrand (electrónica) Ronald Smith (electrónica) […]",
+            "fecha": "08|08|2014"
         },
         {
-            "titulo": "Some Title 3",
-            "texto": "Some Text 3",
-            "fecha": "2014-10-01",
-            "imagen": "http://dummyimage.com/240x200/000/fff"
+            "titulo": "SoundBoxes y Concierto de Derek Holzer",
+            "texto": "Los días Sábado 30 de Noviembre y Domingo 1 de Diciembre se realizará el workshop SoundBoxes. Esta actividad se cerrará con un concierto de Derek Holzer […]",
+            "fecha": "26|11|2013"
         },
         {
-            "titulo": "Some Title 4",
-            "texto": "Some Text 4",
-            "fecha": "2014-10-01",
-            "imagen": "http://dummyimage.com/240x200/000/fff"
-        },
-        {
-            "titulo": "Some Title 5",
-            "texto": "Some Text 5",
-            "fecha": "2014-10-01",
-            "imagen": "http://dummyimage.com/240x200/000/fff"
-        },
-        {
-            "titulo": "Some Title 6",
-            "texto": "Some Text 6",
-            "fecha": "2014-10-01",
-            "imagen": "http://dummyimage.com/240x200/000/fff"
-        },
-        {
-            "titulo": "Some Title 7",
-            "texto": "Some Text 7",
-            "fecha": "2014-10-01",
-            "imagen": "http://dummyimage.com/240x200/000/fff"
+            "titulo": "Concierto Dúo Stéphane Pécas",
+            "texto": "Tenemos el agrado de invitarlos para el día sábado 04 de mayo, a las 20.00 hrs. al Concierto del Dúo Stéphane Pécas, que se realizará en Sala de Música de la Ciudad Abierta […]",
+            "fecha": "03|05|2013"
         }
     ],
     "obras": [
         {
+            "nombre": "Ágora de Tronquoy",
+            "slug": "Ágora-de-Tronquoy",
+            "descripcion": "Ágora",
+            "imagen": "http://cdn.meme.am/images/300x/6541210.jpg",
+            "zona": "Zona Baja - Cercano a la Vega",
+            "autor": "Juan Purcell, Alberto Cruz A",
+            "anio": "1972"
+        },
+        {
+            "nombre": "Taller de Prototipos",
+            "slug": "Taller-de-Prototipos",
+            "descripcion": "Sala",
+            "imagen": "http://cdn.meme.am/images/300x/6541210.jpg",
+            "zona": "Zona Media - Cercano a la Vega",
+            "autor": "Juan Purcell, Alberto Cruz B",
+            "anio": "1973"
+        },
+        {
+            "nombre": "Casa de los Nombres",
+            "slug": "Casa-de-los-Nombres",
+            "descripcion": "Sala",
+            "imagen": "http://cdn.meme.am/images/300x/6541210.jpg",
+            "zona": "Zona Alta - Cercano a la Vega",
+            "autor": "Juan Purcell, Alberto Cruz C",
+            "anio": "1974"
+        },
+                {
+            "nombre": "Ágora de Tronquoy",
+            "slug": "Ágora-de-Tronquoy",
+            "descripcion": "Ágora",
+            "imagen": "http://cdn.meme.am/images/300x/6541210.jpg",
+            "zona": "Zona Baja - Cercano a la Vega",
+            "autor": "Juan Purcell, Alberto Cruz A",
+            "anio": "1972"
+        },
+        {
+            "nombre": "Taller de Prototipos",
+            "slug": "Taller-de-Prototipos",
+            "descripcion": "Sala",
+            "imagen": "http://cdn.meme.am/images/300x/6541210.jpg",
+            "zona": "Zona Media - Cercano a la Vega",
+            "autor": "Juan Purcell, Alberto Cruz B",
+            "anio": "1973"
+        },
+        {
+            "nombre": "Casa de los Nombres",
+            "slug": "Casa-de-los-Nombres",
+            "descripcion": "Sala",
+            "imagen": "http://cdn.meme.am/images/300x/6541210.jpg",
+            "zona": "Zona Alta - Cercano a la Vega",
+            "autor": "Juan Purcell, Alberto Cruz C",
+            "anio": "1974"
+        },
+        {
+            "nombre": "Ágora de Tronquoy",
+            "slug": "Ágora-de-Tronquoy",
+            "descripcion": "Ágora",
+            "imagen": "http://cdn.meme.am/images/300x/6541210.jpg",
+            "zona": "Zona Baja - Cercano a la Vega",
+            "autor": "Juan Purcell, Alberto Cruz A",
+            "anio": "1972"
+        },
+        {
+            "nombre": "Taller de Prototipos",
+            "slug": "Taller-de-Prototipos",
+            "descripcion": "Sala",
+            "imagen": "http://cdn.meme.am/images/300x/6541210.jpg",
+            "zona": "Zona Media - Cercano a la Vega",
+            "autor": "Juan Purcell, Alberto Cruz B",
+            "anio": "1973"
+        },
+        {
+            "nombre": "Casa de los Nombres",
+            "slug": "Casa-de-los-Nombres",
+            "descripcion": "Sala",
+            "imagen": "http://cdn.meme.am/images/300x/6541210.jpg",
+            "zona": "Zona Alta - Cercano a la Vega",
+            "autor": "Juan Purcell, Alberto Cruz C",
+            "anio": "1974"
+        },
+                {
             "nombre": "Ágora de Tronquoy",
             "slug": "Ágora-de-Tronquoy",
             "descripcion": "Ágora",

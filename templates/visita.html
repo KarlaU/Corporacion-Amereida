@@ -1,67 +1,73 @@
 {% extends "base.html" %}
 {% block content %}
 <section id="visita">
-    <div class="parrafo">
-        <p class="titulo">Visita</p>
-        <p class="sub-titulo">Horarios</p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis atque reiciendis officia, perspiciatis et commodi, obcaecati blanditiis praesentium esse illo deserunt! Suscipit maiores, fugit similique voluptas repellat atque corporis optio.
-        </p>
-        <p class="sub-titulo">Colaboración</p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse rerum odio, nobis quam eaque delectus asperiores, pariatur soluta nostrum sapiente provident laudantium deleniti sit sunt molestias eius iusto cupiditate architecto!
-        </p>
-        <p class="titulo">Reglas y Recomendaciones</p>
+    <div class="no-head-image main-wrapper">
+        <h1>Visita</h1>
+        <div class="paragraph-container">
+            <h2>Horarios</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis atque reiciendis officia, perspiciatis et commodi, obcaecati blanditiis praesentium esse illo deserunt! Suscipit maiores, fugit similique voluptas repellat atque corporis optio.
+            </p>
+        </div>
+        <div class="paragraph-container">
+            <h2>Colaboración</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse rerum odio, nobis quam eaque delectus asperiores, pariatur soluta nostrum sapiente provident laudantium deleniti sit sunt molestias eius iusto cupiditate architecto!
+            </p>
+        </div>
+        <div class="paragraph-container">
+            <h2>Reglas y Recomendaciones</h2>
+            <ol>
+                {% for texto in reglas %}
+                <li>{{ texto }}</li>
+                {% endfor %}
+            </ol>
+        </div>
+        <div class="paragraph-container">
+            <h2>Formulario de Visita</h2>
+            <form action="#" role="form">
 
-        <ol>
-            {% for texto in reglas %}
-            <li>{{ texto }}</li>
-            {% endfor %}
-        </ol>
+                <div class="form-group">
+                    <input type="date" class="form-control" placeholder="Fecha de la Visita" />
+                </div>
 
-        <p class="titulo">Formulario de Visita</p>
-        <form action="#" role="form">
+                <div class="form-group">
+                    <select name="" id="" class="form-control">
+                        <option value="">Tipo de visita</option>
+                        <option value="">Institucional</option>
+                        <option value="">Privado</option>
+                    </select>
+                </div>
 
-            <div class="form-group">
-                <input type="date" class="form-control" placeholder="Fecha de la Visita" />
-            </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Número de personas" class="form-control">
+                </div>
 
-            <div class="form-group">
-                <select name="" id="" class="form-control">
-                    <option value="">Tipo de visita</option>
-                    <option value="">Institucional</option>
-                    <option value="">Privado</option>
-                </select>
-            </div>
+                <div class="form-group">
+                    <select name="" id="" class="form-control">
+                        <option value="">Procedencia del/los visitantes/s</option>
+                        <option value="">Chileno</option>
+                        <option value="">Extrangero</option>
+                    </select>
+                </div>
 
-            <div class="form-group">
-                <input type="text" placeholder="Número de personas" class="form-control">
-            </div>
+                <div class="form-group">
+                    <select name="" id="" class="form-control">
+                        <option value="">Ha visitado antes Ciudad Abierta?</option>
+                        <option value="">Si</option>
+                        <option value="">No</option>
+                    </select>
+                </div>
 
-            <div class="form-group">
-                <select name="" id="" class="form-control">
-                    <option value="">Procedencia del/los visitantes/s</option>
-                    <option value="">Chileno</option>
-                    <option value="">Extrangero</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <select name="" id="" class="form-control">
-                    <option value="">Ha visitado antes Ciudad Abierta?</option>
-                    <option value="">Si</option>
-                    <option value="">No</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Escriba un mensaje detallando el motivo de su visita y cual es su principal interes en Ciudad Abierta">
-                </textarea>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Enviar" class="btn btn-primary">
-            </div>
-        </form>
+                <div class="form-group">
+                    <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Escriba un mensaje detallando el motivo de su visita y cual es su principal interes en Ciudad Abierta">
+                    </textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
     </div>
 </section>
 {% endblock %}
