@@ -4,23 +4,25 @@
             "titulo": "Celebración Día de San Francisco",
             "texto": "Les invitamos cordialmente a todos los amigos de la Ciudad Abierta junto a la Escuela de Arquitectura y Diseño PUCV, a celebrar el día de San Francisco este domingo 5 de octubre […]",
             "fecha": "3|10|2014",
-            "imagen":"/images/IMG-20141026-WA00041.jpg"
+            "imagen":"/images/francisco-T-2014.jpg"
         },
         {
             "titulo": "Código es Poesía",
             "texto": "El Viernes 15 de Agosto se realizará el concierto “Código es Poesía” con la participación de: Sonido Sergio Miranda (guitarra) Eric Bertrand (electrónica) Ronald Smith (electrónica) […]",
             "fecha": "08|08|2014",
-            "imagen":"/images/francisco-T-2014"
+            "imagen":"/images/IMG-20141026-WA00041.jpg"
         },
         {
             "titulo": "SoundBoxes y Concierto de Derek Holzer",
             "texto": "Los días Sábado 30 de Noviembre y Domingo 1 de Diciembre se realizará el workshop SoundBoxes. Esta actividad se cerrará con un concierto de Derek Holzer […]",
-            "fecha": "26|11|2013"
+            "fecha": "26|11|2013",
+            "imagen":"/images/sb-2013_02.jpg"
         },
         {
             "titulo": "Concierto Dúo Stéphane Pécas",
             "texto": "Tenemos el agrado de invitarlos para el día sábado 04 de mayo, a las 20.00 hrs. al Concierto del Dúo Stéphane Pécas, que se realizará en Sala de Música de la Ciudad Abierta […]",
-            "fecha": "03|05|2013"
+            "fecha": "03|05|2013",
+            "imagen":"/images/4559875826_79b7186209_z.jpg"
         }
     ],
     "obras": [
