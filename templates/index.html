@@ -79,7 +79,7 @@
         {% for noticia in noticias %}
         <div class="col-xs-12 col-sm-6 col-md-3">
             <div class="thumbnail">
-                <div class="news-image">
+                <div class="news-image" style="background-image:url('{{ noticia.imagen }}');">
                 </div>
                 <div class="caption">
                     <h3>{{ noticia.titulo }}</h3>
