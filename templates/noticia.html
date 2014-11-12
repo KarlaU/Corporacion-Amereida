@@ -13,7 +13,7 @@
 </section>
 <section>
     <div class="main-wrapper">
-        <p>Noticias | Concierto Código es Poesía</p>
+        <p><span class="span-breadcrumb-noticia">Noticias | Concierto Código es Poesía</span></p>
         <p>
             El Sábado 25 de octubre se realizó en la Sala de Música el concierto “Código es Poesía”.
         </p>
@@ -26,21 +26,19 @@
     <div class="main-wrapper">
         <h2>Noticias Anteriores</h2>
         {% for noticia in noticias %}
-        <article class="noticia">
-            <figure class="imagen">
-                <img src="{{ noticia.imagen }}" alt="" />
+        <article class="noticia col-lg-6 col-xs-12">
+            <figure class="news-image" style="background-image:url('{{ noticia.imagen }}');">
             </figure>
-
             <h3 class="titulo">{{ noticia.titulo }}</h3>
-            <p class="fecha">{{ noticia.fecha }}</p>
-
-            <div class="texto">
+            <p>
+                <span class="span-fecha">{{ noticia.fecha }}</span>
+            </p>
+            <p>
                 {% autoescape false %}
                 {{ noticia.texto }}
                 {% endautoescape %}
-            </div>
-        </div>
-    </article>
+            </p>
+        </article>
     {% endfor %}
 </section>
 {% endblock %}
