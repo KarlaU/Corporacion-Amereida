@@ -10,100 +10,95 @@
             <p class="text-center">Sector</p>
             <p class="text-center">Creador</p>
             <p class="text-center">Año</p>
+        <div class="text-center obra-nav">
+            <div class="btn-group btn-custom">
+                <button type="button" class="btn btn-default btn-lg text-center"
+                    onclick="revelar('ubicacion')">
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                    <p>Ubicación</p>
+                </button>
+                <button type="button" class="btn btn-default btn-lg text-center"
+                    onclick="revelar('mas_obras')">
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <p>Más Obras</p>
+                </button>
+                <button type="button" class="btn btn-default btn-lg text-center"
+                    onclick="revelar('vista')">
+                    <span class="glyphicon glyphicon-refresh"></span>
+                    <p>Vista 360</p>
+                </button>
+                <button type="button" class="btn btn-default btn-lg text-center"
+                    onclick="revelar('#galeria')">
+                    <span class="glyphicon glyphicon-th"></span>
+                    <p>Galeria</p>
+                </button>
+            </div>
         </div>
-    </div>
-</section>
 
-<section id="seccion_tabs">
-    <div class="text-center">
-        <div class="btn-group btn-custom">
-            <button type="button" class="btn btn-default btn-lg text-center"
-                onclick="revelar('ubicacion')">
-                <span class="glyphicon glyphicon-map-marker"></span>
-                <p>Ubicación</p>
-            </button>
-            <button type="button" class="btn btn-default btn-lg text-center"
-                onclick="revelar('mas_obras')">
-                <span class="glyphicon glyphicon-plus"></span>
-                <p>Más Obras</p>
-            </button>
-            <button type="button" class="btn btn-default btn-lg text-center"
-                onclick="revelar('vista')">
-                <span class="glyphicon glyphicon-refresh"></span>
-                <p>Vista 360</p>
-            </button>
-            <button type="button" class="btn btn-default btn-lg text-center"
-                onclick="revelar('#galeria')">
-                <span class="glyphicon glyphicon-th"></span>
-                <p>Galeria</p>
-            </button>
-        </div>
-    </div>
-
-    <div id="ubicacion" class="hidden ocultar">
-        <div class="jumbotron no-padding">
-            <div class="container">
-                <div class="text-right btn-remove">
-                    <span class="glyphicon glyphicon-remove"
-                        onclick="$('.ocultar').addClass('hidden')"></span>
-                </div>
-                <div class="text-center">
-                    <img src="http://dummyimage.com/280x280/000/fff" alt="" />
-                </div>
-                <div class="parrafo">
-                    <p class="titulo">Cómo Llegar a Este Sitio</p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis placeat assumenda modi nulla ipsa iusto voluptatum id qui sint blanditiis dolor officia fugiat nesciunt rem quaerat similique, in neque repudiandae.
+        <div id="ubicacion" class="hidden ocultar">
+            <div class="jumbotron no-padding">
+                <div class="container">
+                    <div class="text-right btn-remove">
+                        <span class="glyphicon glyphicon-remove"
+                            onclick="$('.ocultar').addClass('hidden')"></span>
+                    </div>
+                    <div class="text-center">
+                        <img src="http://dummyimage.com/280x280/000/fff" alt="" />
+                    </div>
+                    <div class="parrafo">
+                        <p class="titulo">Cómo Llegar a Este Sitio</p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis placeat assumenda modi nulla ipsa iusto voluptatum id qui sint blanditiis dolor officia fugiat nesciunt rem quaerat similique, in neque repudiandae.
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div id="vista" class="hidden ocultar">
-        <div class="jumbotron no-padding">
-            <div class="container">
-                <div class="text-right btn-remove">
-                    <span class="glyphicon glyphicon-remove"
-                        onclick="ocultar()"></span>
-                </div>
-                <div class="text-center">
-                    <img src="http://dummyimage.com/280x400/000/fff" alt="" />
+        <div id="vista" class="hidden ocultar">
+            <div class="jumbotron no-padding">
+                <div class="container">
+                    <div class="text-right btn-remove">
+                        <span class="glyphicon glyphicon-remove"
+                            onclick="ocultar()"></span>
+                    </div>
+                    <div class="text-center">
+                        <img src="http://dummyimage.com/280x400/000/fff" alt="" />
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div id="galeria" class="hidden ocultar">
-        <div class="jumbotron no-padding">
-            <div class="container">
-                <div class="text-right btn-remove">
-                    <span class="glyphicon glyphicon-remove"
-                        onclick="ocultar()"></span>
+        <div id="galeria" class="hidden ocultar">
+            <div class="jumbotron no-padding">
+                <div class="container">
+                    <div class="text-right btn-remove">
+                        <span class="glyphicon glyphicon-remove"
+                            onclick="ocultar()"></span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div id="mas_obras" class="hidden ocultar">
-        <div class="jumbotron no-padding">
-            <div class="container">
-                <div class="text-right btn-remove">
-                    <span class="glyphicon glyphicon-remove"
-                        onclick="ocultar()"></span>
-                </div>
-                <div class="parrafo">
-                    <p class="titulo">Obras Cercanas</p>
-                </div>
-                <div class="text-center">
-                    <img src="http://dummyimage.com/280x280/000/fff" alt="" />
-                </div>
-                <div class="text-center">
-                    <img src="http://dummyimage.com/280x280/000/fff" alt="" />
+        <div id="mas_obras" class="hidden ocultar">
+            <div class="jumbotron no-padding">
+                <div class="container">
+                    <div class="text-right btn-remove">
+                        <span class="glyphicon glyphicon-remove"
+                            onclick="ocultar()"></span>
+                    </div>
+                    <div class="parrafo">
+                        <p class="titulo">Obras Cercanas</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="http://dummyimage.com/280x280/000/fff" alt="" />
+                    </div>
+                    <div class="text-center">
+                        <img src="http://dummyimage.com/280x280/000/fff" alt="" />
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
 <section>
     <div class="main-wrapper">
         <div class="paragraph-container">
@@ -122,8 +117,8 @@
     <!-- Import de Sound Clound -->
     <!-- Import de Youtube/Vimeo -->
 
-    <div class="main-wrapper">
-        Notas
+    <div class="main-wrapper notas-container">
+        <h3>Notas</h3>
         <ol type="1">
             <li>Alguna nota</li>
             <li>Alguna nota</li>
