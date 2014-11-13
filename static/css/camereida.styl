@@ -221,9 +221,29 @@ ul.tab-especial
 
 #seccion_tabs
 
-    .text-center
+    .dropdown-panel
+        display block
+        background-color #eee
+        padding 2em
         position relative
-        bottom 76px
+        bottom 152px
+        width 80%
+
+        .dropdown-panel-container
+            width 100%
+
+            .close-button
+                width auto
+                display inline-block
+                float right
+
+            h2
+                font-size 19px
+                text-transform none
+                margin-bottom 40px
+
+            .btn-remove
+                padding 0 !important
 
 .thumbnail
     overflow hidden
@@ -234,6 +254,14 @@ ul.tab-especial
 
 .span-fecha
     font-family montserrat
+
+.navbar-nav
+    margin-top 45px
+    float right
+
+    li
+        a
+            padding 7px
 
 .news-image
     width 100%
@@ -258,6 +286,10 @@ ul.tab-especial
     font-style italic
     display inline-block
     margin-bottom 35px
+
+.obra-nav
+    position relative
+    bottom 150px
 
 .obras-box
     overflow auto
