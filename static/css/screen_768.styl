@@ -10,48 +10,46 @@
         height 575px
 header
 
-    header
+    div
+        .panel-busqueda
+            display block
+            overflow hidden
+            padding 0.5em 0
 
-        div
-            .panel-busqueda
-                display block
-                overflow hidden
-                padding 0.5em 0
+            .caja-busqueda
+                padding-top 0.5em
 
-                .caja-busqueda
-                    padding-top 0.5em
+                .fa-search
+                    background-color #eaeaea
+                    padding 0.35em
+                    position relative
+                    right 4px
+                    border 1px solid gray
 
-                    .fa-search
-                        background-color #eaeaea
-                        padding 0.35em
-                        position relative
-                        right 4px
-                        border 1px solid gray
+            .lenguajes
+                span
+                    @extends .box
+                    border 1px solid gray
+                    padding 0.5em 2em
 
-                .lenguajes
-                    span
-                        @extends .box
-                        border 1px solid gray
-                        padding 0.5em 2em
+    .nav
+        back
+    .navbar-nav
+        float none
 
-        .nav
-            back
-        .navbar-nav
-            float none
+    .logo
 
-        .logo
+        img
+            width 62px
 
-            img
-                width 62px
+    .main-wrapper
+        position relative
 
-        .main-wrapper
-            position relative
-
-            .collapse
-                padding-left 240px
-                position absolute
-                right 0
-                padding-right 0px
+        .collapse
+            padding-left 240px
+            position absolute
+            right 0
+            padding-right 0px
 
     #obras_intro
         padding-bottom 1.5em
