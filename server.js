@@ -73,8 +73,11 @@ app.get('/noticias', function(req, res){
 });
 
 app.get('/noticia', function(req, res){
+    var tmp = [];
+    tmp.push(database.noticias[0]);
+    tmp.push(database.noticias[1]);
     res.render('noticia',{
-        noticias: database.noticias
+        noticias: tmp
     });
 });
 

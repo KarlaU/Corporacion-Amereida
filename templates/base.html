@@ -15,18 +15,16 @@
 </head>
 <body>
     <header>
-        <div class="main-wrapper">
-            <section class="panel-busqueda">
-                <div class="lenguajes pull-left">
-                    <span>Español</span>
-                    <span>English</span>
-                </div>
-                <div class="caja-busqueda pull-right">
-                    <input type="text" />
-                    <span class="fa fa-search"></span>
-                </div>
-            </section>
-        </div>
+        <section class="panel-busqueda tst">
+            <div class="lenguajes pull-left">
+                <span>Español</span>
+                <span>English</span>
+            </div>
+            <div class="caja-busqueda pull-right">
+                <input type="text" />
+                <span class="fa fa-search"></span>
+            </div>
+        </section>
         {% include "barra_navegacion.html" %}
     </header>
 
@@ -119,6 +117,9 @@
     $(document).ready(function() {
             var p = $("#gallery").portfolio();
             p.init();
+
+            var some = $('.news-container').children().children()
+            some.height(some.height());
     });
     </script>
     {% block js %}
