@@ -2,18 +2,21 @@
 
 {% block content %}
 <section class="head-section ciudad-abierta-image">
-    <div class="jumbotron main">
+    <div class="jumbotron main photo-filter">
         <div class="container">
             <h1>Ciudad Abierta</h1>
             <p>
                 Ciudad Abierta es un campo de experimentación arquitectónica construido bajo la luz de “Amereida”, poema épico que revela una visión poética de América. 
             </p>
+            <div class="text-center main-wrapper">
+                <a href="/noticias" role="button" class="amereida-btn">Ver todas las Noticias</a>
+            </div>
         </div>
     </div>
 </section>
 
 <section>
-    <div class="jumbotron main-wrapper secondary"> 
+    <div class="jumbotron main-wrapper secondary corporacion-amereida-home"> 
         <div class="container">
             <h2>Corporación Amereida</h2>
             <p>
@@ -67,7 +70,7 @@
     </div>-->
 
     <div class="text-center">
-        <a href="/obras" role="button">Ver todas las Obras</a>
+        <a href="/obras" role="button" class="amereida-btn">Ver todas las Obras</a>
     </div>
 </section>
 
@@ -93,7 +96,7 @@
         {% endfor %}
     </div>
     <div class="text-center main-wrapper">
-        <a href="/noticias" role="button">Ver todas las Noticias</a>
+        <a href="/noticias" role="button" class="amereida-btn">Ver todas las Noticias</a>
     </div>
 </section>
 {% endblock %}
