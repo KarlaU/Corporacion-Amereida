@@ -44,6 +44,7 @@ li
 .jumbotron
     background-size cover
     background-position center
+    background-color transparent
 
     p,h1,h2
         text-align center
@@ -54,6 +55,7 @@ li
 
 .head-section
     margin-bottom 0
+    color #E3E3E3
 
 body
     margin auto
@@ -137,6 +139,7 @@ header
 
     nav
         margin 0 !important
+        padding 5px
 
     .logo
         cursor pointer
@@ -183,11 +186,14 @@ section
         margin-right 0px !important
 
 .main
-    position relative
-    bottom 120px
     z-index -1
     padding-top 168px
     padding-bottom 118px
+    background-color #bbadac
+    opacity .9
+    background-image url("/images/america.png")
+    background-size cover
+    background-position center
 
 .notas-container
     font-style italic
@@ -208,7 +214,6 @@ section
 
 a
     color gray
-    border 1px solid gray
     padding 0.5em 2em
 
 .cargo
@@ -260,15 +265,18 @@ ul.tab-especial
     font-family montserrat
 
 .nav.navbar-nav
-    margin-top 45px
+    margin-top 20px
+    margin-left 40px
     max-width 800px
-    position absolute
-    right 0
-    left 0
+
 
     li
         a
-            padding 7px
+            padding 7px 11px
+
+        a:hover
+            background-color transparent
+            color #9f9594
 
 .news-image
     width 100%
@@ -365,6 +373,11 @@ ul.tab-especial
 
 .cca-brand
     border transparent
- 
+
+.ciudad-abierta-image
+    background-image url("/images/main-home-01.jpg")
+    background-size cover
+    background-position center
+
 @import "screen_768.styl"
 @import "screen_1200.styl"
