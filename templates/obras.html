@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 
 {% block content %}
-<section class="head-section" id="obras_intro">
-    <div class="jumbotron main">
+<section class="head-section obras-main-image" id="obras_intro">
+    <div class="jumbotron main photo-filter">
         <div class="container">
             <h1>Obras</h1>
             <p class="text-left">
@@ -10,16 +10,14 @@
             </p>
         </div>
     </div>
-
-    <div id="select-box" class="main-wrapper">
-        <label id="ordenar">Orden por</label>
-        <select name="ordenar" id="ordenar">
-            <option value="1">Ubicación</option>
-            <option value="2">Fecha</option>
-        </select>
-    </div>
 </section>
-
+<div id="select-box" class="main-wrapper">
+    <label id="ordenar">Orden por</label>
+    <select name="ordenar" id="ordenar">
+        <option value="1">Ubicación</option>
+        <option value="2">Fecha</option>
+    </select>
+</div>
 <section>
     <div class="main-wrapper obras-box">
     {% for obra in obras %}
