@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/css/bootstrap-theme.min.css" />
     <link rel="stylesheet" href="/css/font-awesome.min.css" />
     <link rel="stylesheet" href="/css/camereida.css" />
+    <link rel="Stylesheet" type="text/css" href="/css/smoothTouchScroll.css" />
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400italic,400,900,300italic,300,700,700italic,900italic' rel='stylesheet' type='text/css'>
 </head>
@@ -108,11 +109,18 @@
             </section>
         </div>
     </footer>
-
+    {% block js %}
     <script src="/js/jquery-2.1.1.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/common_functions.js"></script>
-    {% block js %}
+    <script src="/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="/js/jquery.kinetic.min.js"></script>
+    <script src="/js/jquery.smoothTouchScroll.min.js"></script>
+    <script>
+        $(function() {
+            $("#touchScroller").smoothTouchScroll({ continuousScrolling: true });
+        });
+    </script>
     {% endblock %}
 </body>
 </html>

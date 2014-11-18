@@ -23,19 +23,21 @@
     {% for obra in obras %}
         <div class="obra col-sm-6 col-md-4 col-xs-12" onclick="window.location.href='/obra/{{ obra.slug }}'">
             <div>
-                <h2 class="text-center">{{ obra.nombre }}</h2>
-                <p class="text-center">
-                    Ágora
-                </p>
-                <p class="text-center">
-                    Zona Baja - Cercano a la Vega
-                </p>
-                <p class="text-center">
-                    Juan Purcell, Alverto Cruz C
-                </p>
-                <p class="text-center">
-                    1972
-                </p>
+                <div>
+                    <h2 class="text-center">{{ obra.nombre }}</h2>
+                    <p class="text-center">
+                        Ágora
+                    </p>
+                    <p class="text-center">
+                        Zona Baja - Cercano a la Vega
+                    </p>
+                    <p class="text-center">
+                        Juan Purcell, Alverto Cruz C
+                    </p>
+                    <p class="text-center">
+                        1972
+                    </p>
+                </div>
             </div>
         </div>
     {% endfor %}
