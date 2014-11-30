@@ -1,7 +1,310 @@
 <!DOCTYPE html>
-<html>
+<html lang="es-CL"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Camereida</title>
+    <link rel="shortcut icon" href="static/images/favicon.png">
+    <link rel="stylesheet" href="static/css/normalize.css">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/css/camereida.css">
+    <link rel="Stylesheet" type="text/css" href="static/css/smoothTouchScroll.css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Merriweather:400italic,400,900,300italic,300,700,700italic,900italic" rel="stylesheet" type="text/css">
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
-</html>
+    <header>
+        <section class="panel-busqueda tst main-wrapper">
+            <div class="lenguajes pull-left">
+                <span class="amereida-btn">Español</span>
+                <span class="amereida-btn">English</span>
+            </div>
+            <div class="caja-busqueda pull-right">
+                <input type="text">
+                <span class="fa fa-search"></span>
+            </div>
+        </section>
+        <nav role="navigation">
+    <div class="main-wrapper">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand cca-brand" href="#">
+                <figure class="logo" onclick="window.location.href='/'">
+                    <img src="/images/logo cca.png" alt="">
+                </figure>
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="/sobre">Sobre Ciudad Abierta</a>
+                </li>
+                <li>
+                    <a href="/obras">Obras</a>
+                </li>
+                <li>
+                    <a href="/visita">Visita</a>
+                </li>
+                <li>
+                    <a href="/como-llegar">Cómo llegar</a>
+                </li>
+                <li>
+                    <a href="/mapa">Mapa de Ciudad Abierta</a>
+                </li>
+                <li>
+                    <a href="/recorrido">Recorridos</a>
+                </li>
+            </ul>
+        </div>
+  </div>
+</nav>
+
+    </header>
+
+    
+<!--styles de prueba galeria-->
+        <style type="text/css">
+
+            #touchScroller
+            {
+                width:100%;
+                position: relative;
+            }
+            
+            /* Replace the last selector for the type(s) of element(s) you have in
+               your scroller.
+               If you have images use #touchScroller div.scrollableArea img,
+               If you have div's use #touchScroller div.scrollableArea div,
+               if you have links use #touchScroller div.scrollableArea a,
+               or add several selectors if you have mixed content
+               ...and so on. */
+            #touchScroller div.scrollableArea div
+            {
+                position: relative;
+                float: left;
+                margin: 0;
+                padding: 0 5px;
+                overflow: auto;
+                background-color: silver;
+                height: inherit;
+                /* If you don't want the images in the scroller to be selectable, try the following
+                   block of code. It's just a nice feature that prevent the images from
+                   accidentally becoming selected/inverted when the user interacts with the scroller. */
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -o-user-select: none;
+                user-select: none;
+            }
+            
+        </style>
+        <!--fin styles de prueba galeria--> 
+<section class="head-section ciudad-abierta-image">
+    <div class="jumbotron main photo-filter">
+        <div class="container">
+            <h1>Ciudad Abierta</h1>
+            <p>
+                Ciudad Abierta es un campo de experimentación arquitectónica construido bajo la luz de “Amereida”, poema épico que revela una visión poética de América. 
+            </p>
+            <div class="text-center main-wrapper">
+                <a href="/sobre" role="button" class="amereida-btn">Leer Más</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="jumbotron main-wrapper secondary corporacion-amereida-home"> 
+        <div class="container">
+            <h2>Corporación Amereida</h2>
+            <p>
+                Es una organización cultural sin fines de lucro. Su función es ser el rostro legal de la Ciudad Abierta desarrollando, promulgando y manteniendo su existencia en fidelidad con su sentido poético. 
+            </p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="main-wrapper home-text">
+        <h2>Obras</h2>
+        <p class="bajada">
+            Las obras en Ciudad Abierta son el resultado de una visión poética que conjuga el decir de la poesía con el hacer de la arquitectura. Así cada obra se desprende de un acto poético donde el oficio interpreta sentido que nace de la palabra poética dándole forma. 
+        </p>
+    </div>
+    <!--galería >
+        <div id="touchScroller">
+            <div><img src="/images/pencils.jpg" alt="Demo image" id="pencils" /></div>
+            <div><img src="/images/golf.jpg" alt="Demo image" id="golf" /></div>
+            <div><img src="/images/river.jpg" alt="Demo image" id="river" /></div>
+            <div><img src="/images/train.jpg" alt="Demo image" id="train" /></div>
+            <div><img src="/images/leaf.jpg" alt="Demo image" id="leaf" /></div>
+            <div><img src="/images/dog.jpg" alt="Demo image" id="dog" /></div>
+        </div>
+    fin galería testing-->
+    <div class="text-center">
+        <a href="/obras" role="button" class="amereida-btn">Ver todas las Obras</a>
+    </div>
+</section>
+<section>
+     <div class="main-wrapper home-text">
+        <h2>Noticias Recientes</h2>
+    </div>
+    <div class="main-wrapper news-container">
+        
+        <div class="col-xs-12 col-sm-6 col-lg-3">
+            <div class="thumbnail">
+                <div class="news-image" style="background-image:url('static/images/francisco-T-2014.jpg');">
+                </div>
+                <div class="caption">
+                    <h3>Celebración Día de San Francisco</h3>
+                    <p>
+                        <span class="span-fecha">3|10|2014</span>
+                    </p>
+                    <p>Les invitamos cordialmente a todos los amigos de la Ciudad Abierta junto a la Escuela de Arquitectura y Diseño PUCV, a celebrar el día de San Francisco este domingo 5 de octubre […]</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-xs-12 col-sm-6 col-lg-3">
+            <div class="thumbnail">
+                <div class="news-image" style="background-image:url('static/images/IMG-20141026-WA00041.jpg');">
+                </div>
+                <div class="caption">
+                    <h3>Código es Poesía</h3>
+                    <p>
+                        <span class="span-fecha">08|08|2014</span>
+                    </p>
+                    <p>El Viernes 15 de Agosto se realizará el concierto “Código es Poesía” con la participación de: Sonido Sergio Miranda (guitarra) Eric Bertrand (electrónica) Ronald Smith (electrónica) […]</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-xs-12 col-sm-6 col-lg-3">
+            <div class="thumbnail">
+                <div class="news-image" style="background-image:url('static/images/sb-2013_02.jpg');">
+                </div>
+                <div class="caption">
+                    <h3>SoundBoxes y Concierto de Derek Holzer</h3>
+                    <p>
+                        <span class="span-fecha">26|11|2013</span>
+                    </p>
+                    <p>Los días Sábado 30 de Noviembre y Domingo 1 de Diciembre se realizará el workshop SoundBoxes. Esta actividad se cerrará con un concierto de Derek Holzer […]</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-xs-12 col-sm-6 col-lg-3">
+            <div class="thumbnail">
+                <div class="news-image" style="background-image:url('static/images/4559875826_79b7186209_z.jpg');">
+                </div>
+                <div class="caption">
+                    <h3>Concierto Dúo Stéphane Pécas</h3>
+                    <p>
+                        <span class="span-fecha">03|05|2013</span>
+                    </p>
+                    <p>Tenemos el agrado de invitarlos para el día sábado 04 de mayo, a las 20.00 hrs. al Concierto del Dúo Stéphane Pécas, que se realizará en Sala de Música de la Ciudad Abierta […]</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="text-center main-wrapper">
+        <a href="/noticias" role="button" class="amereida-btn">Ver todas las Noticias</a>
+    </div>
+</section>
+
+
+    <footer>
+        <div class="main-wrapper">
+            <h2>Corporación Cultural Camereida</h2>
+            <section class="contacto-direcciones col-lg-3 col-sm-6">
+                <article class="info">
+                    <div class="glyphicon glyphicon-envelope amereida-btn"></div>
+                    <div>
+                        <h3>Contacto</h3>
+                        <p>secretaria@amereida.cl</p>
+                    </div>
+                </article>
+                <article class="info">
+                    <div class="glyphicon glyphicon-earphone amereida-btn"></div>
+                    <div>
+                        <h3>Tel-Fax</h3>
+                        <p>+56 32 666510</p>
+                    </div>
+                </article>
+                <article class="info">
+                    <div class="glyphicon glyphicon-pushpin amereida-btn"></div>
+                    <div>
+                        <h3>Ciudad Abierta</h3>
+                        <p>Km. 4 camino Concón-Quintero</p>
+                    </div>
+                </article>
+                <article class="info">
+                    <div class="glyphicon glyphicon-pushpin amereida-btn"></div>
+                    <div>
+                        <h3>Oficinas</h3>
+                        <p>Matta 12, Recreo, Viña del Mar</p>
+                        <p>Valparaíso, Chile</p>
+                    </div>
+                </article>
+            </section>
+            <section class="col-lg-3 col-sm-6">
+                <article class="info">
+                    <div class="link-formulario">
+                        <a class="amereida-btn" href="#">Formulario de Visitas</a>
+                    </div>
+                </article>
+                <article>  
+                    <div class="link-formulario">
+                        <a class="amereida-btn" href="#">Donaciones y Aporte</a>
+                    </div>
+                </article>
+            </section>
+            <section class="col-lg-3 col-sm-6">
+                <h3>Redes Sociales</h3>
+                <a href="http://vimeo.com/album/2421485" target="_blank" class="fa fa-vimeo-square"></a>
+                <a href="https://twitter.com/amereidas" target="_blank" class="fa fa-twitter-square"></a>
+            </section>
+            <section class="col-lg-3 col-sm-6">
+                <h3>Enlaces</h3>
+
+                <article class="enlace">
+                    <h4>Archivo histórico José Vial Armstrong</h4>
+                    <p>Fotografías, videos, planos, etc.</p>
+                </article>
+
+                <article class="enlace">
+                    <h4>Biblioteca Constel</h4>
+                    <p>Catálogo de documentos, libros, poemas, ensayos, etc.</p>
+                </article>
+
+                <article class="enlace">
+                    <h4>e[ad] Escuela de Arquitectura y Diseño.</h4>
+                    <p>Sitio de la Escuela de Arquitectura y diseño PUCV.</p>
+                </article>
+
+                <article class="enlace">
+                    <h4>Travesías de Amereida</h4>
+                    <p>Bitácora colectiva de las travesías de amereida.</p>
+                </article>
+            </section>
+        </div>
+    </footer>
+    
+    <script src="/js/jquery-2.1.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/common_functions.js"></script>
+    <script src="/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="/js/jquery.kinetic.min.js"></script>
+    <script src="/js/jquery.smoothTouchScroll.min.js"></script>
+    <script>
+        $(function() {
+            $("#touchScroller").smoothTouchScroll({ continuousScrolling: true });
+        });
+    </script>

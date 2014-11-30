@@ -1,9 +1,6 @@
 @import "util.styl"
 @media screen and (min-width: 767px)
 
-    .bajada
-        font-size 22px
-
     section
         margin-bottom 90px
 
@@ -13,38 +10,38 @@
     .news-image
         height 280px
 
-    body
-        font-size 16px
-
     header
-        height 130px
-        color #808080
 
         .panel-busqueda
             display block
             overflow hidden
-            padding 0.5em 0
-            color #bbadac
+            padding 25px 0 0
 
             .caja-busqueda
-                padding-top 0.5em
-
-            .lenguajes
+                border #999999 thin solid
+                padding 0 9px
+                height 30px
 
                 span
+                    padding-top 7px
+
+            .lenguajes
+                display table
+
+                .amereida-btn
                     @extends .box
-                    font-size 12px
+                    font-size 11px
+                    border-color white
 
-            .lenguajes:hover
-                color #9f9594
+                    p
+                        text-transform none
 
-        .main-wrapper
-            position relative
-
+                .amereida-btn:hover
+                    border-color #999999
 
     h1, h2
         text-transform uppercase
-        font-size 52px
+        font-size 24px
 
     h3 
         font-size 25px
@@ -52,10 +49,6 @@
     h4
         font-size 16px
 
-    .jumbotron
-
-        p
-            font-size 22px
     footer
 
         section
@@ -102,3 +95,6 @@
         li
             width auto
             text-align center
+
+    .carousel-caption
+        margin-left 2.3%

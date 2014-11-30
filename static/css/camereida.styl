@@ -1,34 +1,32 @@
 @import "util.styl"
 
-montserrat = 'Montserrat', sans-serif
-
-merriweather = 'Merriweather', serif
-
 claro = #E3E3E3
+
+h1, h2, .btn-text, .amereida-btn
+    font-family 'Raleway', sans-serif
+    text-transform uppercase
 
 p, h1, h2, h3, h4, li
     max-width 740px
 
-h1, h2 ,h3 , h4, a, button, html input[type=button], input[type=reset], input[type=submit]
-    font-family montserrat
-
-a, button, html input[type=button], input[type=reset], input[type=submit]
+a, input, button, html input[type=button], input[type=reset], input[type=submit], 
     text-decoration none
+    border transparent
 
     &:hover 
         text-decoration none
 
+textarea:hover, input:hover, textarea:active, input:active, textarea:focus, input:focus, button:focus, button:active, button:hover
+{
+    outline 0px !important
+    -webkit-appearance none
+}
+
 h1, h2
     text-transform uppercase
-
-h1
-    font-size 40px
-    font-weight bold
-
-h2
-    font-weight normal
-    font-size 22px
-
+    font-size 24px
+    letter-spacing 13px
+    display inline-flex
 h3 
     font-size 19px
 
@@ -36,43 +34,16 @@ h4
     font-size 16px
 
 p, li
-    font-family merriweather
     line-height 1.5em
 
 li
     margin-bottom 16px
 
-.jumbotron
-    background-size cover
-    background-position center
-    background-color transparent
-    margin-bottom 40px
-
-    p,h1,h2
-        text-align center
-        margin 0 auto 10px
-        color #e3e3e3
-    p 
-        font-style italic
-        font-size 15px
-
-    a 
-        text-align center
-        color #ececec
-        border thin solid #ececec
-
-    a:hover
-        color white 
-        border-color white
-
-.head-section
-    margin-bottom 0
-    color #E3E3E3
-
 body
     margin auto
-    font-size 12px
-    color #808080
+    font-size 14px
+    color #909090
+    font-family 'Anonymous Pro'
 
 footer
     border-top 1px solid silver
@@ -114,13 +85,7 @@ footer
 
         h3
             margin 0
-
-    .enlace
-
-        .titulo-enlace
-            font-family montserrat
             
-
     .info
         padding 1em 0
 
@@ -147,17 +112,20 @@ footer
     margin-bottom 50px
 
 header
-    border-bottom solid thin #E3E3E3
-    
-    a, span
-        font-size 12px
-
-    span
-        font-family montserrat
-
+    border-bottom solid #E3E3E3
+    border-top 0
+    border-right 0
+    border-left 0
+    -webkit-border-image: url("/images/border.jpg") 30 30 stretch; /* Safari 3.1-5 */
+    -o-border-image url("/images/border.jpg") 30 30 stretch
+    border-image url("/images/border.jpg") 30 30 stretch
+    letter-spacing 4px
+    font-size 11px
+    font-family 'Raleway', sans-serif
+    margin-bottom 45px !important
+        
     nav
         margin 0 !important
-        padding 5px
 
     .logo
         cursor pointer
@@ -167,7 +135,7 @@ header
         z-index 3
 
         img
-            width 32px
+            width 38px
 
     .panel-busqueda
         display none
@@ -176,10 +144,6 @@ header
 .main-wrapper
     width 90%
     margin 0 auto
-
-.bajada
-    font-style italic
-    font-size 15px
 
 .secondary
     padding-top 160px
@@ -203,29 +167,10 @@ section
         margin-left 0px !important
         margin-right 0px !important
 
-.main
-    z-index -1
-    background-image url("/images/america.png")
-    background-size cover
-    background-position center
-
-.photo-filter
-    background-color #bbadac
-    opacity .9
-    widht 100%
-    height 100%
-
-.photo-filter-2
-    background-color #bbadac
-    opacity .6
-    widht 100%
-    height 100%
-
 .notas-container
     font-style italic
 
     h3 
-        font-family merriweather
         margin-bottom 50px
 
     li 
@@ -289,22 +234,22 @@ ul.tab-especial
     .caption 
         padding-top 0
 
-.span-fecha
-    font-family montserrat
-
 .nav.navbar-nav
     margin-top 20px
     margin-left 40px
     max-width 800px
+    text-transform uppercase
 
 
     li
         a
             padding 7px 11px
 
-        a:hover
-            background-color transparent
-            color #9f9594
+.nav>li>a:hover, .nav>li>a:focus
+    background-color transparent
+
+a:hover, a:focus
+    color #808080
 
 .news-image
     width 100%
@@ -402,56 +347,19 @@ ul.tab-especial
 .cca-brand
     border transparent
 
-.ciudad-abierta-image
-    background-image url("/images/main-home-01.jpg")
-    background-size cover
-    background-position center
-
-.sobre-image-1
-    background-image url("/images/main-home-03.jpg")
-    background-size cover
-    background-position center
-
-.sobre-image-2
-    background-image url("/images/4015833085_63af699047_b.jpg")
-    background-size cover
-    background-position center
-
-.sobre-image-3
-    background-image url("/images/2961878190_d19feb4ddb_b.jpg")
-    background-size cover
-    background-position center
-
-.sobre-image-4
-    background-image url("/images/taller-amereida.jpg")
-    background-size cover
-    background-position center
-
-.sobre-image-5
-    background-image url("/images/01.jpg")
-    background-size cover
-    background-position center
-
-.obras-main-image
-    background-image url("/images/3082475213_be5ea98825_b.jpg")
-    background-size cover
-    background-position center
-
-.corporacion-amereida-home
-    position relative
-    bottom 30px
-    background-image url("/images/americacapovolta_1_.jpg")
-    background-size auto 100%
-    background-repeat no-repeat 
-
 .amereida-btn
-    border thin solid #CC0000
-    color #CC0000
-    padding 0.5em 2em
+    border thin solid #999999
+    height 30px
+    padding 4px 30px 0
+    min-width 30px
+    transition border-color 1s
+
+.btn-text
+    padding-top 7px
+    letter-spacing 4px
 
 .amereida-btn:hover
-    border-color #A10000
-    color #A10000
+    border-color #CC0000
 
 .map-1
     background-image url("/images/Mapa idea-12.jpg")
@@ -460,6 +368,83 @@ ul.tab-especial
 .map-2
     background-image url("/images/Mapa idea-12.jpg")
     background-position center 35%
+
+.main-wrapper
+
+    .main-head
+        height 409px
+        margin-bottom 21px
+
+.carousel-caption
+    position static
+    color #909090
+    text-shadow none
+    text-align left
+    display inline-block
+    background-color white
+    padding 35px 30px 45px
+    margin-left 0
+
+        .icn-ul
+            display inline-block
+            margin-left  0
+            
+.carousel-control.left, .carousel-control.right 
+    background-image none
+
+.icn
+    color #cc0000
+    fonr-size 11px
+
+.bajada
+    max-width 304px
+
+.red-hr:before
+    border-top 1px solid #cc0000
+    display block
+    height 1px
+    content " "
+    width 40px
+    margin-bottom 11px
+
+.item
+    height 100%
+    background-size cover
+    background-position center
+
+.diagonal 
+    height 100px
+    width 100%
+    position relative
+    bottom 100px
+    background-image url("/images/diagonal-1.png")
+
+#slide1
+    background-image url("/images/2792198137_c31546b063_b.jpg")
+
+#slide2
+    background-image url("/images/corporacion.jpg")
+
+.carousel
+    height 426px
+
+.carousel-control
+    text-shadow none
+    font-size 11px
+    display inline-block
+    opacity 1
+
+.carousel-btn
+    background-color #f7f7f7
+    padding 7px
+    position absolute
+    top 50%
+
+.icn-navizquierda
+    left 0
+
+.icn-nav
+    right 0
 
 @import "screen_768.styl"
 @import "screen_1200.styl"

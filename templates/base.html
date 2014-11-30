@@ -10,20 +10,24 @@
     <link rel="stylesheet" href="/css/bootstrap-theme.min.css" />
     <link rel="stylesheet" href="/css/font-awesome.min.css" />
     <link rel="stylesheet" href="/css/camereida.css" />
-    <link rel="Stylesheet" type="text/css" href="/css/smoothTouchScroll.css" />
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Merriweather:400italic,400,900,300italic,300,700,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/stampa.css" />
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Anonymous+Pro:400,400italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <header>
-        <section class="panel-busqueda tst main-wrapper">
+    <header class="main-wrapper">
+        <section class="panel-busqueda tst">
             <div class="lenguajes pull-left">
-                <span class="amereida-btn">Español</span>
-                <span class="amereida-btn">English</span>
+                <div class="amereida-btn">
+                    <p>Español</p>
+                </div>
+                <div class="amereida-btn">
+                    <p>English</p>
+                </div>
             </div>
             <div class="caja-busqueda pull-right">
                 <input type="text" />
-                <span class="fa fa-search"></span>
+                <span class="icn icn-lupa icn-light"></span>
             </div>
         </section>
         {% include "barra_navegacion.html" %}
@@ -115,12 +119,6 @@
     <script src="/js/common_functions.js"></script>
     <script src="/js/jquery-ui-1.10.3.custom.min.js"></script>
     <script src="/js/jquery.kinetic.min.js"></script>
-    <script src="/js/jquery.smoothTouchScroll.min.js"></script>
-    <script>
-        $(function() {
-            $("#touchScroller").smoothTouchScroll({ continuousScrolling: true });
-        });
-    </script>
     {% endblock %}
 </body>
 </html>

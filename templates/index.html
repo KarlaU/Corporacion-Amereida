@@ -1,86 +1,37 @@
 {% extends "base.html" %}
 
 {% block content %}
-<!--styles de prueba galeria-->
-        <style type="text/css">
-
-            #touchScroller
-            {
-                width:100%;
-                position: relative;
-            }
-            
-            /* Replace the last selector for the type(s) of element(s) you have in
-               your scroller.
-               If you have images use #touchScroller div.scrollableArea img,
-               If you have div's use #touchScroller div.scrollableArea div,
-               if you have links use #touchScroller div.scrollableArea a,
-               or add several selectors if you have mixed content
-               ...and so on. */
-            #touchScroller div.scrollableArea div
-            {
-                position: relative;
-                float: left;
-                margin: 0;
-                padding: 0 5px;
-                overflow: auto;
-                background-color: silver;
-                height: inherit;
-                /* If you don't want the images in the scroller to be selectable, try the following
-                   block of code. It's just a nice feature that prevent the images from
-                   accidentally becoming selected/inverted when the user interacts with the scroller. */
-                -webkit-user-select: none;
-                -khtml-user-select: none;
-                -moz-user-select: none;
-                -o-user-select: none;
-                user-select: none;
-            }
-            
-        </style>
-        <!--fin styles de prueba galeria--> 
-<section class="head-section ciudad-abierta-image">
-    <div class="jumbotron main photo-filter">
-        <div class="container">
-            <h1>Ciudad Abierta</h1>
-            <p>
-                Ciudad Abierta es un campo de experimentación arquitectónica construido bajo la luz de “Amereida”, poema épico que revela una visión poética de América. 
-            </p>
-            <div class="text-center main-wrapper">
-                <a href="/sobre" role="button" class="amereida-btn">Leer Más</a>
+<section class="main-wrapper carousel slide" id="myCarousel">
+    <div class="main-head carousel-inner">
+        <div class="item active" id="slide1">
+            <div class="carousel-caption">
+                <span class="icn icn-ul icn-visto"></span>
+                <h1 class="bajada">Ciudad Abierta</h1>
+                <p class="bajada red-hr">
+                    Ciudad Abierta es un campo de experimentación arquitectónica construido bajo la luz de “Amereida”, poema épico que revela una visión poética de América. 
+                </p>
+            </div>
+        </div>
+        <div class="item" id="slide2">
+            <div class="carousel-caption">
+                <h2 class="bajada">Corporación Amereida</h2>
+                <p class="bajada red-hr">
+                    Es una organización cultural sin fines de lucro. Su función es ser el rostro legal de la Ciudad Abierta desarrollando, promulgando y manteniendo su existencia en fidelidad con su sentido poético. 
+                </p>
             </div>
         </div>
     </div>
-</section>
-<section>
-    <div class="jumbotron main-wrapper secondary corporacion-amereida-home"> 
-        <div class="container">
-            <h2>Corporación Amereida</h2>
-            <p>
-                Es una organización cultural sin fines de lucro. Su función es ser el rostro legal de la Ciudad Abierta desarrollando, promulgando y manteniendo su existencia en fidelidad con su sentido poético. 
-            </p>
-        </div>
-    </div>
+    <div class="diagonal"></div>
+    <a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icn icn-navizquierda icn-light carousel-btn"></span></a>
+    <a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icn icn-nav icn-light carousel-btn"></span></a>
 </section>
 
 <section>
-    <div class="main-wrapper home-text">
+    <div class="main-wrapper">
         <h2>Obras</h2>
         <p class="bajada">
             Las obras en Ciudad Abierta son el resultado de una visión poética que conjuga el decir de la poesía con el hacer de la arquitectura. Así cada obra se desprende de un acto poético donde el oficio interpreta sentido que nace de la palabra poética dándole forma. 
         </p>
-    </div>
-    <!--galería >
-        <div id="touchScroller">
-            <div><img src="/images/pencils.jpg" alt="Demo image" id="pencils" /></div>
-            <div><img src="/images/golf.jpg" alt="Demo image" id="golf" /></div>
-            <div><img src="/images/river.jpg" alt="Demo image" id="river" /></div>
-            <div><img src="/images/train.jpg" alt="Demo image" id="train" /></div>
-            <div><img src="/images/leaf.jpg" alt="Demo image" id="leaf" /></div>
-            <div><img src="/images/dog.jpg" alt="Demo image" id="dog" /></div>
-        </div>
-    fin galería testing-->
-    <div class="text-center">
-        <a href="/obras" role="button" class="amereida-btn">Ver todas las Obras</a>
     </div>
 </section>
 <section>
