@@ -5,20 +5,33 @@
     <div class="main-head carousel-inner">
         <div class="item active" id="slide1">
             <div class="carousel-caption">
-                <span class="icn icn-ul icn-visto"></span>
-                <h1 class="bajada">Ciudad Abierta</h1>
-                <p class="bajada red-hr">
-                    Ciudad Abierta es un campo de experimentación arquitectónica construido bajo la luz de “Amereida”, poema épico que revela una visión poética de América. 
-                </p>
+                <div class="c-text-container">
+                    <span class="icn icn-mas title-bullet"></span>
+                    <div class="c-caption-inner">
+                        <h1 class="bajada">Ciudad Abierta</h1>
+                        <p class="bajada red-hr">
+                            Ciudad Abierta es un campo de experimentación arquitectónica construido bajo la luz de “Amereida”, poema épico que revela una visión poética de América. 
+                        </p>
+                    </div>
+                </div>
+                <div class="diagonal down"></div>
             </div>
+            <div class="background-1 grayscale carousel-image"></div>
         </div>
         <div class="item" id="slide2">
             <div class="carousel-caption">
-                <h2 class="bajada">Corporación Amereida</h2>
-                <p class="bajada red-hr">
-                    Es una organización cultural sin fines de lucro. Su función es ser el rostro legal de la Ciudad Abierta desarrollando, promulgando y manteniendo su existencia en fidelidad con su sentido poético. 
-                </p>
+                <div class="c-text-container">
+                    <span class="icn icn-mas title-bullet"></span>
+                    <div class="c-caption-inner">
+                        <h2 class="bajada">Corporación Amereida</h2>
+                        <p class="bajada red-hr">
+                            Es una organización cultural sin fines de lucro. Su función es ser el rostro legal de la Ciudad Abierta desarrollando, promulgando y manteniendo su existencia en fidelidad con su sentido poético.  
+                        </p>
+                    </div>
+                </div>
+                <div class="diagonal down"></div>
             </div>
+            <div class="background-2 grayscale carousel-image"></div>
         </div>
     </div>
     <div class="diagonal"></div>
@@ -27,36 +40,198 @@
 </section>
 
 <section>
-    <div class="main-wrapper">
-        <h2>Obras</h2>
-        <p class="bajada">
-            Las obras en Ciudad Abierta son el resultado de una visión poética que conjuga el decir de la poesía con el hacer de la arquitectura. Así cada obra se desprende de un acto poético donde el oficio interpreta sentido que nace de la palabra poética dándole forma. 
-        </p>
+    <div class="main-wrapper obras-text">
+        <div class="c-text-container">
+            <span class="icn icn-mas title-bullet"></span>
+            <div class="c-caption-inner">
+                <h2 class="bajada">Obras</h2>
+                <p class="bajada red-hr">
+                    Las obras en Ciudad Abierta son el resultado de una visión poética que conjuga el decir de la poesía con el hacer de la arquitectura. Así cada obra se desprende de un acto poético donde el oficio interpreta sentido que nace de la palabra poética dándole forma.   
+                </p>
+            </div>
+        </div>
     </div>
-</section>
-<section>
-     <div class="main-wrapper home-text">
-        <h2>Noticias Recientes</h2>
-    </div>
-    <div class="main-wrapper news-container">
-        {% for noticia in noticias %}
-        <div class="col-xs-12 col-sm-6 col-lg-3">
-            <div class="thumbnail">
-                <div class="news-image" style="background-image:url('{{ noticia.imagen }}');">
+        <!---prueba de carrusel-->
+    <div class="crsl-items" data-navigation="NAV-ID">
+        <div class="crsl-wrap">
+            <div class="crsl-item">
+                <div class="obra-img grayscale obra-1">
                 </div>
-                <div class="caption">
-                    <h3>{{ noticia.titulo }}</h3>
-                    <p>
-                        <span class="span-fecha">{{ noticia.fecha }}</span>
-                    </p>
-                    <p>{{ noticia.texto }}</p>
+                <div class="obra-caption">
+                    <div class="center-container">
+                        <span class="icn icn-mas"></span>
+                        <h3>Hospedería Doble</h3>
+                        <p class="bajada red-hr">
+                            Obra Interior | Zona Baja, Entrada | Grupo Ciudad Abierta | 1973
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="crsl-item">
+                <div class="obra-img grayscale obra-2">
+                </div>
+                <div class="obra-caption">
+                    <div class="center-container">
+                        <span class="icn icn-mas"></span>
+                        <h3>Hospedería Colgante</h3>
+                        <p class="bajada red-hr">
+                            Obra Interior | Zona Baja, Vega | David Luza | 2006
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="crsl-item">
+                <div class="obra-img grayscale obra-3">
+                </div>
+                <div class="obra-caption">
+                    <div class="center-container">
+                        <span class="icn icn-mas"></span>
+                        <h3>Hospedería Colgante</h3>
+                        <p class="bajada red-hr">
+                            Obra Interior | Zona Baja, Vega | David Luza | 2006
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="crsl-item">
+                <div class="obra-img grayscale obra-4">
+                </div>
+                <div class="obra-caption">
+                    <div class="center-container">
+                        <span class="icn icn-mas"></span>
+                        <h3>Hospedería Colgante</h3>
+                        <p class="bajada red-hr">
+                            Obra Interior | Zona Baja, Vega | David Luza | 2006
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="crsl-item">
+                <div class="obra-img grayscale obra-5">
+                </div>
+                <div class="obra-caption">
+                    <div class="center-container">
+                        <span class="icn icn-mas"></span>
+                        <h3>Hospedería Colgante</h3>
+                        <p class="bajada red-hr">
+                            Obra Interior | Zona Baja, Vega | David Luza | 2006
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-        {% endfor %}
+        <div id="NAV-ID" class="crsl-nav">
+            <a href="#" class="previous"><span class="icn icn-navizquierda icn-light carousel-btn"></a>
+            <a href="#" class="next"><span class="icn icn-nav icn-light carousel-btn"></span></a>
+        </div>
     </div>
-    <div class="text-center main-wrapper">
-        <a href="/noticias" role="button" class="amereida-btn">Ver todas las Noticias</a>
+        <!---prueba de carrusel-->
     </div>
 </section>
+<div class="main-wrapper">
+    <div class="row clearfix">
+        <div class="col-md-6 column">
+            <div class="clearfix">
+                <div class="c-text-container">
+                    <span class="icn icn-mas title-bullet"></span>
+                    <div class="c-caption-inner">
+                        <h2 class="bajada">Noticias</h2>
+                    </div>
+                </div>
+                <div class="col-md-6 column">
+                    <div class="thumbnail">
+                        <div class="news-image grayscale" style="background-image:url('/images/francisco-T-2014.jpg');">
+                        </div>
+                        <div class="caption">
+                            <h3>Celebración Día de San Francisco</h3>
+                            <p>
+                                <span class="span-fecha">3|10|2014</span>
+                            </p>
+                            <p class="red-hr">Les invitamos cordialmente a todos los amigos de la Ciudad Abierta junto a la Escuela de Arquitectura y Diseño PUCV, a celebrar el día de San Francisco este domingo 5 de octubre […]</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 column">
+                     <div class="thumbnail">
+                        <div class="news-image grayscale" style="background-image:url('/images/francisco-T-2014.jpg');">
+                        </div>
+                        <div class="caption">
+                            <h3>Celebración Día de San Francisco</h3>
+                            <p>
+                                <span class="span-fecha">3|10|2014</span>
+                            </p>
+                            <p class="red-hr">Les invitamos cordialmente a todos los amigos de la Ciudad Abierta junto a la Escuela de Arquitectura y Diseño PUCV, a celebrar el día de San Francisco este domingo 5 de octubre […]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 column">
+            <div class="clearfix twitter-section">
+                <div class="c-text-container">
+                    <span class="icn icn-mas title-bullet"></span>
+                    <div class="c-caption-inner">
+                        <h2 class="bajada">Tweets</h2>
+                    </div>
+                </div>
+                <div class="col-md-6 column">
+                    <div class="tweet">
+                        <div>
+                            <span class="date">
+                                10 de nov
+                            </span>
+                            <span class="user">
+                                <a>Fernando Vergara</a>
+                                <a>@VergaraBenitez</a>
+                            </span>
+                        </div>
+                        <p class="red-hr">Les invitamos cordialmente a todos los amigos de la Ciudad Abierta junto a la Escuela de Arquitectura y Diseño PUCV, a celebrar el día de San Francisco este domingo 5 de octubre […]
+                        </p>             
+                    </div>
+                    <div class="tweet">
+                        <div>
+                            <span class="date">
+                                10 de nov
+                            </span>
+                            <span class="user">
+                                <a>Fernando Vergara</a>
+                                <a>@VergaraBenitez</a>
+                            </span>
+                        </div>
+                        <p class="red-hr">Les invitamos cordialmente a todos los amigos de la Ciudad Abierta junto a la Escuela de Arquitectura y Diseño PUCV, a celebrar el día de San Francisco este domingo 5 de octubre […]
+                        </p>             
+                    </div>
+                </div>
+                <div class="col-md-6 column">
+                    <div class="tweet">
+                        <div>
+                            <span class="date">
+                                10 de nov
+                            </span>
+                            <span class="user">
+                                <a>Fernando Vergara</a>
+                                <a>@VergaraBenitez</a>
+                            </span>
+                        </div>
+                        <p class="red-hr">Les invitamos cordialmente a todos los amigos de la Ciudad Abierta junto a la Escuela de Arquitectura y Diseño PUCV, a celebrar el día de San Francisco este domingo 5 de octubre […]
+                        </p>             
+                    </div>
+                    <div class="tweet">
+                        <div>
+                            <span class="date">
+                                10 de nov
+                            </span>
+                            <span class="user">
+                                <a>Fernando Vergara</a>
+                                <a>@VergaraBenitez</a>
+                            </span>
+                        </div>
+                        <p class="red-hr">Les invitamos cordialmente a todos los amigos de la Ciudad Abierta junto a la Escuela de Arquitectura y Diseño PUCV, a celebrar el día de San Francisco este domingo 5 de octubre […]
+                        </p>             
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}

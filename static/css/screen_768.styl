@@ -1,14 +1,20 @@
 @import "util.styl"
 @media screen and (min-width: 767px)
 
+    footer
+
+        h2
+            text-align center
+
+
+    body 
+        font-size 14px
+
+
     section
-        margin-bottom 90px
 
         .home-text
             margin-bottom 55px
-
-    .news-image
-        height 280px
 
     header
 
@@ -44,30 +50,21 @@
         font-size 24px
 
     h3 
-        font-size 25px
+        font-size 18px
 
     h4
         font-size 16px
-
-    footer
-
-        section
-            @extends .box
-                width 24%
-
-        .responsive-footer
-            overflow initial
 
     .main
         padding-top 165px
         padding-bottom 145px
 
-    .nav.navbar-nav
-        left initial
-
     #seccion_mapa
         .nav.nav-tabs.tab-especial
             max-width 300px
+
+    .navbar-collapse.in
+        overflow visible
 
     #ubicacion
     #vista
@@ -96,5 +93,11 @@
             width auto
             text-align center
 
-    .carousel-caption
-        margin-left 2.3%
+    .carousel-control
+
+        .carousel-btn
+            background-color #f7f7f7
+            padding 7px
+            position absolute
+            top 50%
+            display block

@@ -37,81 +37,129 @@
     contenido no sobreescrito
     {% endblock %}
 
-    <footer>
-        <div class="main-wrapper">
+    <footer class="main-wrapper">
+        <div class="clearfix">
             <h2>Corporación Cultural Camereida</h2>
-            <section class="contacto-direcciones col-lg-3 col-sm-6">
-                <article class="info">
-                    <div class="glyphicon glyphicon-envelope amereida-btn"></div>
-                    <div>
+            <div class="col-md-3 column">
+                <div class="c-text-container">
+                    <span class="icn icn-email icn-light title-bullet"></span>
+                    <div class="c-caption-inner">
                         <h3>Contacto</h3>
                         <p>secretaria@amereida.cl</p>
                     </div>
-                </article>
-                <article class="info">
-                    <div class="glyphicon glyphicon-earphone amereida-btn"></div>
-                    <div>
+                </div>
+                <div class="c-text-container">
+                    <span class="icn icn-email icn-light title-bullet"></span>
+                    <div class="c-caption-inner">
                         <h3>Tel-Fax</h3>
                         <p>+56 32 666510</p>
                     </div>
-                </article>
-                <article class="info">
-                    <div class="glyphicon glyphicon-pushpin amereida-btn"></div>
-                    <div>
+                </div>
+                <div class="c-text-container">
+                    <span class="icn icn-mapa icn-light title-bullet"></span>
+                    <div class="c-caption-inner">
                         <h3>Ciudad Abierta</h3>
                         <p>Km. 4 camino Concón-Quintero</p>
                     </div>
-                </article>
-                <article class="info">
-                    <div class="glyphicon glyphicon-pushpin amereida-btn"></div>
-                    <div>
-                        <h3>Oficinas</h3>
-                        <p>Matta 12, Recreo, Viña del Mar</p>
-                        <p>Valparaíso, Chile</p>
+                </div>
+                <div class="c-text-container">
+                    <span class="icn icn-mapa icn-light title-bullet"></span>
+                    <div class="c-caption-inner">
+                       <h3>Oficinas</h3>
+                        <p>Matta 12, Recreo, Viña del Mar, Valparaíso, Chile</p>
                     </div>
-                </article>
-            </section>
-            <section class="col-lg-3 col-sm-6">
-                <article class="info">
-                    <div class="link-formulario">
-                        <a class="amereida-btn" href="#">Formulario de Visitas</a>
-                    </div>
-                </article>
-                <article>  
-                    <div class="link-formulario">
-                        <a class="amereida-btn" href="#">Donaciones y Aporte</a>
-                    </div>
-                </article>
-            </section>
-            <section class="col-lg-3 col-sm-6">
+                </div>
+            </div>
+            <div class="col-md-3 column">
+                    <a class="amereida-btn" href="#">Contacto</a>
+                    <a class="amereida-btn" href="#">Formulario de Visitas</a>
+                    <a class="amereida-btn" href="#">Donaciones y Aportes</a>
+            </div>
+            <div class="col-md-3 column">
                 <h3>Redes Sociales</h3>
-                <a href="http://vimeo.com/album/2421485" target="_blank" class="fa fa-vimeo-square"></a>
-                <a href="https://twitter.com/amereidas" target="_blank" class="fa fa-twitter-square"></a>
-            </section>
-            <section class="col-lg-3 col-sm-6">
-                <h3>Enlaces</h3>
-
-                <article class="enlace">
-                    <h4>Archivo histórico José Vial Armstrong</h4>
-                    <p>Fotografías, videos, planos, etc.</p>
-                </article>
-
-                <article class="enlace">
-                    <h4>Biblioteca Constel</h4>
-                    <p>Catálogo de documentos, libros, poemas, ensayos, etc.</p>
-                </article>
-
-                <article class="enlace">
-                    <h4>e[ad] Escuela de Arquitectura y Diseño.</h4>
-                    <p>Sitio de la Escuela de Arquitectura y diseño PUCV.</p>
-                </article>
-
-                <article class="enlace">
-                    <h4>Travesías de Amereida</h4>
-                    <p>Bitácora colectiva de las travesías de amereida.</p>
-                </article>
-            </section>
+                <a href="http://vimeo.com/album/2421485" target="_blank">
+                    <span class="icn icn-cuadro icn-light icn-stack-2x"></span>
+                    <span class="icn icn-vimeo icn-light icn-stack-1x"></span>
+                </a>
+                <a href="https://twitter.com/amereidas" target="_blank"></a>
+            </div>
+            <div class="col-md-3 column">
+            </div>
         </div>
+        <!-- old footer
+        <h2>Corporación Cultural Camereida</h2>
+        <section class="contacto-direcciones col-lg-3 col-sm-6">
+            <article class="info">
+                <div class="glyphicon glyphicon-envelope amereida-btn"></div>
+                <div>
+                    <h3>Contacto</h3>
+                    <p>secretaria@amereida.cl</p>
+                </div>
+            </article>
+            <article class="info">
+                <div class="glyphicon glyphicon-earphone amereida-btn"></div>
+                <div>
+                    <h3>Tel-Fax</h3>
+                    <p>+56 32 666510</p>
+                </div>
+            </article>
+            <article class="info">
+                <div class="glyphicon glyphicon-pushpin amereida-btn"></div>
+                <div>
+                    <h3>Ciudad Abierta</h3>
+                    <p>Km. 4 camino Concón-Quintero</p>
+                </div>
+            </article>
+            <article class="info">
+                <div class="glyphicon glyphicon-pushpin amereida-btn"></div>
+                <div>
+                    <h3>Oficinas</h3>
+                    <p>Matta 12, Recreo, Viña del Mar</p>
+                    <p>Valparaíso, Chile</p>
+                </div>
+            </article>
+        </section>
+        <section class="col-lg-3 col-sm-6">
+            <article class="info">
+                <div class="link-formulario">
+                    <a class="amereida-btn" href="#">Formulario de Visitas</a>
+                </div>
+            </article>
+            <article>  
+                <div class="link-formulario">
+                    <a class="amereida-btn" href="#">Donaciones y Aporte</a>
+                </div>
+            </article>
+        </section>
+        <section class="col-lg-3 col-sm-6">
+            <h3>Redes Sociales</h3>
+            <a href="http://vimeo.com/album/2421485" target="_blank" class="fa fa-vimeo-square"></a>
+            <a href="https://twitter.com/amereidas" target="_blank" class="fa fa-twitter-square"></a>
+        </section>
+        <section class="col-lg-3 col-sm-6">
+            <h3>Enlaces</h3>
+
+            <article class="enlace">
+                <h4>Archivo histórico José Vial Armstrong</h4>
+                <p>Fotografías, videos, planos, etc.</p>
+            </article>
+
+            <article class="enlace">
+                <h4>Biblioteca Constel</h4>
+                <p>Catálogo de documentos, libros, poemas, ensayos, etc.</p>
+            </article>
+
+            <article class="enlace">
+                <h4>e[ad] Escuela de Arquitectura y Diseño.</h4>
+                <p>Sitio de la Escuela de Arquitectura y diseño PUCV.</p>
+            </article>
+
+            <article class="enlace">
+                <h4>Travesías de Amereida</h4>
+                <p>Bitácora colectiva de las travesías de amereida.</p>
+            </article>
+        </section>
+    -->
     </footer>
     {% block js %}
     <script src="/js/jquery-2.1.1.min.js"></script>
@@ -119,6 +167,12 @@
     <script src="/js/common_functions.js"></script>
     <script src="/js/jquery-ui-1.10.3.custom.min.js"></script>
     <script src="/js/jquery.kinetic.min.js"></script>
-    {% endblock %}
+    <script src="/js/responsiveCarousel.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function($){
+            $('.crsl-items').carousel();
+            $('.crsl-items').carousel({ visible: 3, itemMinWidth: 300, itemMargin: 10 });
+        });
+    </script>
 </body>
 </html>
