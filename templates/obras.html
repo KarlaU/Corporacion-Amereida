@@ -1,49 +1,49 @@
 {% extends "base.html" %}
 
 {% block content %}
-<section class="head-section obras-main-image" id="obras_intro">
-    <div class="jumbotron main photo-filter">
-        <div class="container">
-            <h1>Obras</h1>
-            <p class="text-left">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt aliquid corrupti possimus ad illo doloremque natus, odio fuga. Odit nihil ut sit animi molestias, provident veritatis illo cum corrupti id.
-            </p>
-        </div>
+<section class="main-wrapper">
+    <h1>Obras</h1>
+    <p class="bajada red-hr">
+        Las obras en Ciudad Abierta son el resultado de una visión poética que conjuga el decir de la poesía con el hacer de la arquitectura. Así cada obra se desprende de un acto poético. Luego el oficio interpreta y lleva a la forma el sentido que se desprende de la palabra.  
+    </p>
+    <p class="bajada">
+        Las obras en Ciudad Abierta son el resultado de una visión poética que conjuga el decir de la poesía con el hacer de la arquitectura. Así cada obra se desprende de un acto poético. Luego el oficio interpreta y lleva a la forma el sentido que se desprende de la palabra.  
+    </p>
+
+    <div id="select-box">
+        <label id="ordenar">Orden por</label>
+        <select name="ordenar" id="ordenar">
+            <option value="1">Ubicación</option>
+            <option value="2">Fecha</option>
+        </select>
     </div>
-</section>
-<div id="select-box" class="main-wrapper">
-    <label id="ordenar">Orden por</label>
-    <select name="ordenar" id="ordenar">
-        <option value="1">Ubicación</option>
-        <option value="2">Fecha</option>
-    </select>
-</div>
-<section>
-    <div class="main-wrapper obras-box">
-    {% for obra in obras %}
-        <div class="obra col-sm-6 col-md-4 col-xs-12" onclick="window.location.href='/obra/{{ obra.slug }}'">
-            <div>
-                <h2 class="text-center">{{ obra.nombre }}</h2>
-                <p class="text-center">
-                    Ágora
-                </p>
-                <p class="text-center">
-                    Zona Baja - Cercano a la Vega
-                </p>
-                <p class="text-center">
-                    Juan Purcell, Alverto Cruz C
-                </p>
-                <p class="text-center">
-                    1972
-                </p>
+    <section>
+        <div class="obras-box">
+        {% for obra in obras %}
+            <div class="obra col-sm-6 col-md-4 col-xs-12" onclick="window.location.href='/obra/{{ obra.slug }}'">
+                <div>
+                    <h2 class="text-center">{{ obra.nombre }}</h2>
+                    <p class="text-center">
+                        Ágora
+                    </p>
+                    <p class="text-center">
+                        Zona Baja - Cercano a la Vega
+                    </p>
+                    <p class="text-center">
+                        Juan Purcell, Alverto Cruz C
+                    </p>
+                    <p class="text-center">
+                        1972
+                    </p>
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+        <div class="parrafo">
+            <div class="text-right main-wrapper" onclick="common.irTop()">
+                Arriba <spam class="glyphicon glyphicon-arrow-up"></spam>
             </div>
         </div>
-    {% endfor %}
-    </div>
-    <div class="parrafo">
-        <div class="text-right main-wrapper" onclick="common.irTop()">
-            Arriba <spam class="glyphicon glyphicon-arrow-up"></spam>
-        </div>
-    </div>
+    </section>
 </section>
 {% endblock %}

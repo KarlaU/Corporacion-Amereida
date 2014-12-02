@@ -2,6 +2,36 @@
 
 claro = #E3E3E3
 
+figure
+    -webkit-filter grayscale(100%)
+    -moz-filter grayscale(100%)
+    filter grayscale(100%)
+    transition -webkit-filter 2s
+    transition -moz-filter 2s
+    transition filter 2s
+    background-size cover
+    background-position center
+
+figure:hover
+    -webkit-filter grayscale(0%)
+    -moz-filter grayscale(0%)
+    filter grayscale(0%)
+
+.carousel-caption
+    position relative
+    color #909090
+    text-shadow none
+    text-align left
+    display inline-block
+    background-color white
+    padding 0
+
+    .c-text-container
+        padding 35px 30px 0
+
+    .bajada
+        max-width 304px
+
 footer
     margin-top 75px !important
     padding 69px 0 123px
@@ -10,22 +40,35 @@ footer
     border-right 0
     border-left 0
 
+    h4, p
+        font-size 12px
+
     h2
         text-align left
         margin-bottom 54px
 
-    h3
+    h3, h4
         margin 0
 
-    .c-caption-inner
-        max-width 81%
+        a 
+            text-decoration underline
 
     .icn
         margin-right 20px
+        left auto
+        text-align left
+
+    a
+        padding 0
 
     .amereida-btn
         width 100% 
         margin-bottom 20px
+
+    .column:nth-child(4), .column:nth-child(5)
+
+        h3
+            margin-bottom 10px
 
 h1, h2, .btn-text, .amereida-btn
     font-family 'Raleway', sans-serif
@@ -46,16 +89,12 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
 
 h1, h2
     text-transform uppercase
-    font-size 22px
     letter-spacing 13px
 
 h2, h3, h4 ,h5 ,h6
     color #c1c1c1
 
-h3 
-    font-size 16px
-
-h4
+h1, h3 , h2, h3, h4
     font-size 16px
 
 p, li
@@ -63,6 +102,10 @@ p, li
 
 li
     margin-bottom 16px
+
+p
+    a
+        text-decoration underline
 
 body
     margin auto
@@ -95,7 +138,8 @@ header
         .navbar-collapse 
             padding 0
 
-
+        .btn-nav-bar
+            font-size 26px
 
     .logo
         cursor pointer
@@ -111,9 +155,30 @@ header
         display none
         margin-bottom 0
 
+.navbar-collapse.in
+    overflow-y inherit
+
 .main-wrapper
     width 90%
     margin 0 auto
+
+.main-image-container
+    position relative
+
+    .diagonal
+        position absolute
+
+    .top
+        top 0
+        left 1px
+        -webkit-transform rotate(180deg)
+        -moz-transform rotate(180deg)
+        -ms-transform rotate(180deg)
+        -o-transform rotate(180deg)
+        transform rotate(180deg)
+
+    .bottom
+        bottom 0
 
 .secondary
     padding-top 160px
@@ -355,23 +420,9 @@ a:hover, a:focus
         margin-bottom 21px
         height 100%
 
-.carousel-caption
-    position relative
-    color #909090
-    text-shadow none
-    text-align left
-    display inline-block
-    background-color white
-    padding 0
-
-    .c-text-container
-        padding 35px 30px 6px
-
-    .bajada
-        max-width 304px
-
 .c-caption-inner
     display inline-table
+    max-width 81%
 
 .title-bullet
     display inline-block
@@ -404,11 +455,54 @@ a:hover, a:focus
     bottom 100px
     background-image url("/images/diagonal-1.png")
 
+article, .article-head
+    position relative
+
+.article
+
+    .col-md-6
+        margin 0 auto 0
+        float none
+
+    .article-head-text
+        text-align center
+        overflow auto
+        width 100%
+        position absolute
+        top 320px
+        padding-bottom 33px
+        border-bottom thin solid #c1c1c1
+
+        span
+            background-color white
+            padding 38px
+
+    p
+        line-height 1.7em
+
+.after-head-text
+    margin-top 116px
+
 .background-1
     background-image url("/images/2792198137_c31546b063_b.jpg")
 
 .background-2
     background-image url("/images/corporacion.jpg")
+
+.background-3
+    background-image url("/images/main-home-03.jpg")
+
+.background-4
+    background-image url("/images/4015833085_63af699047_b.jpg")
+
+.background-5
+    background-image url("/images/2961878190_d19feb4ddb_b.jpg")
+
+.background-6
+    background-image url("/images/taller-amereida.jpg")
+
+.background-7
+    background-image url("/images/2792906396_582205be9c_b.jpg")
 
 .carousel-control
     text-shadow none
@@ -429,19 +523,9 @@ a:hover, a:focus
     height 50px
     width 100%
     position relative
-    bottom -16px
+    bottom -30px
     background-image url("/images/diagonal-1.png")
     transform rotate(180deg)
-
-.grayscale
-    -webkit-filter grayscale(100%)
-    -moz-filter grayscale(100%)
-    filter grayscale(100%)
-    transition -webkit-filter 2s
-    transition -moz-filter 2s
-    transition filter 2s
-    background-size cover
-    background-position center
 
 .item
     height 100%
@@ -451,11 +535,6 @@ a:hover, a:focus
     width 100%
     height 100%
     top 0
-
-.grayscale:hover
-    -webkit-filter grayscale(0%)
-    -moz-filter grayscale(0%)
-    filter grayscale(0%)
 
 .obras-text
     margin-bottom 53px
@@ -542,6 +621,12 @@ a:hover, a:focus
 
     p
         font-size 12px
+
+.main-image-container
+
+    figure
+        height 100%
+        background-color silver
 
 @import "screen_768.styl"
 @import "screen_1200.styl"
