@@ -1,30 +1,36 @@
 {% extends "base.html" %}
 {% block content %}
-<section id="visita">
-    <div class="no-head-image main-wrapper">
-        <h1>Visita</h1>
-        <div class="paragraph-container">
+<section class="main-wrapper article">
+    <section>
+        <div class="clearfix">
+            <div class="col-md-6">
+            <h1>Visitas</h1>
             <h2>Horarios</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis atque reiciendis officia, perspiciatis et commodi, obcaecati blanditiis praesentium esse illo deserunt! Suscipit maiores, fugit similique voluptas repellat atque corporis optio.
-            </p>
-        </div>
-        <div class="paragraph-container">
+            <p class="red-hr">Las visitas a Ciudad Abierta se pueden realizar entre días lunes y viernes, y sólo los días miércoles pueden ser solicitadas con un anfitrión.</p>
+            <p>Estas deben ser concertadas haciendo uso del formulario de visitas y con una semana de anticipación por lo menos. Las fechas solicitadas están sujetas a confirmación.</p>
             <h2>Colaboración</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse rerum odio, nobis quam eaque delectus asperiores, pariatur soluta nostrum sapiente provident laudantium deleniti sit sunt molestias eius iusto cupiditate architecto!
+            <p class="red-hr">
+            Invitamos a los visitantes a cancelar una colaboración o adhesión, cuya suma corresponde a $1.500 estudiante y $3.000 público general. Esta colaboración permite la mantención general del territorio.
             </p>
-        </div>
-        <div class="paragraph-container">
+            <p>El pago de este aporte debe efectuarse luego de confirmada la visita por parte de la secretaría de la corporación. Para ello se debe completar el formulario y esperar la respuesta. Plazo máximo de confirmación 3 días hábiles.</p>
+            <p>Para conocer más detalles sobre el pago de este aporte visite la <a href="">sección aportes</a> </p>
             <h2>Reglas y Recomendaciones</h2>
-            <ol>
-                {% for texto in reglas %}
-                <li>{{ texto }}</li>
-                {% endfor %}
-            </ol>
-        </div>
-        <div class="paragraph-container">
-            <h2>Formulario de Visita</h2>
+            <ul class="icn-ul">
+                <li><span class="icn icn-li icn-light icn-vineta"></span>Respetar y conservar todos y cada uno de los bienes naturales y culturales de Ciudad Abierta</li>
+                <li><span class="icn icn-li icn-light icn-vineta"></span>Respetar el derecho a la privacidad. Mantener una distancia prudente con las Hospederías. Se recuerda que en ellas vive gente.</li>
+                <li><span class="icn icn-li icn-light icn-vineta"></span>Respetar las indicaciones entregadas por los anfitriones.</li>
+                <li><span class="icn icn-li icn-light icn-vineta"></span>No cazar.</li>
+                <li><span class="icn icn-li icn-light icn-vineta"></span>No acampar.</li>
+                <li><span class="icn icn-li icn-light icn-vineta"></span>No ingresar con vehículos al borde costero. Para ingresar a la playa, existen senderos peatonales autorizados.
+                </li>
+                <li><span class="icn icn-li icn-light icn-vineta"></span>Las playas del sector no son aptas para el baño.</li>
+                <li><span class="icn icn-li icn-light icn-vineta"></span>Si se viene en auto, estacionar dentro del recinto. Existen lugares habilitados mas estos no cuentan con cuidadores.</li>
+                <li><span class="icn icn-li icn-light icn-vineta"></span>Las delegaciones que vengan en buses grandes no pueden estacionar dentro del recinto. Deben estacionar al costado de la calzada. Los caminos ripiados al interior de Ciudad Abierta no cuentan con las dimensiones suficientes como  para efectuar de forma segura el ingreso de buses de gran tamaño.</li>
+                <li><span class="icn icn-li icn-light icn-vineta"></span>Ciudad Abierta no posee ninguna clase de expendio de alimentos ni bebestibles. Se recomienda por lo tanto a los visitantes, en especial a aquellos que visiten Ciudad Abierta por una jornada prolongada, que lleven sus propios alimentos.</li>
+                <li><span class="icn icn-li icn-light icn-vineta"></span>Se solicita a los visitantes llevarse su basura. Dentro del recinto no existen basureros puesto que el servicio de recolección de basura no llega al sector.</li>
+
+            </ul>
+             <h2>Formulario de Visita</h2>
             <form action="#" role="form">
 
                 <div class="form-group">
@@ -64,10 +70,41 @@
                     </textarea>
                 </div>
                 <div class="form-group">
-                    <input type="submit" value="Enviar">
+                    <input class="amereida-btn" type="submit" value="Enviar">
                 </div>
             </form>
         </div>
+        </div>
+    </section>
+</section>
+    <!--
+    <div class="no-head-image main-wrapper">
+        <h1>Visita</h1>
+        <div class="paragraph-container">
+            <h2>Horarios</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis atque reiciendis officia, perspiciatis et commodi, obcaecati blanditiis praesentium esse illo deserunt! Suscipit maiores, fugit similique voluptas repellat atque corporis optio.
+            </p>
+        </div>
+        <div class="paragraph-container">
+            <h2>Colaboración</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse rerum odio, nobis quam eaque delectus asperiores, pariatur soluta nostrum sapiente provident laudantium deleniti sit sunt molestias eius iusto cupiditate architecto!
+            </p>
+        </div>
+        <div class="paragraph-container">
+            <h2>Reglas y Recomendaciones</h2>
+            <ol>
+                {% for texto in reglas %}
+                <li>{{ texto }}</li>
+                {% endfor %}
+            </ol>
+        </div>-->
+        <div class="paragraph-container">
+           
     </div>
 </section>
+    <script type="text/javascript">
+    </script>
+
 {% endblock %}

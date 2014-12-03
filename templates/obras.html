@@ -1,49 +1,173 @@
 {% extends "base.html" %}
 
 {% block content %}
-<section class="main-wrapper">
-    <h1>Obras</h1>
-    <p class="bajada red-hr">
-        Las obras en Ciudad Abierta son el resultado de una visión poética que conjuga el decir de la poesía con el hacer de la arquitectura. Así cada obra se desprende de un acto poético. Luego el oficio interpreta y lleva a la forma el sentido que se desprende de la palabra.  
-    </p>
-    <p class="bajada">
-        Las obras en Ciudad Abierta son el resultado de una visión poética que conjuga el decir de la poesía con el hacer de la arquitectura. Así cada obra se desprende de un acto poético. Luego el oficio interpreta y lleva a la forma el sentido que se desprende de la palabra.  
-    </p>
-
-    <div id="select-box">
-        <label id="ordenar">Orden por</label>
-        <select name="ordenar" id="ordenar">
-            <option value="1">Ubicación</option>
-            <option value="2">Fecha</option>
-        </select>
-    </div>
-    <section>
-        <div class="obras-box">
-        {% for obra in obras %}
-            <div class="obra col-sm-6 col-md-4 col-xs-12" onclick="window.location.href='/obra/{{ obra.slug }}'">
-                <div>
-                    <h2 class="text-center">{{ obra.nombre }}</h2>
-                    <p class="text-center">
-                        Ágora
-                    </p>
-                    <p class="text-center">
-                        Zona Baja - Cercano a la Vega
-                    </p>
-                    <p class="text-center">
-                        Juan Purcell, Alverto Cruz C
-                    </p>
-                    <p class="text-center">
-                        1972
-                    </p>
+<section class="main-wrapper article">
+     <section>
+        <div class="article-head">
+            <div class="main-image-container">
+                <figure class="background-8"></figure>
+                <div class="diagonal bottom"></div>
+            </div>
+            <div class="article-head-text">
+                <span class="icn icn-cruzdelsur"></span>
+                <h1>Obras</h1>
+            </div>
+        </div>
+         <div class="after-head-text">
+            <div class="clearfix">
+                <div class="col-md-6">
+                <p class="red-hr">
+                Las obras en Ciudad Abierta son el resultado de una visión poética que conjuga el decir de la poesía con el hacer de la arquitectura. Así cada obra se desprende de un acto poético. Luego el oficio interpreta y lleva a la forma el sentido que se desprende de la palabra. </p>
+                <p>Las construcciones se proyectan en la ronda, instancia donde participan todos los integrantes de la ciudad. Las obras son construidas “con cualquier material”, apelando a las propias fuerzas y recursos se sus habitantes. </p>
                 </div>
             </div>
-        {% endfor %}
         </div>
-        <div class="parrafo">
-            <div class="text-right main-wrapper" onclick="common.irTop()">
-                Arriba <spam class="glyphicon glyphicon-arrow-up"></spam>
+    </section>
+    <section>
+        <div id="select-box">
+            <label id="ordenar">Orden por</label>
+            <select name="ordenar" id="ordenar">
+                <option value="1">Ubicación</option>
+                <option value="2">Fecha</option>
+            </select>
+        </div>
+        <div class="row clearfix obras-container">
+            <!--columna 1-->
+            <div class="col-md-4 col-sm-6 column">
+                <!--hospedería de la entrada-->
+                <figure>
+                    <img src="/images/hospederia-de-la-entrada.png" alt="" />
+                </figure>
+                <div class="obra-caption">
+                    <figcaption class="center-container">
+                        <span class="icon-obra-interior"></span>
+                        <h3>Hospedería de la Entrada</h3>
+                        <p class="bajada red-hr">
+                            Obra Interior | Zona Baja, Entrada | Grupo Ciudad Abierta | 11992
+                        </p>
+                    </figcaption>
+                </div>
+                <!--arpa eolica-->
+                <figure>
+                    <img src="/images/arpa-eolica.png" alt="" />
+                </figure>
+                <div class="obra-caption">
+                    <figcaption class="center-container">
+                        <span class="icon-escultura"></span>
+                        <h3>Arpa Eólica</h3>
+                        <p class="bajada red-hr">
+                            Obra Interior | Zona Baja, Entrada | Grupo Ciudad Abierta | 1980
+                        </p>
+                    </figcaption>
+                </div>
+                <!--cubicula del poeta-->
+                <figure>
+                    <img src="/images/cubicula-del-poeta.png" alt="" />
+                </figure>
+                <div class="obra-caption">
+                    <figcaption class="center-container">
+                        <span class="icon-obra-interior"></span>
+                        <h3>Cubícula del Poeta</h3>
+                        <p class="bajada red-hr">
+                            Obra Interior | Zona Baja, Entrada | Juan Purcell, Salvador Zahr, Fabio Cruz | 1978
+                        </p>
+                    </figcaption>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 column">
+                <!--giro-->
+                <figure>
+                    <img src="/images/giro-400x600.png" alt="" />
+                </figure>
+                <div class="obra-caption">
+                    <figcaption class="center-container">
+                        <span class="icon-escultura"></span>
+                        <h3>Giro</h3>
+                        <p class="bajada red-hr">
+                            Obra Interior | Zona Baja, Entrada | Claudio Girola | 1994
+                        </p>
+                    </figcaption>
+                </div>
+                <!--confín-->
+                <figure>
+                    <img src="/images/confin.png" alt="" />
+                </figure>
+                <div class="obra-caption">
+                    <figcaption class="center-container">
+                        <span class="icon-obra-interior"></span>
+                        <h3>Confín</h3>
+                        <p class="bajada red-hr">
+                            Obra Interior | Zona Baja, Entrada | Patricio Cáraves, David Jolly y alumnos del Taller de Obra | 1975
+                        </p>
+                    </figcaption>
+                </div>
+                <!--vuelo quebrado-->
+                <figure>
+                    <img src="/images/vuelo-quebrado.png" alt="" />
+                </figure>
+                <div class="obra-caption">
+                    <figcaption class="center-container">
+                        <span class="icon-escultura"></span>
+                        <h3>Vuelo Quebrado</h3>
+                        <p class="bajada red-hr">
+                            Obra Interior | Zona Baja, Vega | Claudio Girola | 2007
+                        </p>
+                    </figcaption>
+                </div>
+
+            </div>
+            <div class="col-md-4 col-sm-6 column">
+                <!--hospedería doble-->
+                <figure>
+                    <img src="/images/hospederia-doble-o-del-banquete.png" alt="" />
+                </figure>
+                <div class="obra-caption">
+                    <figcaption class="center-container">
+                        <span class="icon-obra-interior"></span>
+                        <h3>Hospedería Doble</h3>
+                        <p class="bajada red-hr">
+                            Obra Interior | Zona Baja, Entrada | Grupo Ciudad Abierta | 1973
+                        </p>
+                    </figcaption>
+                </div>
+                <!--mesa del entreacto-->
+                <figure>
+                    <img src="/images/mesa-del-entreacto.png" alt="" />
+                </figure>
+                <div class="obra-caption">
+                    <figcaption class="center-container">
+                        <span class="icon-obra-exterior"></span>
+                        <h3>Mesa del Entreacto</h3>
+                        <p class="bajada red-hr">
+                            Obra Interior | Zona Baja, Entrada | David Jolly, Patricio Cáraves y el Grupo Ciudad Abierta | 1996
+                        </p>
+                    </figcaption>
+                </div>
+                <!--las celdas-->
+                <figure>
+                    <img src="/images/hospederia-de-la-rosa-de-los-vientos-o-las-celdas.png" alt="" />
+                </figure>
+                <div class="obra-caption">
+                    <figcaption class="center-container">
+                        <span class="icon-obra-interior"></span>
+                        <h3>Las Celdas</h3>
+                        <p class="bajada red-hr">
+                            Obra Interior | Zona Baja, Vega | Grupo Ciudad Abierta | 1997
+                        </p>
+                    </figcaption>
+                </div>
             </div>
         </div>
+        <label>Página 1 de 5</label>
+        <ul class="pagination">
+            <li><a href="#">&laquo;</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+        </ul>
     </section>
 </section>
 {% endblock %}
