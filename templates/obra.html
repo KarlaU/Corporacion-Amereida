@@ -1,19 +1,51 @@
 {% extends "base.html" %}
 
 {% block content %}
-
-<section class="obra head-section">
-    <div class="jumbotron main">
-        <div class="container">
-            <h1 class="text-center">Nombre de la obra</h1>
-            <p class="text-center">Tipo Obra</p>
-            <p class="text-center">Sector</p>
-            <p class="text-center">Creador</p>
-            <p class="text-center">Año</p>
-    </div>
+<section class="main-wrapper article obra">
+     <section>
+        <div class="article-head">
+            <div class="main-image-container">
+                <figure class="obra-4"></figure>
+                <div class="diagonal bottom"></div>
+            </div>
+            <div class="article-head-text">
+                <span class="icon-obra-interior"></span>
+                <h1>Hospedería de la entrada</h1>
+                <p class="bajada red-hr">
+                    Obra Interior | Zona Baja, Entrada | Grupo Ciudad Abierta | 11992
+                </p>
+            </div>
+        </div>
+         <div class="after-head-text">
+            <div class="clearfix">
+                <div class="col-md-6">
+                <h2>Descripción</h2>
+                <p class="red-hr">
+                Construida en el año 1985 por Boris Ivelic (Arquitecto), Grupo Ciudad Abierta. Cualquier persona que entre a los terrenos debiese tener un lugar donde poder hablar, preguntar, presentarse. Girar al asedio en una real llegada. Una hospedería o pórtico, un lugar público en el acceder donde alguien reciba. Se piensa que más que hospedería de la puerta, puesto que todas las hospederías tienen puerta, es la “hospedería de la llegada” y es hospedería porque lo propio de ésta es recibir, es la primera que recibe.Esta hospedería que cuida de la llegada, la primera que recibe.</p>
+                <p>Las construcciones se proyectan en la ronda, instancia donde participan todos los integrantes de la ciudad. Las obras son construidas “con cualquier material”, apelando a las propias fuerzas y recursos se sus habitantes. </p>
+                <h2>Materialidad y Dimensiones</h2>
+                </p>
+                    <li><span class="icn icn-li icn-light icn-vineta"></span><b>Piso</b> Madera de Pino</li>
+                    <li><span class="icn icn-li icn-light icn-vineta"></span><b>Estructura</b> Pino Impregnado</li>
+                    <li><span class="icn icn-li icn-light icn-vineta"></span><b>Recubrimiento</b> Madera Machihembrada</li>
+                    <li><span class="icn icn-li icn-light icn-vineta"></span><b>Cubierta</b> Planchas de Ferrocemento</li>
+                <p>
+                <h2>Fundamento</h2>
+                <p class="red-hr">Es distinto un huésped, a quien nos hemos dedicado a oírle, a un visitante que es atraído a esta ciudad por la belleza del paisaje, por la novedad de sus edificaciones o por el simple hecho de detenerse en el camino porque esto lo permite. Para ellos las obras y la Ciudad Abierta se vuelve equivoca.</p>
+                <p>La Ciudad Abierta no tiene límites físicos, que la separen de otros terrenos. Esto porque en la apertura poética, los limites fueron desvelados con una trascendencia distinta a lo conocido.</p>
+                <p>Cualquier persona que entre a los terrenos debiese tener un lugar donde poder hablar, preguntar, presentarse. Girar al asedio en una real llegada. Una hospedería o pórtico, un lugar público en el acceder donde alguien reciba.</p>
+                <p>Se piensa que más que hospedería de la puerta, puesto que todas las hospederías tienen puerta, es la “hospedería de la llegada” y es hospedería porque lo propio de ésta es recibir, es la primera que recibe.
+                Esta hospedería que cuida de la llegada, la primera que recibe, es propiamente la constitución de un exterior, pero una hospedería también tiene interior, es el interior el que cuidara del cine.</p>
+                <p>Se propone un gran anfiteatro y se dibuja como imagen un teatro griego. Se piensa que es lo propiamente público. Incluso en la ciudad todos los cines son públicos y tratan de salir a la calle y son espacios graduables desde el exterior al interior. Las personas y los automóviles podrían pasar por debajo de unas prolongaciones del teatro a manera de umbral. Y arriba de ellos podría vivir una familia.</p>
+                <p>También se propone en el cruce de caminos que se produce a la entrada, constituir una suerte de plaza formada por un gran cubo de pilares inclinados. Es como entrar a un gran bosque pasando por entremedio de ellos. Cuando se llega se queda enfrentado a las torres, se trata que esta trama de pilares forma una especie de tamiz con las torres de agua.</p>
+                <p>Es trabajando con la duna, la arena que se puede conformar los espacios. La arena es suelo, los terraplenes se pueden pisar, acceder, se pueden constituir toda una suerte de recorridos, dando distintos puntos de vista a la obra. Buscando el sin revés ni derecho.</p>
+                <p>Se piensa que la estructura que arma el interior sea una suerte de prolongación de las hipóstilas. Un pórtico que en su parte alta arman unas cubículas en desniveles creando un Acceso a la sala de cine. Son unas cubiculas que tiene un techo común y que pueden albergar la vida de una familia. Estas cubiculas pueden irse terminando separadamente de manera que la obra no este a la espera de ser terminada para que se constituya como obra: estando el suelo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 </section>
-<section id="seccion_tabs">
-    <div class="text-center obra-nav">
+ <!--toggle buttons   <div class="text-center obra-nav">
         <div class="btn-group btn-custom">
             <button type="button" class="btn btn-default btn-lg text-center"
                 onclick="revelar('ubicacion')">
@@ -37,104 +69,7 @@
             </button>
         </div>
     </div>
-    <!--Comienza Panel de Ubicación-->
-    <div id="ubicacion" class="hidden ocultar main-wrapper dropdown-panel">
-        <div>
-            <div class="dropdown-panel-container">
-                <div class="close-button btn-remove">
-                    <span class="glyphicon glyphicon-remove"
-                        onclick="$('.ocultar').addClass('hidden')"></span>
-                </div>
-                <h2>Cómo Llegar a Este Sitio</h2>
-                <div class="jumbotron secondary">
-                a 
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis placeat assumenda modi nulla ipsa iusto voluptatum id qui sint blanditiis dolor officia fugiat nesciunt rem quaerat similique, in neque repudiandae.</p>
-            </div>
-        </div>
-    </div>
-    <!--Comienza Panel Vista 360-->
-        <div id="vista" class="hidden ocultar main-wrapper dropdown-panel">
-        <div>
-            <div class="dropdown-panel-container">
-                <div class="close-button btn-remove">
-                    <span class="glyphicon glyphicon-remove"
-                         onclick="ocultar()"></span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Comienza Panel Galería-->
-    <div id="galeria" class="hidden ocultar main-wrapper dropdown-panel">
-        <div>
-            <div class="dropdown-panel-container">
-                <div class="close-button btn-remove">
-                    <span class="glyphicon glyphicon-remove"
-                         onclick="ocultar()"></span>
-                </div>
-                <h2>Galería</h2>
-            </div>
-        </div>
-    </div>
-    <!--Comienza Panel Más Obras-->
-   <div id="mas_obras" class="hidden ocultar main-wrapper dropdown-panel">
-        <div>
-            <div class="dropdown-panel-container">
-                <div class="close-button btn-remove">
-                    <span class="glyphicon glyphicon-remove"
-                         onclick="ocultar()"></span>
-                </div>
-                <h2>Obras Cercanas</h2>
-                 <div class="obras-box">
-                    <div class="obra col-sm-6 col-md-4 col-xs-12">
-                        <div>
-                            <h3 class="text-center">Escultura Ágora de Tronquoy</h3>
-                        </div>
-                    </div>
-                    <div class="obra col-sm-6 col-md-4 col-xs-12">
-                        <div>
-                            <h3 class="text-center">Escultura Ágora de Tronquoy</h3>
-                        </div>
-                    </div>
-                    <div class="obra col-sm-6 col-md-4 col-xs-12">
-                        <div>
-                            <h3 class="text-center">Escultura Ágora de Tronquoy</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-<section>
-    <div class="main-wrapper">
-        <div class="paragraph-container">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quam illo sint deleniti obcaecati velit ipsam itaque qui amet adipisci rem, laborum a, voluptates placeat consequatur, vel nesciunt eaque voluptas.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quam illo sint deleniti obcaecati velit ipsam itaque qui amet adipisci rem, laborum a, voluptates placeat consequatur, vel nesciunt eaque voluptas.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quam illo sint deleniti obcaecati velit ipsam itaque qui amet adipisci rem, laborum a, voluptates placeat consequatur, vel nesciunt eaque voluptas.
-            </p>
-        </div>
-    </div>
-
-    <!-- Import de Sound Clound -->
-    <!-- Import de Youtube/Vimeo -->
-
-    <div class="main-wrapper notas-container">
-        <h3>Notas</h3>
-        <ol type="1">
-            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quam illo sint deleniti obcaecati velit ipsam itaque qui amet adipisci rem, laborum a, voluptates placeat consequatur, vel nesciunt eaque voluptas.</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quam illo sint deleniti obcaecati velit ipsam itaque qui amet adipisci rem, laborum a, voluptates placeat consequatur, vel nesciunt eaque voluptas.</li>
-        </ol>
-
-        <div class="text-right" onclick="common.irTop()">
-            Arriba <spam class="glyphicon glyphicon-arrow-up"></spam>
-        </div>
-    </div>
-</section>
+    toggle buttons-->
 
 {% endblock %}
 

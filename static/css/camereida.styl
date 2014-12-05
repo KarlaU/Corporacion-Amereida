@@ -2,6 +2,11 @@
 
 claro = #E3E3E3
 
+header
+
+    input[type=text]
+        border-width 0
+
 figure
     -webkit-filter grayscale(100%)
     -moz-filter grayscale(100%)
@@ -234,14 +239,26 @@ section
         margin-left 0px !important
         margin-right 0px !important
 
+.noticia
+
     .article-head
 
-        .noticia-head
-            top 408px
+        span
+            padding 0 !important
 
-            span
-                padding 0 !important
+        .share
+            padding 24px
+            background-color white
+            position relative
+            top 43px
 
+    .after-head-text
+        margin-top 216px
+
+        img
+            width 100%
+            margin 39px 0 13px 
+ 
 .notas-container
     font-style italic
 
@@ -304,6 +321,7 @@ ul.tab-especial
     height auto
     border transparent
     box-shadow none
+    text-align left
 
     .caption 
         padding-top 0
@@ -494,15 +512,20 @@ article, .article-head
 
     .article-head-text
         text-align center
-        overflow auto
         width 100%
         position absolute
-        top 320px
+        top 336px
         padding-bottom 33px
         border-bottom thin solid #c1c1c1
 
+        .red-hr:before
+            margin 0 auto 11px
+
+        .bajada
+            margin auto 
+
         .antetitulo
-            letter-spacing 4px
+            letter-spacing 7px
 
         span
             background-color white
@@ -514,8 +537,27 @@ article, .article-head
     p
         line-height 1.7em
 
+li
+    list-style none
+
 .after-head-text
     margin-top 116px
+
+    .icn-li
+        position initial
+
+    .bottom-content
+        border-top thin solid #c1c1c1
+        padding-top 49px
+        margin-top 85px
+
+        .col-md-10
+            margin 0 auto 0
+            float none
+            text-align center
+
+            h2
+                margin-bottom 52px
 
 .background-1
     background-image url("/images/2792198137_c31546b063_b.jpg")
@@ -540,6 +582,9 @@ article, .article-head
 
 .background-8
     background-image url("/images/3082475213_be5ea98825_b.jpg")
+
+.background-noticia
+    background-image url("/images/IMG-20141026-WA00041.jpg")
 
 .carousel-control
     text-shadow none
