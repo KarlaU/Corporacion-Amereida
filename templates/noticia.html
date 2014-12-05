@@ -1,44 +1,28 @@
 {% extends "base.html" %}
 
 {% block content %}
-<section class="head-section">
-    <div class="jumbotron main">
-        <div class="container">
-            <h1>Concierto Código es Poesía</h1>
-            <p class="text-center">
-                11|11|2014
-            </p>
+<section class="main-wrapper article">
+     <section>
+        <div class="article-head">
+            <div class="main-image-container">
+                <figure class="background-8"></figure>
+                <div class="diagonal bottom"></div>
+            </div>
+            <div class="article-head-text noticia-head">
+                <span class="icn icn-noticias"></span>  
+                <span class="antetitulo">Noticias</span>
+                <h1>Concierto Código es Poesía</h1>
+            </div>
         </div>
-    </div>
-</section>
-<section>
-    <div class="main-wrapper">
-        <p><span class="span-breadcrumb-noticia">Noticias | Concierto Código es Poesía</span></p>
-        <p>
-            El Sábado 25 de octubre se realizó en la Sala de Música el concierto “Código es Poesía”.
-        </p>
-        <p>
-           Participaron: Sergio Miranda (guitarra eléctrica), Sebastián de Larraechea (flauta y guitarra eléctrica), Sebastián Murillo (acordeón y vidrios), Ronald Smith (electrónica), Óscar Santis (electrónica) y Diego Ballcels (imágenes y proyecciones)
-        </p>
-    </div>
-</section>
-<section class="noticias">
-    <div class="main-wrapper">
-        <h2>Noticias Anteriores</h2>
-        {% for noticia in noticias %}
-        <article class="noticia col-sm-6 col-xs-12">
-            <figure class="news-image" style="background-image:url('{{ noticia.imagen }}');">
-            </figure>
-            <h3 class="titulo">{{ noticia.titulo }}</h3>
-            <p>
-                <span class="span-fecha">{{ noticia.fecha }}</span>
-            </p>
-            <p>
-                {% autoescape false %}
-                {{ noticia.texto }}
-                {% endautoescape %}
-            </p>
-        </article>
-    {% endfor %}
+         <div class="after-head-text">
+            <div class="clearfix">
+                <div class="col-md-6">
+                <p class="red-hr">
+                Las obras en Ciudad Abierta son el resultado de una visión poética que conjuga el decir de la poesía con el hacer de la arquitectura. Así cada obra se desprende de un acto poético. Luego el oficio interpreta y lleva a la forma el sentido que se desprende de la palabra. </p>
+                <p>Las construcciones se proyectan en la ronda, instancia donde participan todos los integrantes de la ciudad. Las obras son construidas “con cualquier material”, apelando a las propias fuerzas y recursos se sus habitantes. </p>
+                </div>
+            </div>
+        </div>
+    </section>
 </section>
 {% endblock %}
