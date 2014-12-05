@@ -81,6 +81,10 @@ app.get('/noticia', function(req, res){
     });
 });
 
+app.get('/contacto', function(req, res){
+    res.render('contacto');
+});
+
 app.get('*', function(req, res){
     res.status(404).send('404, no está tu coso :(');
 })
@@ -88,3 +92,4 @@ app.get('*', function(req, res){
 app.listen(3000, function(){
     console.log('estoy entero ready pos oshe');
 });
+
