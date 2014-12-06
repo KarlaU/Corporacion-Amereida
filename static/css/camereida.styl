@@ -202,7 +202,7 @@ header
     width 90%
     margin 0 auto
 
-.main-image-container
+.main-image-container, .gray-content
     position relative
 
     .diagonal
@@ -219,6 +219,7 @@ header
 
     .bottom
         bottom 0
+        right 1px
 
 .secondary
     padding-top 160px
@@ -285,11 +286,6 @@ a
     font-size 14px !important
     margin 0px !important
 
-ul.tab-especial
-    li
-        width 50% !important
-        text-align center
-
 #seccion_tabs
 
     .dropdown-panel
@@ -341,6 +337,9 @@ ul.tab-especial
         a
             padding 7px 11px
 
+.nav-tabs>li>a
+    border-radius 0
+
 .nav>li>a:hover, .nav>li>a:focus
     background-color transparent
 
@@ -365,8 +364,7 @@ a:hover, a:focus
         width 100%
 
     .obra-caption
-        padding-top 10px
-        padding 28px
+        padding 0 28px 32px
         height auto
 
 .paragraph-container
@@ -375,11 +373,6 @@ a:hover, a:focus
 .sub-titulo
     font-size 16px !important
     margin 0.5em 0 !important
-
-.tab-especial
-    li
-        width 50% !important
-        text-align center
 
 .titulo
     font-size 18px !important
@@ -546,18 +539,35 @@ li
     .icn-li
         position initial
 
-    .bottom-content
-        border-top thin solid #c1c1c1
-        padding-top 49px
-        margin-top 85px
+.bottom-content
+    border-top thin solid #c1c1c1
+    padding-top 49px
+    margin-top 85px
 
-        .col-md-10
-            margin 0 auto 0
-            float none
-            text-align center
+    .col-md-10
+        margin 0 auto 0
+        float none
+        text-align center
 
-            h2
-                margin-bottom 52px
+        h2
+            margin-bottom 52px
+
+        .col-md-6
+            float left
+
+        .obra-img
+            height 215px
+
+.galeria-content
+    margin-top 0
+    border-top none
+
+.gray-content
+    border-top none
+    background-color #f7f7f7
+    position relative
+    padding 106px 0
+    margin 0
 
 .background-1
     background-image url("/images/2792198137_c31546b063_b.jpg")
@@ -629,9 +639,8 @@ li
         .crsl-item
             width 40%
 
-            span
-                display block
-                margin 22px 0 14px
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus
+        border #cc0000 solid thin   
 
 #NAV-ID
 
@@ -665,6 +674,15 @@ li
 .obra-5
     background-image url("/images/hospederia-colgante-o-del-taller-de-obra.png")
 
+.obra-6
+    background-image url("/images/arpa-eolica.png")
+
+.obra-7
+    background-image url("/images/taller-de-prototipos.png")
+
+.obra-8
+    background-image url("/images/taller-del-escultor.png")
+
 .obra-caption
     background-color #f7f7f7
     height 170px
@@ -676,6 +694,10 @@ li
 
     h3
         margin-top 11px
+
+    span
+        display block
+        margin 22px 0 14px
 
 .center-container
     width 76%
