@@ -78,6 +78,32 @@
     <div class="col-md-10">
         <span class="icn icn-imagen"></span>
         <h2>Galería</h2>
+        <div id="mygallery">
+            <a href="path/to/image1_b.jpg">
+                <img alt="#" src="/images/2792198137_c31546b063_b.jpg"/>
+            </a>
+            <a href="path/to/image2_b.jpg">
+                <img alt="#" src="/images/2792906396_582205be9c_b.jpg"/>
+            </a>
+            <a href="#">
+                <img alt="#" src="/images/4559875826_79b7186209_z.jpg"/>
+            </a>
+            <a href="#">
+                <img alt="#" src="/images/calzada-aguas.jpg"/>
+            </a>
+            <a href="path/to/image1_b.jpg">
+                <img alt="#" src="/images/corporacion.jpg"/>
+            </a>
+            <a href="path/to/image2_b.jpg">
+                <img alt="#" src="/images/dog.jpg"/>
+            </a>
+            <a href="#">
+                <img alt="#" src="/images/francisco-T-2014.jpg"/>
+            </a>
+            <a href="#">
+                <img alt="#" src="/images/gnome.jpg"/>
+            </a>
+        </div>
     </div>
 </section>
 <section class="clearfix bottom-content">
@@ -126,6 +152,7 @@
 
     </div>
 </section>
+
  <!--toggle buttons   <div class="text-center obra-nav">
         <div class="btn-group btn-custom">
             <button type="button" class="btn btn-default btn-lg text-center"
@@ -155,20 +182,26 @@
 {% endblock %}
 
 {% block js %}
-<script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        alert('holito');
+        $("#basicExample").justifiedGallery();
+    });
+</script>
+<!--<script>
 
 
-//function revelar(id){
-//    $('.ocultar').addClass('hidden');
-//    $('#' + id).removeClass('hidden');
-//}
+function revelar(id){
+    $('.ocultar').addClass('hidden');
+    $('#' + id).removeClass('hidden');
+}
 
-//function ocultar(){
-//    $('.ocultar').addClass('hidden');
-//}
+function ocultar(){
+    $('.ocultar').addClass('hidden');
+}
 
 //if($(window).width() >= 768){
 //    $(".hidden").removeClass("hidden");
 //}
-</script>
+</script>-->
 {% endblock %}

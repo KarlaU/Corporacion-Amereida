@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/css/font-awesome.min.css" />
     <link rel="stylesheet" href="/css/camereida.css" />
     <link rel="stylesheet" href="/css/stampa.css"/>
+    <link rel="stylesheet" href="/css/justifiedGallery.min.css"/>
     <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Anonymous+Pro:400,400italic' rel='stylesheet' type='text/css'>
     <link href="https://fontastic.s3.amazonaws.com/q5EW7m6rHv9JyZ7pcLEfLM/icons.css" rel="stylesheet">
@@ -118,10 +119,12 @@
     <script src="/js/jquery-ui-1.10.3.custom.min.js"></script>
     <script src="/js/jquery.kinetic.min.js"></script>
     <script src="/js/responsiveCarousel.js"></script>
+    <script src="/js/jquery.justifiedGallery.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function($){
             $('.crsl-items').carousel();
             $('.crsl-items').carousel({ visible: 3, itemMinWidth: 300, itemMargin: 10 });
+            $("#mygallery").justifiedGallery();
         });
     </script>
 </body>
