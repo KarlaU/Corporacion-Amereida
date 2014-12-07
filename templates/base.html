@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <title>Camereida</title>
+
+    <script src="/js/jquery-2.1.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/common_functions.js"></script>
+    <script src="/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="/js/jquery.kinetic.min.js"></script>
+    <script src="/js/responsiveCarousel.js"></script>
+    <script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
     <link rel="shortcut icon" href="/images/favicon.png" />
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
@@ -113,18 +123,10 @@
         </div>
     </footer>
     {% block js %}
-    <script src="/js/jquery-2.1.1.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/common_functions.js"></script>
-    <script src="/js/jquery-ui-1.10.3.custom.min.js"></script>
-    <script src="/js/jquery.kinetic.min.js"></script>
-    <script src="/js/responsiveCarousel.js"></script>
-    <script src="/js/jquery.justifiedGallery.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function($){
             $('.crsl-items').carousel();
             $('.crsl-items').carousel({ visible: 3, itemMinWidth: 300, itemMargin: 10 });
-            $("#mygallery").justifiedGallery();
         });
     </script>
 </body>

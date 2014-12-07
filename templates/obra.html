@@ -184,10 +184,18 @@
 {% block js %}
 <script type="text/javascript">
     $(document).ready(function(){
-        alert('holito');
-        $("#basicExample").justifiedGallery();
+        $("#mygallery").justifiedGallery({
+            rowHeight: 120,
+            maxRowHeight: 0,
+            margins: 1,
+            lastRow: 'nojustify',
+            fixedHeight: false,
+            captions: true,
+            randomize: false
+        });
     });
 </script>
+
 <!--<script>
 
 
