@@ -7,7 +7,7 @@ header
     input[type=text]
         border-width 0
 
-figure
+figure, #mygallery img
     -webkit-filter grayscale(100%)
     -moz-filter grayscale(100%)
     filter grayscale(100%)
@@ -17,10 +17,13 @@ figure
     background-size cover
     background-position center
 
-figure:hover
+figure:hover, #mygallery img:hover
     -webkit-filter grayscale(0%)
     -moz-filter grayscale(0%)
     filter grayscale(0%)
+
+#mygallery
+    margin-bottom 25px
 
 .carousel-caption
     position relative
@@ -530,6 +533,62 @@ article, .article-head
     p
         line-height 1.7em
 
+.map-section
+
+    .bottom-content
+        border-top 0
+        margin-top 0
+        padding-top 0
+
+.map-container
+    overflow auto
+    position relative
+    display inline-block
+
+    img
+        width 100%
+
+    .zona
+        position absolute
+        background-color rgba(93 93 93 .3)
+        -ms-display: flex;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition background-color 2s
+
+    .zona:hover
+         background-color rgba(93 93 93 .5)
+
+    .first
+        top 30px
+        right 30px
+        left 51%
+        bottom 30px
+
+    .second
+        bottom 30px
+        right 51%
+        left 30px
+        top 30px
+
+    .third
+        bottom 51%
+        right 30px
+        left 30px
+        top 30px
+
+    .fourth
+        bottom 30px
+        right 30px
+        left 30px
+        top 51%
+
+    h2
+        color white
+        text-align center
+        font-weight bold
+        margin 0 !important
 li
     list-style none
 
@@ -602,9 +661,6 @@ li
     display inline-block
     opacity 1
 
-    .carousel-btn
-        display none
-
 .icn-navizquierda
     left 0
 
@@ -655,6 +711,19 @@ li
 
     .next
         right 0
+
+    .top
+        top 0
+        left 50%
+
+    .bottom
+        bottom 0 
+        top auto
+        left 50%
+
+    .zoom-out
+        right 0
+        top 0
 
 .obra-img
     height 365px

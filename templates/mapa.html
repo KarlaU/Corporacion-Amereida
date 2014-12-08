@@ -1,24 +1,95 @@
 {% extends "base.html" %}
 {% block content %}
 
-<section>
-    <div class="no-head-image main-wrapper">
+<section class="main-wrapper article map-section">
+    <section class="clearfix bottom-content">
         <h1>Mapa de Ciudad Abierta</h1>
-        <ul class="nav nav-tabs tab-especial">
-            <li class="active"><a href="#tab1" data-toggle="tab">Zona Baja</a></li>
-            <li><a href="#tab2" data-toggle="tab">Zona Alta</a></li>
-        </ul>
-
-        <div class="tab-content">
-            <div class="tab-pane active" id="tab1">
-                <div class="jumbotron secondary map-1">
-                </div>
-            </div>
-            <div class="tab-pane fade" id="tab2">
-                <div class="jumbotron secondary map-2">
-                </div>
+        <div class="col-md-10">
+            <div>
+                <div id="mapa-1" class="map-container">
+                    <img id="mapa-1" alt="#" src="/images/mapa 1.jpg"/>
+                    <div id="NAV-ID" class="crsl-nav">
+                        <div class="zona first" onclick="change('#mapa-1-2')">
+                            <h2>Zona Alta</h2>
+                        </div>
+                        <div class="zona second" onclick="change('#mapa-1-1')">
+                            <h2>Zona Baja</h2>
+                        </div>
+                    </div>
+                </div>   
+                <div id="mapa-1-1" class="map-container hidden">
+                    <img alt="#" src="/images/mapa 1-1.jpg"/>
+                    <div id="NAV-ID" class="crsl-nav">
+                        <a href="#" class="next"  onclick="change('#mapa-1-2')"><span class="icn icn-nav icn-light carousel-btn"></span></a>
+                        <a href="#" class="zoom-out" onclick="change('#mapa-1')"><span class="icn icn-menos icn-light carousel-btn"></span></a>
+                        <div class="zona third" onclick="change('#mapa-1-1-1')">
+                            <h2>Vega</h2>
+                        </div>
+                        <div class="zona fourth" onclick="change('#mapa-1-1-2')">
+                            <h2>Entrada</h2>
+                        </div>
+                    </div>
+                </div> 
+                <div id="mapa-1-2" class="map-container hidden">
+                    <img alt="#" src="/images/mapa 1-2.jpg"/>
+                    <div id="NAV-ID" class="crsl-nav">
+                        <a href="#" class="previous" onclick="change('#mapa-1-1')"><span class="icn icn-navizquierda icn-light carousel-btn"></span></a>
+                        <a href="#" class="zoom-out" onclick="change('#mapa-1')"><span class="icn icn-menos icn-light carousel-btn"></span></a>
+                        <div class="zona third" onclick="change('#mapa-1-2-2')">
+                            <h2>Pradera</h2>
+                        </div>
+                        <div class="zona fourth" onclick="change('#mapa-1-2-1')">
+                            <h2>Quebrada</h2>
+                        </div>
+                    </div>
+                </div> 
+                <div id="mapa-1-1-1" class="map-container hidden">
+                    <img alt="#" src="/images/mapa 1-1-1.jpg"/>
+                    <div id="NAV-ID" class="crsl-nav">
+                        <a href="#" class="next" onclick="change('#mapa-1-2-2')"><span class="icn icn-nav icn-light carousel-btn"></span></a>
+                        <a href="#" class="bottom" onclick="change('#mapa-1-1-2')"><span class="icn icn-navabajo icn-light carousel-btn"></span></a>
+                        <a href="#" class="zoom-out" onclick="change('#mapa-1-1')"><span class="icn icn-menos icn-light carousel-btn"></span></a>
+                    </div>
+                </div>        
+                <div id="mapa-1-1-2" class="map-container hidden">
+                    <img alt="#" src="/images/mapa 1-1-2.jpg"/>
+                    <div id="NAV-ID" class="crsl-nav">
+                        <a href="#" class="next" onclick="change('#mapa-1-2-1')"><span class="icn icn-navizquierda icn-light carousel-btn"></span></a>
+                        <a href="#" class="top" onclick="change('#mapa-1-1-1')"><span class="icn icn-navarriba icn-light carousel-btn"></span></a>
+                        <a href="#" class="zoom-out" onclick="change('#mapa-1-1')"><span class="icn icn-menos icn-light carousel-btn"></span></a>
+                    </div>
+                </div> 
+                <div id="mapa-1-2-1" class="map-container hidden">
+                    <img alt="#" src="/images/mapa 1-2-1.jpg"/>
+                    <div id="NAV-ID" class="crsl-nav">
+                        <a href="#" class="previous" onclick="change('#mapa-1-1-2')"><span class="icn icn-navizquierda icn-light carousel-btn"></span></a>
+                        <a href="#" class="top" onclick="change('#mapa-1-2-2')"><span class="icn icn-navarriba icn-light carousel-btn"></span></a>
+                        <a href="#" class="zoom-out" onclick="change('#mapa-1-1')"><span class="icn icn-menos icn-light carousel-btn"></span></a>
+                    </div>
+                </div> 
+                <div id="mapa-1-2-2" class="map-container hidden">
+                    <img alt="#" src="/images/mapa 1-2-2.jpg"/>
+                    <div id="NAV-ID" class="crsl-nav">
+                        <a href="#" class="previous"  onclick="change('#mapa-1-1-1')"><span class="icn icn-navizquierda icn-light carousel-btn"></span></a>
+                        <a href="#" class="bottom" onclick="change('#mapa-1-2-1')"><span class="icn icn-navabajo icn-light carousel-btn"></span></a>
+                        <a href="#" class="zoom-out" onclick="change('#mapa-1-2')"><span class="icn icn-menos icn-light carousel-btn"></span></a>
+                    </div>
+                </div> 
             </div>
         </div>
-    </div>
+    </section>
 </section>
+{% endblock %}
+{% block js %}
+<script type="text/javascript">
+    
+    function change(id){
+        allHidden();
+        $(id).removeClass('hidden');
+    }
+
+    function allHidden(){
+        $('.map-container').addClass('hidden');
+    }
+</script>
 {% endblock %}
