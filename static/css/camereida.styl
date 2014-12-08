@@ -70,6 +70,10 @@ footer
         a 
             text-decoration underline
 
+        a:hover
+            text-decoration underline
+            color #cc0000 
+
     .icn
         margin-right 20px
         left auto
@@ -148,9 +152,16 @@ p, li
 li
     margin-bottom 16px
 
+h3, h4, h5, h6
+    margin-bottom 40px
+
 p
     a
         text-decoration underline
+
+    a:hover
+        text-decoration underline
+        color #cc0000
 
 body
     margin auto
@@ -227,7 +238,7 @@ header
 
     .bottom
         bottom 0
-        right 1px
+        
 
 .secondary
     padding-top 160px
@@ -335,6 +346,20 @@ a
         h3
             margin-bottom 0
 
+.lenguajes
+    display table
+
+    .amereida-btn
+        @extends .box
+        font-size 11px
+        border-color white
+
+        p
+            text-transform none
+
+    .amereida-btn:hover, .active
+        border-color #999999    
+
 .nav.navbar-nav
     margin-top 20px
     margin-left 0%
@@ -411,7 +436,7 @@ a:hover, a:focus
     background-color transparent
     border none
 
-.pagination>li>a:hover, .red
+.pagination>li>a:hover, .red, .zona-nota
     color:#cc0000
     background-color transparent
 
@@ -440,14 +465,6 @@ form
 
 .amereida-btn:hover, select:hover, .pagination:hover, .form-control:focus
     border-color #CC0000
-
-.map-1
-    background-image url("/images/Mapa idea-12.jpg")
-    background-position center 74%
-
-.map-2
-    background-image url("/images/Mapa idea-12.jpg")
-    background-position center 35%
 
 .main-wrapper
 
@@ -545,11 +562,23 @@ article, .article-head
         margin-top 0
         padding-top 0
 
+    .zona-content
+
+        h2
+            font-weight normal
+            color inherit
+
+.amereida-btn
+
+    .icn-equis
+        display block
+        text-align right
+
 .map-container
-    overflow auto
     position relative
-    display inline-block
-    margin auto 0 auto
+    margin auto 0 
+    display -webkit-box
+    width 100%
 
     img
         width 100%
@@ -609,7 +638,7 @@ li
     padding-top 49px
     margin-top 85px
 
-    .col-md-10
+    .col-md-10, .col-md-8
         margin 0 auto 0
         float none
         text-align center
@@ -623,6 +652,22 @@ li
         .obra-img
             height 215px
 
+        .amereida-btn
+            padding 6px 6px 17px
+            margin-bottom 24px
+
+        #simbologia
+
+            span
+                margin 5px
+
+
+    .col-md-8
+
+        .obra-caption
+            height 130px
+            padding-bottom 0
+
 .galeria-content
     margin-top 0
     border-top none
@@ -631,8 +676,11 @@ li
     border-top none
     background-color #f7f7f7
     position relative
-    padding 106px 0
+    padding 146px 0
     margin 0
+
+    img
+        width 100%
 
 .background-1
     background-image url("/images/2792198137_c31546b063_b.jpg")
@@ -731,7 +779,7 @@ li
         left 50%
 
     .bottom
-        bottom 0 
+        bottom 0
         top auto
         left 50%
 
@@ -766,6 +814,18 @@ li
 .obra-8
     background-image url("/images/taller-del-escultor.png")
 
+.obra-9
+    background-image url("/images/mesa-del-entreacto.png")
+
+.obra-10
+    background-image url("/images/hospederia-de-la-rosa-de-los-vientos-o-las-celdas.png")
+
+.obra-11
+    background-image url("/images/anfiteatro-al-aire-libre-510x340.png")
+
+.obra-12
+    background-image url("/images/jardin-cenotafio-de-bo.png")
+
 .obra-caption
     background-color #f7f7f7
     height 170px
@@ -776,7 +836,7 @@ li
     margin 0 auto 0
 
     h3
-        margin-top 11px
+        margin 11px 0 10px
 
     span
         display block
@@ -798,11 +858,16 @@ figcaption
 
 .tweet
     width 100%
-    overflow auto
+    overflow hidden
 
     a
         padding 0
         display block
+
+    p
+
+        a
+            display inline
 
     .date
         float right

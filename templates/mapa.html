@@ -1,141 +1,232 @@
 {% extends "base.html" %}
 {% block content %}
-
-<section class="main-wrapper article map-section">
-    <h1>Mapa de Ciudad Abierta</h1>
-</section>
-
-<div id="mapa-1" class="map-container">
-    <img id="mapa-1" alt="#" src="/images/mapa 1.jpg"/>
-    <div id="NAV-ID" class="crsl-nav">
-        <div class="zona first" onclick="change('#mapa-1-2');some('#some');">
-            <h2>Zona Alta</h2>
-        </div>
-        <div class="zona second" onclick="change('#mapa-1-1')">
+<section class="map-section">
+    <div class="main-wrapper article">
+        <h1>Mapa de Ciudad Abierta</h1>
+    </div>
+    <section class="clearfix bottom-content">
+        <div class="col-md-10">
+            <div id="mapa-1" class="map-container">
+                <img id="mapa-1" alt="#" src="/images/mapa 1.jpg"/>
+                <div id="NAV-ID" class="crsl-nav">
+                    <div class="zona first" onclick="change('#mapa-1-2');show('#zona-alta');">
+                        <h2>Zona Alta</h2>
+                    </div>
+                    <div class="zona second" onclick="change('#mapa-1-1');show('#zona-baja')">
+                        <h2>Zona Baja</h2>
+                    </div>
+                </div>
+            </div>   
+            <div id="mapa-1-1" class="map-container hidden">
+                <img alt="#" src="/images/mapa 1-1.jpg"/>
+                <div id="NAV-ID" class="crsl-nav">
+                    <a href="#" class="next"  onclick="change('#mapa-1-2');show('#zona-alta')"><span class="icn icn-nav icn-light carousel-btn"></span></a>
+                    <a href="#" class="zoom-out" onclick="change('#mapa-1')"><span class="icn icn-menos icn-light carousel-btn"></span></a>
+                    <div class="zona third" onclick="change('#mapa-1-1-1');show('#simbologia')">
+                        <h2>Vega</h2>
+                    </div>
+                    <div class="zona fourth" onclick="change('#mapa-1-1-2');show('#simbologia')">
+                        <h2>Entrada</h2>
+                    </div>
+                </div>
+            </div> 
+            <div id="mapa-1-2" class="map-container hidden">
+                <img alt="#" src="/images/mapa 1-2.jpg"/>
+                <div id="NAV-ID" class="crsl-nav">
+                    <a href="#" class="previous" onclick="change('#mapa-1-1');show('#zona-baja')"><span class="icn icn-navizquierda icn-light carousel-btn"></span></a>
+                    <a href="#" class="zoom-out" onclick="change('#mapa-1')"><span class="icn icn-menos icn-light carousel-btn"></span></a>
+                    <div class="zona third" onclick="change('#mapa-1-2-2');show('#simbologia')">
+                        <h2>Pradera</h2>
+                    </div>
+                    <div class="zona fourth" onclick="change('#mapa-1-2-1');show('#simbologia')">
+                        <h2>Quebrada</h2>
+                    </div>
+                </div>
+            </div> 
+            <div id="mapa-1-1-1" class="map-container hidden">
+                <img alt="#" src="/images/mapa 1-1-1.jpg"/>
+                <div id="NAV-ID" class="crsl-nav">
+                    <a href="#" class="next" onclick="change('#mapa-1-2-2');show('#simbologia')"><span class="icn icn-nav icn-light carousel-btn"></span></a>
+                    <a href="#" class="bottom" onclick="change('#mapa-1-1-2');show('#simbologia')"><span class="icn icn-navabajo icn-light carousel-btn"></span></a>
+                    <a href="#" class="zoom-out" onclick="change('#mapa-1-1');show('#zona-baja')"><span class="icn icn-menos icn-light carousel-btn"></span></a>
+                    <!--
+                    <a class="pin-map" href=""><span class="icon-obra-interior"></span></a>
+                    <a class="pin-map" href=""><span class="icon-obra-interior"></span></a>
+                    <a class="pin-map" href=""><span class="icon-obra-interior"></span></a>
+                    <a class="pin-map" href=""><span class="icon-obra-interior"></span></a>
+                    <a class="pin-map" href=""><span class="icon-escultura"></span></a>
+                    <a class="pin-map" href=""><span class="icon-escultura"></span></a>
+                    <a class="pin-map" href=""><span class="icon-escultura"></span></a>
+                    <a class="pin-map" href=""><span class="icon-escultura"></span></a>
+                    <a class="pin-map" href=""><span class="icon-escultura"></span></a>
+                    <a class="pin-map" href=""><span class="icon-banio"></span></a>
+                -->
+                </div>
+            </div>        
+            <div id="mapa-1-1-2" class="map-container hidden">
+                <img alt="#" src="/images/mapa 1-1-2.jpg"/>
+                <div id="NAV-ID" class="crsl-nav">
+                    <a href="#" class="next" onclick="change('#mapa-1-2-1');show('#simbologia')"><span class="icn icn-nav icn-light carousel-btn"></span></a>
+                    <a href="#" class="top" onclick="change('#mapa-1-1-1');show('#simbologia')"><span class="icn icn-navarriba icn-light carousel-btn"></span></a>
+                    <a href="#" class="zoom-out" onclick="change('#mapa-1-1');show('#zona-baja')"><span class="icn icn-menos icn-light carousel-btn"></span></a>
+                    <!--
+                    <a  class="pin-map" href=""><span class="icon-obra-interior"></span></a>
+                    <a  class="pin-map" href=""><span class="icon-obra-interior"></span></a>
+                    <a class="pin-map"  href=""><span class="icon-obra-interior"></span>
+                    <a  class="pin-map" href=""><span class="icon-obra-interior"></span></a>
+                    <a  class="pin-map" href=""><span class="icon-obra-interior"></span></a>
+                    <a  class="pin-map" href=""><span class="icon-obra-interior"></span></a>
+                    <a  class="pin-map" href=""><span class="icon-obra-interior"></span></a>
+                    <a  class="pin-map" href=""><span class="icon-obra-interior"></span></a>
+                    <a  class="pin-map" href=""><span class="icon-obra-interior"></span></a>
+                    <a  class="pin-map" href=""><span class="icon-obra-interior"></span></a>
+                    <a  class="pin-map" href=""><span class="icon-entrada"></span></a>
+                    <a  class="pin-map" href=""><span class="icon-escultura"></span></a>
+                    <a  class="pin-map" href=""><span class="icon-escultura"></span></a>
+                    <a  class="pin-map" href=""><span class="icon-escultura"></span></a>
+                    <a  class="pin-map" href=""><span class="icon-escultura"></span></a>
+                    <a  class="pin-map" href=""><span class="icon-escultura"></span></a>
+                    <a  class="pin-map" href=""><span class="icon-obra-exterior"></span></a>
+                    <a  class="pin-map" href=""><span class="icon-obra-exterior"></span></a>
+                    <a  class="pin-map" href=""><span class="icon-estacionamiento"></span></a>-->
+                </div>
+            </div> 
+            <div id="mapa-1-2-1" class="map-container hidden">
+                <img alt="#" src="/images/mapa 1-2-1.jpg"/>
+                <div id="NAV-ID" class="crsl-nav">
+                    <a href="#" class="previous" onclick="change('#mapa-1-1-2');show('#simbologia')"><span class="icn icn-navizquierda icn-light carousel-btn"></span></a>
+                    <a href="#" class="top" onclick="change('#mapa-1-2-2');show('#simbologia')"><span class="icn icn-navarriba icn-light carousel-btn"></span></a>
+                    <a href="#" class="zoom-out" onclick="change('#mapa-1-1');show('#zona-baja')"><span class="icn icn-menos icn-light carousel-btn"></span></a>
+                    <!--
+                    <a class="pin-map" href=""><span class="icon-obra-interior"></span></a>
+                    <a class="pin-map" href=""><span class="icon-obra-interior"></span></a>
+                    <a class="pin-map" href=""><span class="icon-escultura"></span></a>
+                    <a class="pin-map" href=""><span class="icon-escultura"></span></a>
+                    <a class="pin-map" href=""><span class="icon-escultura"></span></a>
+                    <a class="pin-map" href=""><span class="icon-obra-exterior"></span></a>
+                    <a class="pin-map" href=""><span class="icon-obra-exterior"></span></a>
+                    <a class="pin-map" href=""><span class="icon-obra-exterior"></span></a>
+                    <a class="pin-map" href=""><span class="icon-obra-exterior"></span></a>
+                -->
+                </div>
+            </div> 
+            <div id="mapa-1-2-2" class="map-container hidden">
+                <img alt="#" src="/images/mapa 1-2-2.jpg"/>
+                <div id="NAV-ID" class="crsl-nav">
+                    <a href="#" class="previous"  onclick="change('#mapa-1-1-1');show('#simbologia')"><span class="icn icn-navizquierda icn-light carousel-btn"></span></a>
+                    <a href="#" class="bottom" onclick="change('#mapa-1-2-1');show('#simbologia')"><span class="icn icn-navabajo icn-light carousel-btn"></span></a>
+                    <a href="#" class="zoom-out" onclick="change('#mapa-1-2');show('#zona-alta')"><span class="icn icn-menos icn-light carousel-btn"></span></a>
+                    <!--
+                    <a class="pin-map" href=""><span class="icon-entrada"></span></a>
+                    <a class="pin-map" href=""><span class="icon-obra-exterior"></span></a>
+                    <a class="pin-map" href=""><span class="icon-obra-exterior"></span></a>
+                    <a class="pin-map" href=""><span class="icon-obra-exterior"></span></a>
+                    <a class="pin-map" href=""><span class="icon-obra-exterior"></span></a>
+                    <a class="pin-map" href=""><span class="icon-escultura"></span></a>
+                    <a class="pin-map" href=""><span class="icon-escultura"></span></a>
+                    <a class="pin-map" href=""><span class="icon-escultura"></span></a>
+                    <a class="pin-map" href=""><span class="icon-obra-interior"></span></a>
+                    <a class="pin-map" href=""><span class="icon-obra-interior"></span></a>
+                    <a class="pin-map"  class="pin-map"href=""><span class="icon-obra-interior"></span></a>
+                    <a class="pin-map" href=""><span class="icon-obra-interior"></span></a>
+                    <a class="pin-map" href=""><span class="icon-agora"></span></a>
+                    <a  class="pin-map" href=""><span class="icon-estacionamiento"></span></a>
+                -->
+                </div>
+            </div> 
+            <div id="rotate-device" class="main-wrapper article">
+                <p class="amereida-btn visible-xs" ><span class="icn icn-equis" onclick="hide('#rotate-device')"></span>Para ver mejor el mapa gira tu dispositivo horizontalmente</p>
+            </div>
+            <div class="main-wrapper article">
+                <div class="map-container hidden" id="simbologia">
+                    <span class="icon-obra-exterior"></span><span> Obra Exterior</span>
+                    <span class="icon-obra-interior"></span><span> Obra Interior</span>
+                    <span class="icon-escultura"></span><span> Escultura</span>
+                    <span class="icon-agora"></span><span> Ágora</span>
+                    <span class="icon-entrada"></span><span> Entrada</span>
+                    <span class="icon-estacionamiento"></span><span> Estacionamiento</span>
+                    <span class="icon-banio"></span><span> Baños</span>
+                </div>
+            </div>
+        <div>
+    </section>
+    <!--Zona Baja-->
+    <section id="zona-baja" class="clearfix bottom-content map-container hidden">
+        <div class="col-md-8 zona-content">
             <h2>Zona Baja</h2>
-        </div>
-    </div>
-</div>   
-<div id="mapa-1-1" class="map-container hidden">
-    <img alt="#" src="/images/mapa 1-1.jpg"/>
-    <div id="NAV-ID" class="crsl-nav">
-        <a href="#" class="next"  onclick="change('#mapa-1-2')"><span class="icn icn-nav icn-light carousel-btn"></span></a>
-        <a href="#" class="zoom-out" onclick="change('#mapa-1')"><span class="icn icn-menos icn-light carousel-btn"></span></a>
-        <div class="zona third" onclick="change('#mapa-1-1-1')">
-            <h2>Vega</h2>
-        </div>
-        <div class="zona fourth" onclick="change('#mapa-1-1-2')">
-            <h2>Entrada</h2>
-        </div>
-    </div>
-</div> 
-<div id="mapa-1-2" class="map-container hidden">
-    <img alt="#" src="/images/mapa 1-2.jpg"/>
-    <div id="NAV-ID" class="crsl-nav">
-        <a href="#" class="previous" onclick="change('#mapa-1-1')"><span class="icn icn-navizquierda icn-light carousel-btn"></span></a>
-        <a href="#" class="zoom-out" onclick="change('#mapa-1')"><span class="icn icn-menos icn-light carousel-btn"></span></a>
-        <div class="zona third" onclick="change('#mapa-1-2-2')">
-            <h2>Pradera</h2>
-        </div>
-        <div class="zona fourth" onclick="change('#mapa-1-2-1')">
-            <h2>Quebrada</h2>
-        </div>
-    </div>
-</div> 
-<div id="mapa-1-1-1" class="map-container hidden">
-    <img alt="#" src="/images/mapa 1-1-1.jpg"/>
-    <div id="NAV-ID" class="crsl-nav">
-        <a href="#" class="next" onclick="change('#mapa-1-2-2')"><span class="icn icn-nav icn-light carousel-btn"></span></a>
-        <a href="#" class="bottom" onclick="change('#mapa-1-1-2')"><span class="icn icn-navabajo icn-light carousel-btn"></span></a>
-        <a href="#" class="zoom-out" onclick="change('#mapa-1-1')"><span class="icn icn-menos icn-light carousel-btn"></span></a>
-        <!--
-        <a class="pin-map" href=""><span class="icon-obra-interior"></span></a>
-        <a class="pin-map" href=""><span class="icon-obra-interior"></span></a>
-        <a class="pin-map" href=""><span class="icon-obra-interior"></span></a>
-        <a class="pin-map" href=""><span class="icon-obra-interior"></span></a>
-        <a class="pin-map" href=""><span class="icon-escultura"></span></a>
-        <a class="pin-map" href=""><span class="icon-escultura"></span></a>
-        <a class="pin-map" href=""><span class="icon-escultura"></span></a>
-        <a class="pin-map" href=""><span class="icon-escultura"></span></a>
-        <a class="pin-map" href=""><span class="icon-escultura"></span></a>
-        <a class="pin-map" href=""><span class="icon-banio"></span></a>
-    -->
-    </div>
-</div>        
-<div id="mapa-1-1-2" class="map-container hidden">
-    <img alt="#" src="/images/mapa 1-1-2.jpg"/>
-    <div id="NAV-ID" class="crsl-nav">
-        <a href="#" class="next" onclick="change('#mapa-1-2-1')"><span class="icn icn-navizquierda icn-light carousel-btn"></span></a>
-        <a href="#" class="top" onclick="change('#mapa-1-1-1')"><span class="icn icn-navarriba icn-light carousel-btn"></span></a>
-        <a href="#" class="zoom-out" onclick="change('#mapa-1-1')"><span class="icn icn-menos icn-light carousel-btn"></span></a>
-        <!--
-        <a  class="pin-map" href=""><span class="icon-obra-interior"></span></a>
-        <a  class="pin-map" href=""><span class="icon-obra-interior"></span></a>
-        <a class="pin-map"  href=""><span class="icon-obra-interior"></span>
-        <a  class="pin-map" href=""><span class="icon-obra-interior"></span></a>
-        <a  class="pin-map" href=""><span class="icon-obra-interior"></span></a>
-        <a  class="pin-map" href=""><span class="icon-obra-interior"></span></a>
-        <a  class="pin-map" href=""><span class="icon-obra-interior"></span></a>
-        <a  class="pin-map" href=""><span class="icon-obra-interior"></span></a>
-        <a  class="pin-map" href=""><span class="icon-obra-interior"></span></a>
-        <a  class="pin-map" href=""><span class="icon-obra-interior"></span></a>
-        <a  class="pin-map" href=""><span class="icon-entrada"></span></a>
-        <a  class="pin-map" href=""><span class="icon-escultura"></span></a>
-        <a  class="pin-map" href=""><span class="icon-escultura"></span></a>
-        <a  class="pin-map" href=""><span class="icon-escultura"></span></a>
-        <a  class="pin-map" href=""><span class="icon-escultura"></span></a>
-        <a  class="pin-map" href=""><span class="icon-escultura"></span></a>
-        <a  class="pin-map" href=""><span class="icon-obra-exterior"></span></a>
-        <a  class="pin-map" href=""><span class="icon-obra-exterior"></span></a>
-        <a  class="pin-map" href=""><span class="icon-estacionamiento"></span></a>-->
-    </div>
-</div> 
-<div id="mapa-1-2-1" class="map-container hidden">
-    <img alt="#" src="/images/mapa 1-2-1.jpg"/>
-    <div id="NAV-ID" class="crsl-nav">
-        <a href="#" class="previous" onclick="change('#mapa-1-1-2')"><span class="icn icn-navizquierda icn-light carousel-btn"></span></a>
-        <a href="#" class="top" onclick="change('#mapa-1-2-2')"><span class="icn icn-navarriba icn-light carousel-btn"></span></a>
-        <a href="#" class="zoom-out" onclick="change('#mapa-1-1')"><span class="icn icn-menos icn-light carousel-btn"></span></a>
-        <!--
-        <a class="pin-map" href=""><span class="icon-obra-interior"></span></a>
-        <a class="pin-map" href=""><span class="icon-obra-interior"></span></a>
-        <a class="pin-map" href=""><span class="icon-escultura"></span></a>
-        <a class="pin-map" href=""><span class="icon-escultura"></span></a>
-        <a class="pin-map" href=""><span class="icon-escultura"></span></a>
-        <a class="pin-map" href=""><span class="icon-obra-exterior"></span></a>
-        <a class="pin-map" href=""><span class="icon-obra-exterior"></span></a>
-        <a class="pin-map" href=""><span class="icon-obra-exterior"></span></a>
-        <a class="pin-map" href=""><span class="icon-obra-exterior"></span></a>
-    -->
-    </div>
-</div> 
-<div id="mapa-1-2-2" class="map-container hidden">
-    <img alt="#" src="/images/mapa 1-2-2.jpg"/>
-    <div id="NAV-ID" class="crsl-nav">
-        <a href="#" class="previous"  onclick="change('#mapa-1-1-1')"><span class="icn icn-navizquierda icn-light carousel-btn"></span></a>
-        <a href="#" class="bottom" onclick="change('#mapa-1-2-1')"><span class="icn icn-navabajo icn-light carousel-btn"></span></a>
-        <a href="#" class="zoom-out" onclick="change('#mapa-1-2')"><span class="icn icn-menos icn-light carousel-btn"></span></a>
-        <!--
-        <a class="pin-map" href=""><span class="icon-entrada"></span></a>
-        <a class="pin-map" href=""><span class="icon-obra-exterior"></span></a>
-        <a class="pin-map" href=""><span class="icon-obra-exterior"></span></a>
-        <a class="pin-map" href=""><span class="icon-obra-exterior"></span></a>
-        <a class="pin-map" href=""><span class="icon-obra-exterior"></span></a>
-        <a class="pin-map" href=""><span class="icon-escultura"></span></a>
-        <a class="pin-map" href=""><span class="icon-escultura"></span></a>
-        <a class="pin-map" href=""><span class="icon-escultura"></span></a>
-        <a class="pin-map" href=""><span class="icon-obra-interior"></span></a>
-        <a class="pin-map" href=""><span class="icon-obra-interior"></span></a>
-        <a class="pin-map"  class="pin-map"href=""><span class="icon-obra-interior"></span></a>
-        <a class="pin-map" href=""><span class="icon-obra-interior"></span></a>
-        <a class="pin-map" href=""><span class="icon-agora"></span></a>
-        <a  class="pin-map" href=""><span class="icon-estacionamiento"></span></a>
-    -->
-    </div>
-</div> 
-<div id="some">
-    <p class="amereida-btn visible-xs">Para ver mejor el mapa gira tu dispositivo horizontalmente</p>
-</div>
+            <h3>Obras Destacadas</h3>
+            <div class="col-md-4 column">
+                <figure class="obra-img obra-9">
+                </figure>
+                <div class="obra-caption">
+                    <figcaption class="center-container">
+                        <span class="icon-obra-exterior"></span>
+                        <h4>Mesa del Entracto</h4>
+                    </figcaption>
+                </div>
+            </div>
+            <div class="col-md-4 column">
+                <figure class="obra-img obra-5">
+                </figure>
+                <div class="obra-caption">
+                    <figcaption class="center-container">
+                        <span class="icon-obra-interior"></span>
+                        <h4>Hospedería Colgante</h4>
+                    </figcaption>
+                </div>
+            </div>
+            <div class="col-md-4 column">
+                <figure class="obra-img obra-10">
+                </figure>
+                <div class="obra-caption">
+                    <figcaption class="center-container">
+                        <span class="icon-obra-interior"></span>
+                        <h4>Las Celdas</h4>
+                    </figcaption>
+                </div>
+            </div>
+        <div>
+        <span class="zona-nota"><span class="icn icn-mapa icn-light"></span> Ubicación Entrada</span> Desde Concón, tomando la ruta F-30-E. Al pasar el Hotel Mantagua, un kilómetro más ayá -en la verma que está en dirección a la costa- se ve el portón.</span>
+    </section>
+     <!--Zona Alta-->
+    <section id="zona-alta" class="clearfix bottom-content map-container hidden">
+        <div class="col-md-8 zona-content">
+            <h2>Zona Alta</h2>
+            <h3>Obras Destacadas</h3>
+            <div class="col-md-4 column">
+                <figure class="obra-img obra-11">
+                </figure>
+                <div class="obra-caption">
+                    <figcaption class="center-container">
+                        <span class="icon-obra-exterior"></span>
+                        <h4>Anfiteatro</h4>
+                    </figcaption>
+                </div>
+            </div>
+            <div class="col-md-4 column">
+                <figure class="obra-img obra-3">
+                </figure>
+                <div class="obra-caption">
+                    <figcaption class="center-container">
+                        <span class="icon-obra-interior"></span>
+                        <h4>Hospedería del Errante</h4>
+                    </figcaption>
+                </div>
+            </div>
+            <div class="col-md-4 column">
+                <figure class="obra-img obra-8">
+                </figure>
+                <div class="obra-caption">
+                    <figcaption class="center-container">
+                        <span class="icon-obra-exterior"></span>
+                        <h4>Jardín de Bo</h4>
+                    </figcaption>
+                </div>
+            </div>
+        <div>
+        <span class="zona-nota"><span class="icn icn-mapa icn-light"></span> Ubicación Entrada</span> Desde Concón, tomando la ruta F-30-E. Al pasar el Hotel Mantagua, un kilómetro más ayá -en la verma que está en dirección a la costa- se ve el portón de la Zona Baja. 400 metros después aproximadamente -hacia el lado del cerro- está el portón de la Zona Alta.</span>
+    </section>
+</section>
 
 {% endblock %}
 {% block js %}
@@ -150,8 +241,11 @@
         $('.map-container').addClass('hidden');
     }
 
-    function some(id){
+    function show(id){
         $(id).removeClass('hidden');
+    }
+    function hide(id){
+        $(id).addClass('hidden');
     }
 </script>
 {% endblock %}
