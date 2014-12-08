@@ -9,7 +9,7 @@
                 <div id="mapa-1" class="map-container">
                     <img id="mapa-1" alt="#" src="/images/mapa 1.jpg"/>
                     <div id="NAV-ID" class="crsl-nav">
-                        <div class="zona first" onclick="change('#mapa-1-2')">
+                        <div class="zona first" onclick="change('#mapa-1-2');some('#some');">
                             <h2>Zona Alta</h2>
                         </div>
                         <div class="zona second" onclick="change('#mapa-1-1')">
@@ -127,6 +127,9 @@
                         <a  class="pin-map" href=""><span class="icon-estacionamiento"></span></a>
                     </div>
                 </div> 
+                <div id="some" class="map-container hidden">
+                    Holi soy un div caquita
+                </div>
             </div>
         </div>
     </section>
@@ -142,6 +145,10 @@
 
     function allHidden(){
         $('.map-container').addClass('hidden');
+    }
+
+    function some(id){
+        $(id).removeClass('hidden');
     }
 </script>
 {% endblock %}
