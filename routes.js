@@ -1,75 +1,14 @@
-var database = database = require('./database.json');
-
-function indexController(req, res){
-    res.render('index',{
-        noticias: database.noticias,
-        obras: database.obras
-    });
-}
-
-function corporacionController(req, res){
-    res.render('corporacion');
-}
-
-function sobreController(req, res){
-    res.render('sobre');
-    console.log("muestra Git");
-}
-
-function visitaController(req, res){
-    res.render('visita',{
-        reglas: database.reglas
-    });
-}
-
-function obrasController(req, res){
-    res.render('obras',{
-        obras: database.obras
-    });
-}
-
-function obraController(req, res){
-    var obras = database.obras,
-        obra = null;
-
-    obra = obras.filter(function(o){
-        return o.slug = req.params.slug;
-    });
-
-    console.log('llegue a obra de un algo : ' + req.params.slug);
-
-    obra = obra[0] || {};
-    res.render('obra');
-}
-
-function comoLlegarController(req, res){
-    res.render('como_llegar');
-}
-
-function mapaController(req, res){
-    res.render('mapa');
-}
-
-function recorridoController(req, res){
-    res.render('recorrido');
-}
-
-function noticiasController(req, res){
-    res.render('noticias',{
-        noticias: database.noticias
-    });
-}
-
-function noticiaController(req, res){
-    var tmp = [];
-
-    tmp.push(database.noticias[0]);
-    tmp.push(database.noticias[1]);
-
-    res.render('noticia',{
-        noticias: tmp
-    });
-}
+var indexController = require('./controllers/index_controller.js'),
+    corporacionController = require('./controllers/corporacion_controller.js'),
+    sobreController = require('./controllers/sobre_controller.js'),
+    visitaController = require('./controllers/visita_controller.js'),
+    obrasController = require('./controllers/obras_controller.js'),
+    obraController = require('./controllers/obra_controller.js'),
+    comoLlegarController = require('./controllers/como_llegar_controller.js'),
+    mapaController = require('./controllers/mapa_controller.js'),
+    recorridoController = require('./controllers/recorrido_controller.js'),
+    noticiasController = require('./controllers/noticias_controller.js'),
+    noticiaController = require('./controllers/noticia_controller.js');
 
 function addRoutes(app){
     app.get('/', indexController);
