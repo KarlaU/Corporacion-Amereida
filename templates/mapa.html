@@ -7,7 +7,7 @@
     <section class="clearfix bottom-content">
         <div class="col-md-10">
             <div id="mapa-1" class="map-container">
-                <img id="mapa-1" alt="#" src="/images/mapa 1.jpg"/>
+                <img id="mapa-1" alt="#" src="{{ assets }}/images/mapa 1.jpg"/>
                 <div id="NAV-ID" class="crsl-nav">
                     <div class="zona first" onclick="change('#mapa-1-2');show('#zona-alta');">
                         <h2>Zona Alta</h2>
@@ -16,9 +16,9 @@
                         <h2>Zona Baja</h2>
                     </div>
                 </div>
-            </div>   
+            </div>
             <div id="mapa-1-1" class="map-container hidden">
-                <img alt="#" src="/images/mapa 1-1.jpg"/>
+                <img alt="#" src="{{ assets }}/images/mapa 1-1.jpg"/>
                 <div id="NAV-ID" class="crsl-nav">
                     <a href="#" class="next"  onclick="change('#mapa-1-2');show('#zona-alta')"><span class="icn icn-nav icn-light carousel-btn"></span></a>
                     <a href="#" class="zoom-out" onclick="change('#mapa-1')"><span class="icn icn-menos icn-light carousel-btn"></span></a>
@@ -29,9 +29,9 @@
                         <h2>Entrada</h2>
                     </div>
                 </div>
-            </div> 
+            </div>
             <div id="mapa-1-2" class="map-container hidden">
-                <img alt="#" src="/images/mapa 1-2.jpg"/>
+                <img alt="#" src="{{ assets }}/images/mapa 1-2.jpg"/>
                 <div id="NAV-ID" class="crsl-nav">
                     <a href="#" class="previous" onclick="change('#mapa-1-1');show('#zona-baja')"><span class="icn icn-navizquierda icn-light carousel-btn"></span></a>
                     <a href="#" class="zoom-out" onclick="change('#mapa-1')"><span class="icn icn-menos icn-light carousel-btn"></span></a>
@@ -42,9 +42,9 @@
                         <h2>Quebrada</h2>
                     </div>
                 </div>
-            </div> 
+            </div>
             <div id="mapa-1-1-1" class="map-container hidden">
-                <img alt="#" src="/images/mapa 1-1-1.jpg"/>
+                <img alt="#" src="{{ assets }}/images/mapa 1-1-1.jpg"/>
                 <div id="NAV-ID" class="crsl-nav">
                     <a href="#" class="next" onclick="change('#mapa-1-2-2');show('#simbologia')"><span class="icn icn-nav icn-light carousel-btn"></span></a>
                     <a href="#" class="bottom" onclick="change('#mapa-1-1-2');show('#simbologia')"><span class="icn icn-navabajo icn-light carousel-btn"></span></a>
@@ -62,9 +62,9 @@
                     <a class="pin-map" href=""><span class="icon-banio"></span></a>
                 -->
                 </div>
-            </div>        
+            </div>
             <div id="mapa-1-1-2" class="map-container hidden">
-                <img alt="#" src="/images/mapa 1-1-2.jpg"/>
+                <img alt="#" src="{{ assets }}/images/mapa 1-1-2.jpg"/>
                 <div id="NAV-ID" class="crsl-nav">
                     <a href="#" class="next" onclick="change('#mapa-1-2-1');show('#simbologia')"><span class="icn icn-nav icn-light carousel-btn"></span></a>
                     <a href="#" class="top" onclick="change('#mapa-1-1-1');show('#simbologia')"><span class="icn icn-navarriba icn-light carousel-btn"></span></a>
@@ -90,9 +90,9 @@
                     <a  class="pin-map" href=""><span class="icon-obra-exterior"></span></a>
                     <a  class="pin-map" href=""><span class="icon-estacionamiento"></span></a>-->
                 </div>
-            </div> 
+            </div>
             <div id="mapa-1-2-1" class="map-container hidden">
-                <img alt="#" src="/images/mapa 1-2-1.jpg"/>
+                <img alt="#" src="{{ assets }}/images/mapa 1-2-1.jpg"/>
                 <div id="NAV-ID" class="crsl-nav">
                     <a href="#" class="previous" onclick="change('#mapa-1-1-2');show('#simbologia')"><span class="icn icn-navizquierda icn-light carousel-btn"></span></a>
                     <a href="#" class="top" onclick="change('#mapa-1-2-2');show('#simbologia')"><span class="icn icn-navarriba icn-light carousel-btn"></span></a>
@@ -109,9 +109,9 @@
                     <a class="pin-map" href=""><span class="icon-obra-exterior"></span></a>
                 -->
                 </div>
-            </div> 
+            </div>
             <div id="mapa-1-2-2" class="map-container hidden">
-                <img alt="#" src="/images/mapa 1-2-2.jpg"/>
+                <img alt="#" src="{{ assets }}/images/mapa 1-2-2.jpg"/>
                 <div id="NAV-ID" class="crsl-nav">
                     <a href="#" class="previous"  onclick="change('#mapa-1-1-1');show('#simbologia')"><span class="icn icn-navizquierda icn-light carousel-btn"></span></a>
                     <a href="#" class="bottom" onclick="change('#mapa-1-2-1');show('#simbologia')"><span class="icn icn-navabajo icn-light carousel-btn"></span></a>
@@ -133,7 +133,7 @@
                     <a  class="pin-map" href=""><span class="icon-estacionamiento"></span></a>
                 -->
                 </div>
-            </div> 
+            </div>
             <div id="rotate-device" class="main-wrapper article">
                 <p class="amereida-btn visible-xs" ><span class="icn icn-equis" onclick="hide('#rotate-device')"></span>Para ver mejor el mapa gira tu dispositivo horizontalmente</p>
             </div>
@@ -231,7 +231,7 @@
 {% endblock %}
 {% block js %}
 <script type="text/javascript">
-    
+
     function change(id){
         allHidden();
         $(id).removeClass('hidden');
