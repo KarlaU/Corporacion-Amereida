@@ -7,14 +7,14 @@ var express = require('express'),
 app.engine('html', swig.renderFile);
 app.set('view engine', 'html');
 app.set('views', __dirname + '/templates');
-app.use(express.static("static"));
+app.use(express.static(__dirname + '/static'));
 app.set('view cache', false);
 
 swig.setDefaults({ cache : false });
 
 addRoutes(app);
 
-app.listen(3000, function(){
+app.listen(20433, function(){
     console.log('estoy entero ready pos oshe');
 });
 
