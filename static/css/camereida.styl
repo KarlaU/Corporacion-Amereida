@@ -2,7 +2,17 @@
 
 claro = #E3E3E3
 
-figure
+.ctm
+    top 21%
+    left 61.5%
+    background-color red
+
+header
+
+    input[type=text]
+        border-width 0
+
+figure, #mygallery img
     -webkit-filter grayscale(100%)
     -moz-filter grayscale(100%)
     filter grayscale(100%)
@@ -12,10 +22,13 @@ figure
     background-size cover
     background-position center
 
-figure:hover
+figure:hover, #mygallery img:hover
     -webkit-filter grayscale(0%)
     -moz-filter grayscale(0%)
     filter grayscale(0%)
+
+#mygallery
+    margin-bottom 25px
 
 .carousel-caption
     position relative
@@ -54,8 +67,12 @@ footer
     h3, h4
         margin 0
 
-        a 
+        a
             text-decoration underline
+
+        a:hover
+            text-decoration underline
+            color #cc0000
 
     .icn
         margin-right 20px
@@ -66,11 +83,11 @@ footer
         padding 0
 
     .amereida-btn
-        width 100% 
+        width 100%
         margin-bottom 20px
         font-size 10px
 
-    .column 
+    .column
         margin-bottom 25px
 
     .column:nth-child(4), .column:nth-child(5)
@@ -78,14 +95,14 @@ footer
         h3
             margin-bottom 10px
 
-h1, h2, .btn-text, .amereida-btn, option, label, select, .pagination, input[placeholder]
+h1, h2, .btn-text, .amereida-btn, option, label, select, .pagination, input[placeholder], .antetitulo
     font-family 'Raleway', sans-serif
     text-transform uppercase
 
-a, input, button, html input[type=button], input[type=reset], input[type=submit], 
+a, input, button, html input[type=button], input[type=reset], input[type=submit],
     text-decoration none
 
-    &:hover 
+    &:hover
         text-decoration none
 
 
@@ -111,7 +128,7 @@ select, .form-group select, .form-group input[type=date]
     -webkit-appearance none
     appearance none
     background url(/images/navabajo.svg) no-repeat 97% center;
-    max-width 
+    max-width
 
 input[placeholder], textarea[placeholder]
     text-align left
@@ -135,9 +152,16 @@ p, li
 li
     margin-bottom 16px
 
+h3, h4, h5, h6
+    margin-bottom 40px
+
 p
     a
         text-decoration underline
+
+    a:hover
+        text-decoration underline
+        color #cc0000
 
 body
     margin auto
@@ -160,18 +184,17 @@ header, label
     font-family 'Raleway', sans-serif
     font-weigth thin
 
-
 header
     border-bottom solid #E3E3E3
     border-top 0
     border-right 0
     border-left 0
     margin-bottom 45px !important
-        
+
     nav
         margin-bottom 11px
 
-        .navbar-collapse 
+        .navbar-collapse
             padding 0
 
         .btn-nav-bar
@@ -198,7 +221,7 @@ header
     width 90%
     margin 0 auto
 
-.main-image-container
+.main-image-container, .gray-content
     position relative
 
     .diagonal
@@ -215,6 +238,7 @@ header
 
     .bottom
         bottom 0
+
 
 .secondary
     padding-top 160px
@@ -235,17 +259,37 @@ section
         margin-left 0px !important
         margin-right 0px !important
 
+.noticia
+
+    .article-head
+
+        span
+            padding 0 !important
+
+        .share
+            padding 24px
+            background-color white
+            position relative
+            top 43px
+
+    .after-head-text
+        margin-top 216px
+
+        img
+            width 100%
+            margin 39px 0 13px
+
 .notas-container
     font-style italic
 
-    h3 
+    h3
         margin-bottom 50px
 
-    li 
+    li
         font-size 14px
         max-width 540px
 
-.text-center 
+.text-center
 
     a
         margin-top 50px
@@ -256,15 +300,10 @@ a
 
 .cargo
     font-size 14px !important
-    
+
 .nombre
     font-size 14px !important
     margin 0px !important
-
-ul.tab-especial
-    li
-        width 50% !important
-        text-align center
 
 #seccion_tabs
 
@@ -297,14 +336,29 @@ ul.tab-especial
     height auto
     border transparent
     box-shadow none
+    text-align left
 
-    .caption 
+    .caption
         padding-top 0
         padding 0
         color inherit
 
         h3
             margin-bottom 0
+
+.lenguajes
+    display table
+
+    .amereida-btn
+        @extends .box
+        font-size 11px
+        border-color white
+
+        p
+            text-transform none
+
+    .amereida-btn:hover, .active
+        border-color #999999
 
 .nav.navbar-nav
     margin-top 20px
@@ -315,6 +369,9 @@ ul.tab-especial
     li
         a
             padding 7px 11px
+
+.nav-tabs>li>a
+    border-radius 0
 
 .nav>li>a:hover, .nav>li>a:focus
     background-color transparent
@@ -329,23 +386,6 @@ a:hover, a:focus
     background-size cover
     background-position center
 
-.noticias
-    overflow auto
-
-    .noticia
-        border 1px solid silver
-        padding 1em
-
-    h2
-        text-transform none
-        font-size 30px
-
-.span-breadcrumb-noticia
-    font-size 12px
-    font-style italic
-    display inline-block
-    margin-bottom 35px
-
 .obra-nav
     position relative
     bottom 150px
@@ -357,8 +397,7 @@ a:hover, a:focus
         width 100%
 
     .obra-caption
-        padding-top 10px
-        padding 28px
+        padding 0 28px 32px
         height auto
 
 .paragraph-container
@@ -367,11 +406,6 @@ a:hover, a:focus
 .sub-titulo
     font-size 16px !important
     margin 0.5em 0 !important
-
-.tab-especial
-    li
-        width 50% !important
-        text-align center
 
 .titulo
     font-size 18px !important
@@ -385,7 +419,7 @@ a:hover, a:focus
         -moz-filter none
         filter none
 
-.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus 
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus
     color inherit
     background-color transparent
     border-right solid thin #cc0000
@@ -402,7 +436,7 @@ a:hover, a:focus
     background-color transparent
     border none
 
-.pagination>li>a:hover
+.pagination>li>a:hover, .red, .zona-nota
     color:#cc0000
     background-color transparent
 
@@ -432,14 +466,6 @@ form
 .amereida-btn:hover, select:hover, .pagination:hover, .form-control:focus
     border-color #CC0000
 
-.map-1
-    background-image url("/images/Mapa idea-12.jpg")
-    background-position center 74%
-
-.map-2
-    background-image url("/images/Mapa idea-12.jpg")
-    background-position center 35%
-
 .main-wrapper
 
     .main-head
@@ -456,7 +482,7 @@ form
     list-style-type none
     padding-left 0
 
-.carousel-control.left, .carousel-control.right 
+.carousel-control.left, .carousel-control.right
     background-image none
 
 .icn, .icon-agora, .icon-banio, .icon-entrada, .icon-escultura, .icon-estacionamiento, .icon-obra-exterior, .icon-obra-interior, .icon-telefono
@@ -474,7 +500,7 @@ form
     width 40px
     margin-bottom 11px
 
-.diagonal 
+.diagonal
     height 100px
     width 100%
     position relative
@@ -488,9 +514,12 @@ article, .article-head
     margin-top 21px
 
 .article
-    
-    h1 
+
+    h1
         margin-bottom 52px
+
+    h2
+        margin-top 24px
 
     section
         padding-bottom 55px
@@ -501,25 +530,157 @@ article, .article-head
 
     .article-head-text
         text-align center
-        overflow auto
         width 100%
         position absolute
-        top 320px
+        top 336px
         padding-bottom 33px
         border-bottom thin solid #c1c1c1
+
+        .red-hr:before
+            margin 0 auto 11px
+
+        .bajada
+            margin auto
+
+        .antetitulo
+            letter-spacing 7px
 
         span
             background-color white
             padding 38px
 
-        h1 
+        h1
             margin-bottom 10px
 
     p
         line-height 1.7em
 
+.map-section
+
+    .bottom-content
+        border-top 0
+        margin-top 0
+        padding-top 0
+
+    .zona-content
+
+        h2
+            font-weight normal
+            color inherit
+
+.amereida-btn
+
+    .icn-equis
+        display block
+        text-align right
+
+.map-container
+    position relative
+    margin auto 0
+    display -webkit-box
+    width 100%
+
+    img
+        width 100%
+
+    .zona
+        position absolute
+        background-color rgba(93 93 93 .3)
+        -ms-display: flex;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition background-color 2s
+
+    .zona:hover
+         background-color rgba(93 93 93 .5)
+
+    .first
+        top 30px
+        right 30px
+        left 51%
+        bottom 30px
+
+    .second
+        bottom 30px
+        right 51%
+        left 30px
+        top 30px
+
+    .third
+        bottom 51%
+        right 30px
+        left 30px
+        top 30px
+
+    .fourth
+        bottom 30px
+        right 30px
+        left 30px
+        top 51%
+
+    h2
+        color white
+        text-align center
+        font-weight bold
+        margin 0 !important
+li
+    list-style none
+
 .after-head-text
     margin-top 116px
+
+    .icn-li
+        position initial
+
+.bottom-content
+    border-top thin solid #c1c1c1
+    padding-top 49px
+    margin-top 85px
+
+    .col-md-10, .col-md-8
+        margin 0 auto 0
+        float none
+        text-align center
+
+        h2
+            margin-bottom 52px
+
+        .col-md-6
+            float left
+
+        .obra-img
+            height 215px
+
+        .amereida-btn
+            padding 6px 6px 17px
+            margin-bottom 24px
+
+        #simbologia
+
+            span
+                margin 5px
+
+
+    .col-md-8
+
+        .obra-caption
+            height 130px
+            padding-bottom 0
+
+.galeria-content
+    margin-top 0
+    border-top none
+
+.gray-content
+    border-top none
+    background-color #f7f7f7
+    position relative
+    padding 146px 0
+    margin 0
+
+    img
+        width 100%
 
 .background-1
     background-image url("/images/2792198137_c31546b063_b.jpg")
@@ -545,14 +706,14 @@ article, .article-head
 .background-8
     background-image url("/images/3082475213_be5ea98825_b.jpg")
 
+.background-noticia
+    background-image url("/images/IMG-20141026-WA00041.jpg")
+
 .carousel-control
     text-shadow none
     font-size 11px
     display inline-block
     opacity 1
-
-    .carousel-btn
-        display none
 
 .icn-navizquierda
     left 0
@@ -564,7 +725,7 @@ article, .article-head
     height 50px
     width 100%
     position relative
-    bottom -30px
+    bottom -15px
     background-image url("/images/diagonal-1.png")
     transform rotate(180deg)
 
@@ -588,23 +749,43 @@ article, .article-head
         .crsl-item
             width 40%
 
-            span
-                display block
-                margin 22px 0 14px
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus
+        border #cc0000 solid thin
 
 #NAV-ID
+
+    .icon-obra-interior, .icon-escultura, .icon-banio, .icon-entrada, .icon-obra-exterior, .icon-agora, .icon-estacionamiento
+        font-size 40px
+
+    .pin-map
+        background-color transparent
+        padding 0
 
     a
         position absolute
         top 50%
         padding 7px
         background-color #f7f7f7
+        overflow auto
 
     .previous
         left 0
 
     .next
         right 0
+
+    .top
+        top 0
+        left 50%
+
+    .bottom
+        bottom 0
+        top auto
+        left 50%
+
+    .zoom-out
+        right 0
+        top 0
 
 .obra-img
     height 365px
@@ -624,6 +805,27 @@ article, .article-head
 .obra-5
     background-image url("/images/hospederia-colgante-o-del-taller-de-obra.png")
 
+.obra-6
+    background-image url("/images/arpa-eolica.png")
+
+.obra-7
+    background-image url("/images/taller-de-prototipos.png")
+
+.obra-8
+    background-image url("/images/taller-del-escultor.png")
+
+.obra-9
+    background-image url("/images/mesa-del-entreacto.png")
+
+.obra-10
+    background-image url("/images/hospederia-de-la-rosa-de-los-vientos-o-las-celdas.png")
+
+.obra-11
+    background-image url("/images/anfiteatro-al-aire-libre-510x340.png")
+
+.obra-12
+    background-image url("/images/jardin-cenotafio-de-bo.png")
+
 .obra-caption
     background-color #f7f7f7
     height 170px
@@ -634,7 +836,11 @@ article, .article-head
     margin 0 auto 0
 
     h3
-        margin-top 11px
+        margin 11px 0 10px
+
+    span
+        display block
+        margin 22px 0 14px
 
 .center-container
     width 76%
@@ -652,11 +858,16 @@ figcaption
 
 .tweet
     width 100%
-    overflow auto
+    overflow hidden
 
     a
         padding 0
         display block
+
+    p
+
+        a
+            display inline
 
     .date
         float right
@@ -664,7 +875,7 @@ figcaption
     div
         margin-bottom 16px
 
-        a:first-child 
+        a:first-child
             color #cc0000
 
 .twitter-section

@@ -27,8 +27,8 @@
     ],
     "obras": [
         {
-            "nombre": "Ágora de Tronquoy",
-            "slug": "Ágora-de-Tronquoy",
+            "nombre": "Hospedería de la Entrada",
+            "slug": "Hospederia-de-la-Entrada",
             "descripcion": "Ágora",
             "imagen": "http://cdn.meme.am/images/300x/6541210.jpg",
             "zona": "Zona Baja - Cercano a la Vega",
@@ -55,7 +55,7 @@
         },
                 {
             "nombre": "Ágora de Tronquoy",
-            "slug": "Ágora-de-Tronquoy",
+            "slug": "Agora-de-Tronquoy",
             "descripcion": "Ágora",
             "imagen": "http://cdn.meme.am/images/300x/6541210.jpg",
             "zona": "Zona Baja - Cercano a la Vega",

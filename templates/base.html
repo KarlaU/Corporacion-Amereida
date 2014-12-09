@@ -4,22 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <title>Camereida</title>
+
+    <script src="{{ assets }}/js/jquery-2.1.1.min.js"></script>
+    <script src="{{ assets }}/js/bootstrap.min.js"></script>
+    <script src="{{ assets }}/js/common_functions.js"></script>
+    <script src="{{ assets }}/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="{{ assets }}/js/jquery.kinetic.min.js"></script>
+    <script src="{{ assets }}/js/responsiveCarousel.js"></script>
+    <script src="{{ assets }}/js/jquery.justifiedGallery.min.js"></script>
     <link rel="shortcut icon" href="/images/favicon.png" />
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/bootstrap-theme.min.css" />
-    <link rel="stylesheet" href="/css/font-awesome.min.css" />
     <link rel="stylesheet" href="/css/camereida.css" />
-    <link rel="stylesheet" href="/css/stampa.css" />
-    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Anonymous+Pro:400,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/stampa.css"/>
+    <link rel="stylesheet" href="/css/justifiedGallery.min.css"/>
+    <!--link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'-->
+    <!--link href='http://fonts.googleapis.com/css?family=Anonymous+Pro:400,400italic' rel='stylesheet' type='text/css'-->
     <link href="https://fontastic.s3.amazonaws.com/q5EW7m6rHv9JyZ7pcLEfLM/icons.css" rel="stylesheet">
 </head>
 <body>
     <header class="main-wrapper">
         <section class="panel-busqueda tst">
             <div class="lenguajes pull-left">
-                <div class="amereida-btn">
+                <div class="amereida-btn active">
                     <p>Español</p>
                 </div>
                 <div class="amereida-btn">
@@ -65,7 +73,7 @@
                 </a>
             </div>
             <div class="col-md-3 col-sm-6 column">
-                    <a class="amereida-btn" href="#">Contacto</a>
+                    <a class="amereida-btn" href="/contacto">Contacto</a>
                     <a class="amereida-btn" href="#">Formulario de Visitas</a>
                     <a class="amereida-btn" href="#">Donaciones y Aportes</a>
             </div>
@@ -83,28 +91,28 @@
                 <div class="c-text-container">
                     <span class="icn icn-archivo icn-light title-bullet"></span>
                     <div class="c-caption-inner">
-                        <h4><a href="">Archivo histórico José Vial Armstrong</a></h4>
+                        <h4><a href="http://www.ead.pucv.cl/extension/archivo/">Archivo histórico José Vial Armstrong</a></h4>
                         <p>Fotografías, videos, planos, etc.</p>
                     </div>
                 </div>
                 <div class="c-text-container">
                     <span class="icn icn-constel icn-light title-bullet"></span>
                     <div class="c-caption-inner">
-                        <h4><a href="">Biblioteca Constel</a></h4>
+                        <h4><a href="http://www.ead.pucv.cl/amereida/biblioteca-con%C2%A7tel/">Biblioteca Constel</a></h4>
                         <p>Catálogo de documentos, libros, poemas, ensayos, etc.</p>
                     </div>
                 </div>
                 <div class="c-text-container">
                     <span class="icn icn-mas icn-light title-bullet"></span>
                     <div class="c-caption-inner">
-                        <h4><a href="">e[ad] Escuela de Arquitectura y Diseño</a></h4>
+                        <h4><a href="http://www.ead.pucv.cl/">e[ad] Escuela de Arquitectura y Diseño</a></h4>
                         <p>Sitio de la Escuela de Arquitectura y diseño PUCV.</p>
                     </div>
                 </div>
                 <div class="c-text-container">
                     <span class="icn icn-travesia icn-light title-bullet"></span>
                     <div class="c-caption-inner">
-                       <h4><a href="">Travesías de Amereida</a></h4>
+                       <h4><a href="http://travesias.ead.pucv.cl/">Travesías de Amereida</a></h4>
                         <p>Bitácora colectiva de las travesías de amereida.</p>
                     </div>
                 </div>
@@ -112,12 +120,6 @@
         </div>
     </footer>
     {% block js %}
-    <script src="/js/jquery-2.1.1.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/common_functions.js"></script>
-    <script src="/js/jquery-ui-1.10.3.custom.min.js"></script>
-    <script src="/js/jquery.kinetic.min.js"></script>
-    <script src="/js/responsiveCarousel.js"></script>
     <script type="text/javascript">
         $(document).ready(function($){
             $('.crsl-items').carousel();
