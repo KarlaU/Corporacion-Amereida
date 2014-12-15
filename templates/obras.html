@@ -34,129 +34,65 @@
         <div class="row clearfix obras-container">
             <!--columna 1-->
             <div class="col-md-4 col-sm-6 column">
-                <!--hospedería de la entrada-->
-                <a href="/obra/Hospederia-de-la-Entrada"><figure>
-                    <img src="{{ assets }}images/hospederia-de-la-entrada.png" alt="" />
-                </figure>
-                <div class="obra-caption">
-                    <figcaption class="center-container">
-                        <span class="icon-obra-interior"></span>
-                        <h3>Hospedería de la Entrada</h3>
-                        <p class="bajada red-hr">
-                            Obra Interior | Zona Baja, Entrada | Grupo Ciudad Abierta | 11992
-                        </p>
-                    </figcaption>
-                </div></a>
-                <!--arpa eolica-->
-                <a href="#"><figure>
-                    <img src="{{ assets }}images/arpa-eolica.png" alt="" />
-                </figure>
-                <div class="obra-caption">
-                    <figcaption class="center-container">
-                        <span class="icon-escultura"></span>
-                        <h3>Arpa Eólica</h3>
-                        <p class="bajada red-hr">
-                            Obra Interior | Zona Baja, Entrada | Grupo Ciudad Abierta | 1980
-                        </p>
-                    </figcaption>
-                </div></a>
-                <!--cubicula del poeta-->
-                <a href="#"><figure>
-                    <img src="{{ assets }}images/cubicula-del-poeta.png" alt="" />
-                </figure>
-                <div class="obra-caption">
-                    <figcaption class="center-container">
-                        <span class="icon-obra-interior"></span>
-                        <h3>Cubícula del Poeta</h3>
-                        <p class="bajada red-hr">
-                            Obra Interior | Zona Baja, Entrada | Juan Purcell, Salvador Zahr, Fabio Cruz | 1978
-                        </p>
-                    </figcaption>
-                </div></a>
+                {# SET 1 #}
+                {% for obra in col1 %}
+                <a href="/obra/{{obra.slug}}">
+                    <figure>
+                        <img src="{{ assets }}{{ obra.imagen }}" alt="" />
+                    </figure>
+                    <div class="obra-caption">
+                        <figcaption class="center-container">
+                            <span class="icon-obra-interior"></span>
+                            <h3>{{ obra.nombre }}</h3>
+                            <p class="bajada red-hr">
+                                {{ obra.resumen }}
+                            </p>
+                        </figcaption>
+                    </div>
+                </a>
+                {% endfor %}
             </div>
-            <div class="col-md-4 col-sm-6 column">
-                <!--giro-->
-                <a href="#"><figure>
-                    <img src="{{ assets }}images/giro-400x600.png" alt="" />
-                </figure>
-                <div class="obra-caption">
-                    <figcaption class="center-container">
-                        <span class="icon-escultura"></span>
-                        <h3>Giro</h3>
-                        <p class="bajada red-hr">
-                            Obra Interior | Zona Baja, Entrada | Claudio Girola | 1994
-                        </p>
-                    </figcaption>
-                </div></a>
-                <!--confín-->
-                <a href="#"><figure>
-                    <img src="{{ assets }}images/confin.png" alt="" />
-                </figure>
-                <div class="obra-caption">
-                    <figcaption class="center-container">
-                        <span class="icon-obra-interior"></span>
-                        <h3>Confín</h3>
-                        <p class="bajada red-hr">
-                            Obra Interior | Zona Baja, Entrada | Patricio Cáraves, David Jolly y alumnos del Taller de Obra | 1975
-                        </p>
-                    </figcaption>
-                </div></a>
-                <!--vuelo quebrado-->
-                <a href="#"><figure>
-                    <img src="{{ assets }}images/vuelo-quebrado.png" alt="" />
-                </figure>
-                <div class="obra-caption">
-                    <figcaption class="center-container">
-                        <span class="icon-escultura"></span>
-                        <h3>Vuelo Quebrado</h3>
-                        <p class="bajada red-hr">
-                            Obra Interior | Zona Baja, Vega | Claudio Girola | 2007
-                        </p>
-                    </figcaption>
-                </div></a>
 
-            </div>
             <div class="col-md-4 col-sm-6 column">
-                <!--hospedería doble-->
-                <a href="#"><figure>
-                    <img src="{{ assets }}images/hospederia-doble-o-del-banquete.png" alt="" />
-                </figure>
-                <div class="obra-caption">
-                    <figcaption class="center-container">
-                        <span class="icon-obra-interior"></span>
-                        <h3>Hospedería Doble</h3>
-                        <p class="bajada red-hr">
-                            Obra Interior | Zona Baja, Entrada | Grupo Ciudad Abierta | 1973
-                        </p>
-                    </figcaption>
-                </div></a>
-                <!--mesa del entreacto-->
-                <a href="#"><figure>
-                    <img src="{{ assets }}images/mesa-del-entreacto.png" alt="" />
-                </figure>
-                <div class="obra-caption">
-                    <figcaption class="center-container">
-                        <span class="icon-obra-exterior"></span>
-                        <h3>Mesa del Entreacto</h3>
-                        <p class="bajada red-hr">
-                            Obra Interior | Zona Baja, Entrada | David Jolly, Patricio Cáraves y el Grupo Ciudad Abierta | 1996
-                        </p>
-                    </figcaption>
-                </div></a>
-                <!--las celdas-->
-                <a href="#"><figure>
-                    <img src="{{ assets }}images/hospederia-de-la-rosa-de-los-vientos-o-las-celdas.png" alt="" />
-                </figure>
-                <div class="obra-caption">
-                    <figcaption class="center-container">
-                        <span class="icon-obra-interior"></span>
-                        <h3>Las Celdas</h3>
-                        <p class="bajada red-hr">
-                            Obra Interior | Zona Baja, Vega | Grupo Ciudad Abierta | 1997
-                        </p>
-                    </figcaption>
-                </div></a>
+                {# SET 2 #}
+                {% for obra in col2 %}
+                <a href="/obra/{{obra.slug}}">
+                    <figure>
+                        <img src="{{ assets }}{{ obra.imagen }}" alt="" />
+                    </figure>
+                    <div class="obra-caption">
+                        <figcaption class="center-container">
+                            <span class="icon-obra-interior"></span>
+                            <h3>{{ obra.nombre }}</h3>
+                            <p class="bajada red-hr">
+                                {{ obra.resumen }}
+                            </p>
+                        </figcaption>
+                    </div>
+                </a>
+                {% endfor %}
             </div>
+
+            <div class="col-md-4 col-sm-6 column">
+                {# SET 3 #}
+                {% for obra in col3 %}
+                <a href="/obra/{{obra.slug}}">
+                    <figure>
+                        <img src="{{ assets }}{{ obra.imagen }}" alt="" />
+                    </figure>
+                    <div class="obra-caption">
+                        <figcaption class="center-container">
+                            <span class="icon-obra-interior"></span>
+                            <h3>{{ obra.nombre }}</h3>
+                            <p class="bajada red-hr">
+                                {{ obra.resumen }}
+                            </p>
+                        </figcaption>
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+
         </div>
         <label>Página 1 de 5</label>
         <ul class="pagination">
@@ -170,4 +106,5 @@
         </ul>
     </section>
 </section>
+
 {% endblock %}

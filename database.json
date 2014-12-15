@@ -30,109 +30,91 @@
             "nombre": "Hospedería de la Entrada",
             "slug": "Hospederia-de-la-Entrada",
             "descripcion": "Ágora",
-            "imagen": "http://cdn.meme.am/images/300x/6541210.jpg",
+            "imagen": "images/hospederia-de-la-entrada.png",
             "zona": "Zona Baja - Cercano a la Vega",
             "autor": "Juan Purcell, Alberto Cruz A",
-            "anio": "1972"
+            "anio": "1972",
+            "resumen" : "Obra Interior | Zona Baja, Entrada | Grupo Ciudad Abierta | 11992"
         },
         {
             "nombre": "Taller de Prototipos",
             "slug": "Taller-de-Prototipos",
             "descripcion": "Sala",
-            "imagen": "http://cdn.meme.am/images/300x/6541210.jpg",
+            "imagen": "images/arpa-eolica.png",
             "zona": "Zona Media - Cercano a la Vega",
             "autor": "Juan Purcell, Alberto Cruz B",
-            "anio": "1973"
+            "anio": "1973",
+            "resumen": "Obra Interior | Zona Baja, Entrada | Grupo Ciudad Abierta | 1980"
         },
         {
             "nombre": "Casa de los Nombres",
             "slug": "Casa-de-los-Nombres",
             "descripcion": "Sala",
-            "imagen": "http://cdn.meme.am/images/300x/6541210.jpg",
+            "imagen": "images/cubicula-del-poeta.png",
             "zona": "Zona Alta - Cercano a la Vega",
             "autor": "Juan Purcell, Alberto Cruz C",
-            "anio": "1974"
+            "anio": "1974",
+            "resumen": "Obra Interior | Zona Baja, Entrada | Juan Purcell, Salvador Zahr, Fabio Cruz | 1978"
         },
-                {
-            "nombre": "Ágora de Tronquoy",
-            "slug": "Agora-de-Tronquoy",
+        {
+            "nombre": "Giro",
+            "slug": "giro",
             "descripcion": "Ágora",
-            "imagen": "http://cdn.meme.am/images/300x/6541210.jpg",
+            "imagen": "images/giro-400x600.png",
             "zona": "Zona Baja - Cercano a la Vega",
             "autor": "Juan Purcell, Alberto Cruz A",
-            "anio": "1972"
+            "anio": "1972",
+            "resumen": "Obra Interior | Zona Baja, Entrada | Claudio Girola | 1994"
         },
         {
-            "nombre": "Taller de Prototipos",
-            "slug": "Taller-de-Prototipos",
+            "nombre": "Confín",
+            "slug": "confin",
             "descripcion": "Sala",
-            "imagen": "http://cdn.meme.am/images/300x/6541210.jpg",
+            "imagen": "images/confin.png",
             "zona": "Zona Media - Cercano a la Vega",
             "autor": "Juan Purcell, Alberto Cruz B",
-            "anio": "1973"
+            "anio": "1973",
+            "resumen": "Obra Interior | Zona Baja, Entrada | Patricio Cáraves, David Jolly y alumnos del Taller de Obra | 1975"
         },
         {
-            "nombre": "Casa de los Nombres",
-            "slug": "Casa-de-los-Nombres",
+            "nombre": "Vuelo Quebrado",
+            "slug": "vuelo-quebrado",
             "descripcion": "Sala",
-            "imagen": "http://cdn.meme.am/images/300x/6541210.jpg",
+            "imagen": "images/vuelo-quebrado.png",
             "zona": "Zona Alta - Cercano a la Vega",
             "autor": "Juan Purcell, Alberto Cruz C",
-            "anio": "1974"
+            "anio": "1974",
+            "resumen": "Obra Interior | Zona Baja, Vega | Claudio Girola | 2007"
         },
         {
-            "nombre": "Ágora de Tronquoy",
-            "slug": "Ágora-de-Tronquoy",
+            "nombre": "Hospedería Doble",
+            "slug": "hospederia-doble",
             "descripcion": "Ágora",
-            "imagen": "http://cdn.meme.am/images/300x/6541210.jpg",
+            "imagen": "images/hospederia-doble-o-del-banquete.png",
             "zona": "Zona Baja - Cercano a la Vega",
             "autor": "Juan Purcell, Alberto Cruz A",
-            "anio": "1972"
+            "anio": "1972",
+            "resumen": "Obra Interior | Zona Baja, Entrada | Grupo Ciudad Abierta | 1973"
         },
         {
-            "nombre": "Taller de Prototipos",
-            "slug": "Taller-de-Prototipos",
+            "nombre": "Mesa del Entreacto",
+            "slug": "mesa-del-entreacto",
             "descripcion": "Sala",
-            "imagen": "http://cdn.meme.am/images/300x/6541210.jpg",
+            "imagen": "images/mesa-del-entreacto.png",
             "zona": "Zona Media - Cercano a la Vega",
             "autor": "Juan Purcell, Alberto Cruz B",
-            "anio": "1973"
+            "anio": "1973",
+            "resumen": "Obra Interior | Zona Baja, Entrada | David Jolly, Patricio Cáraves y el Grupo Ciudad Abierta | 1996"
         },
         {
-            "nombre": "Casa de los Nombres",
-            "slug": "Casa-de-los-Nombres",
+            "nombre": "Las Celdas",
+            "slug": "las-celdas",
             "descripcion": "Sala",
-            "imagen": "http://cdn.meme.am/images/300x/6541210.jpg",
+            "imagen": "images/hospederia-de-la-rosa-de-los-vientos-o-las-celdas.png",
             "zona": "Zona Alta - Cercano a la Vega",
             "autor": "Juan Purcell, Alberto Cruz C",
-            "anio": "1974"
-        },
-                {
-            "nombre": "Ágora de Tronquoy",
-            "slug": "Ágora-de-Tronquoy",
-            "descripcion": "Ágora",
-            "imagen": "http://cdn.meme.am/images/300x/6541210.jpg",
-            "zona": "Zona Baja - Cercano a la Vega",
-            "autor": "Juan Purcell, Alberto Cruz A",
-            "anio": "1972"
-        },
-        {
-            "nombre": "Taller de Prototipos",
-            "slug": "Taller-de-Prototipos",
-            "descripcion": "Sala",
-            "imagen": "http://cdn.meme.am/images/300x/6541210.jpg",
-            "zona": "Zona Media - Cercano a la Vega",
-            "autor": "Juan Purcell, Alberto Cruz B",
-            "anio": "1973"
-        },
-        {
-            "nombre": "Casa de los Nombres",
-            "slug": "Casa-de-los-Nombres",
-            "descripcion": "Sala",
-            "imagen": "http://cdn.meme.am/images/300x/6541210.jpg",
-            "zona": "Zona Alta - Cercano a la Vega",
-            "autor": "Juan Purcell, Alberto Cruz C",
-            "anio": "1974"
+            "anio": "1974",
+            "resumen": "Obra Interior | Zona Baja, Vega | Grupo Ciudad Abierta | 1997"
         }
     ],
     "reglas":[
