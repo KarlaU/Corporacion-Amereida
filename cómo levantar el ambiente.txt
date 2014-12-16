@@ -1,0 +1,53 @@
+Instalacion Requerida para Proyecto Corporacion-Amereida
+- NodeJs
+- npm
+
+los pasos señalados son para las instalaciones en OSX
+
+NodeJs
+para la instalacion de NodeJs require la instalacion previa de homebrew o macports.
+
+homebrew:
+en la terminal de OSX.
+brew install node
+
+macports
+en la terminal de OSX.
+port install nodejs
+
+npm
+npm es el gestor de paquetes que utiliza el proyecto.
+
+sudo npm install npm -g
+
+con esto completamos la instalacion de las dependencias minimas para iniciar el proyecto
+
+Proyecto.
+despues de clonar el proyecto desde
+git clone https://github.com/KarlaU/Corporacion-Amereida.git
+
+te pocisionas en la carpeta del proyecto eh ejecutas el siguiente comando para instalar las dependecias de este proyecto en particular
+
+npm install
+
+este comando instalara express, swig entre otras dependecias necesarias para lebantar el proyecto.
+
+para iniciar el servidor
+
+node server.js
+
+NOTA :
+si se realiza un cambio en db.json o cualquier archivo de configuracion del proyecto deberas recinicas el server con cmd + c y volviendo la iniciar el servidor
+
+por la configuracion que se encuentra activa la forma de acceder sera
+
+http://localhost:20433
+
+Mas informacion : 
+https://github.com/paulomcnally/content_desarrolladores/blob/master/articles/como-instalar-nodejs-en-windows-linux-mac.markdown
+https://docs.npmjs.com/getting-started/installing-node
+http://www.iteramos.com/pregunta/7412/como-se-instala-modulos-solo-desarrollo-npm-para-nodejs-packagejson
+	
+
+	
+

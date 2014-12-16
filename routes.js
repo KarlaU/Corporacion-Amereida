@@ -16,7 +16,7 @@ function addRoutes(app){
     app.get('/sobre', sobreController);
     app.get('/visita', visitaController);
     app.get('/obras', obrasController);
-    app.get('/obra/:slug', obraController);
+    app.get('/obra', obraController);
     app.get('/como-llegar', comoLlegarController);
     app.get('/mapa', mapaController);
     app.get('/recorrido', recorridoController);
