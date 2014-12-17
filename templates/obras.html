@@ -38,7 +38,7 @@
                 {% for obra in col1 %}
                 <a href="/obra">
                     <figure>
-                        <img src="{{ assets }}{{ obra.imagen }}" alt="" />
+                        <img src="{{ assets }}/static/{{ obra.imagen }}" alt="" />
                     </figure>
                     <div class="obra-caption">
                         <figcaption class="center-container">
@@ -58,7 +58,7 @@
                 {% for obra in col2 %}
                 <a href="/obra/{{obra.slug}}">
                     <figure>
-                        <img src="{{ assets }}{{ obra.imagen }}" alt="" />
+                        <img src="{{ assets }}/static/{{ obra.imagen }}" alt="" />
                     </figure>
                     <div class="obra-caption">
                         <figcaption class="center-container">
@@ -78,7 +78,7 @@
                 {% for obra in col3 %}
                 <a href="/obra/{{obra.slug}}">
                     <figure>
-                        <img src="{{ assets }}{{ obra.imagen }}" alt="" />
+                        <img src="{{ assets }}/static/{{ obra.imagen }}" alt="" />
                     </figure>
                     <div class="obra-caption">
                         <figcaption class="center-container">

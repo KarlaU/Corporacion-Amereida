@@ -2,12 +2,13 @@ var express = require('express'),
     app = express(),
     http = require('http'),
     swig = require('swig'),
+    consolidate = require('consolidate'),
     addRoutes = require('./routes.js');
 
-app.engine('html', swig.renderFile);
+app.engine('html', consolidate.swig);
 app.set('view engine', 'html');
 app.set('views', __dirname + '/templates');
-app.use(express.static(__dirname + '/static'));
+app.use('/static', express.static(__dirname + '/static'));
 app.set('view cache', false);
 
 swig.setDefaults({ cache : false });

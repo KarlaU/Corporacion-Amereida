@@ -8,8 +8,6 @@ function obraController(req, res){
         return o.slug = req.params.slug;
     });
 
-    console.log('llegue a obra de un algo : ' + req.params.slug);
-
     obra = obra[0] || {};
     res.render('obra');
 }
